@@ -1,0 +1,6 @@
+framework module Pods_The_Ballad_of_Sigurd {
+  umbrella header "Pods-The Ballad of Sigurd-umbrella.h"
+
+  export *
+  module * { export * }
+}

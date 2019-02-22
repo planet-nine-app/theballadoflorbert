@@ -1,0 +1,958 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		60707F5A1FBBF586D51E8776 /* Pods_The_Ballad_of_SigurdUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D7D236FADCA30916E631D8C /* Pods_The_Ballad_of_SigurdUITests.framework */; };
+		9D4A62EC3D3C4C740C7C1FCF /* Pods_The_Ballad_of_SigurdTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53F3519C373C20127125D289 /* Pods_The_Ballad_of_SigurdTests.framework */; };
+		CA640C2722209682004905E0 /* AbstractPlayerCharacter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA640C2622209682004905E0 /* AbstractPlayerCharacter.swift */; };
+		CA640C2B2220987D004905E0 /* Rune.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA640C2A2220987D004905E0 /* Rune.swift */; };
+		CA640C2D2220988F004905E0 /* Weapon.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA640C2C2220988F004905E0 /* Weapon.swift */; };
+		CA640C2F222098AF004905E0 /* Helm.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA640C2E222098AF004905E0 /* Helm.swift */; };
+		CA640C31222098BD004905E0 /* BodyArmor.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA640C30222098BD004905E0 /* BodyArmor.swift */; };
+		CA640C33222098CE004905E0 /* Bracers.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA640C32222098CE004905E0 /* Bracers.swift */; };
+		CA640C35222098E4004905E0 /* Shield.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA640C34222098E4004905E0 /* Shield.swift */; };
+		CA640C37222098FA004905E0 /* Necklace.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA640C36222098FA004905E0 /* Necklace.swift */; };
+		CA640C392220990B004905E0 /* Boots.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA640C382220990B004905E0 /* Boots.swift */; };
+		CA640C3B22209925004905E0 /* Gloves.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA640C3A22209925004905E0 /* Gloves.swift */; };
+		CA640C3D22209A40004905E0 /* InventoryManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA640C3C22209A40004905E0 /* InventoryManager.swift */; };
+		CA640C3F22209AD1004905E0 /* InventoryItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA640C3E22209AD1004905E0 /* InventoryItem.swift */; };
+		CA640C4222209BBC004905E0 /* Enums.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA640C4122209BBC004905E0 /* Enums.swift */; };
+		CA640C5A2220B46F004905E0 /* Orbitron-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CA640C582220B46F004905E0 /* Orbitron-Bold.ttf */; };
+		CA640C5B2220B46F004905E0 /* Ubuntu-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CA640C592220B46F004905E0 /* Ubuntu-Medium.ttf */; };
+		CAB4EADD221F693B0066EDC4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAB4EADC221F693B0066EDC4 /* AppDelegate.swift */; };
+		CAB4EADF221F693B0066EDC4 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = CAB4EADE221F693B0066EDC4 /* GameScene.sks */; };
+		CAB4EAE1221F693B0066EDC4 /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = CAB4EAE0221F693B0066EDC4 /* Actions.sks */; };
+		CAB4EAE3221F693B0066EDC4 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAB4EAE2221F693B0066EDC4 /* GameScene.swift */; };
+		CAB4EAE5221F693B0066EDC4 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAB4EAE4221F693B0066EDC4 /* GameViewController.swift */; };
+		CAB4EAE8221F693B0066EDC4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CAB4EAE6221F693B0066EDC4 /* Main.storyboard */; };
+		CAB4EAEA221F693D0066EDC4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CAB4EAE9221F693D0066EDC4 /* Assets.xcassets */; };
+		CAB4EAED221F693D0066EDC4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CAB4EAEB221F693D0066EDC4 /* LaunchScreen.storyboard */; };
+		CAB4EAF8221F693D0066EDC4 /* The_Ballad_of_SigurdTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAB4EAF7221F693D0066EDC4 /* The_Ballad_of_SigurdTests.swift */; };
+		CAB4EB03221F693D0066EDC4 /* The_Ballad_of_SigurdUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAB4EB02221F693D0066EDC4 /* The_Ballad_of_SigurdUITests.swift */; };
+		CAB4EC1D221F6A570066EDC4 /* LFCGzipUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = CAB4EC1A221F6A560066EDC4 /* LFCGzipUtility.m */; };
+		CAB4EC1E221F6A570066EDC4 /* JSTileMap.m in Sources */ = {isa = PBXBuildFile; fileRef = CAB4EC1C221F6A570066EDC4 /* JSTileMap.m */; };
+		CAB4EC23221F6AB90066EDC4 /* AbstractScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAB4EC22221F6AB90066EDC4 /* AbstractScene.swift */; };
+		EB7FDCC16600EE77DEF99F5F /* Pods_The_Ballad_of_Sigurd.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6059DB171FC9D443A925B423 /* Pods_The_Ballad_of_Sigurd.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CAB4EAF4221F693D0066EDC4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CAB4EAD1221F693B0066EDC4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CAB4EAD8221F693B0066EDC4;
+			remoteInfo = "The Ballad of Sigurd";
+		};
+		CAB4EAFF221F693D0066EDC4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CAB4EAD1221F693B0066EDC4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CAB4EAD8221F693B0066EDC4;
+			remoteInfo = "The Ballad of Sigurd";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		4B6C69EF00AF47D5B0D6E6E2 /* Pods-The Ballad of SigurdUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-The Ballad of SigurdUITests.release.xcconfig"; path = "Target Support Files/Pods-The Ballad of SigurdUITests/Pods-The Ballad of SigurdUITests.release.xcconfig"; sourceTree = "<group>"; };
+		510F921F2FBEA32777BD9CB4 /* Pods-The Ballad of SigurdTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-The Ballad of SigurdTests.release.xcconfig"; path = "Target Support Files/Pods-The Ballad of SigurdTests/Pods-The Ballad of SigurdTests.release.xcconfig"; sourceTree = "<group>"; };
+		53F3519C373C20127125D289 /* Pods_The_Ballad_of_SigurdTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_The_Ballad_of_SigurdTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6059DB171FC9D443A925B423 /* Pods_The_Ballad_of_Sigurd.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_The_Ballad_of_Sigurd.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9D7D236FADCA30916E631D8C /* Pods_The_Ballad_of_SigurdUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_The_Ballad_of_SigurdUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A0E70B37BE82543C425A1373 /* Pods-The Ballad of Sigurd.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-The Ballad of Sigurd.release.xcconfig"; path = "Target Support Files/Pods-The Ballad of Sigurd/Pods-The Ballad of Sigurd.release.xcconfig"; sourceTree = "<group>"; };
+		AE82BB8F9771EABDB5D8FCF8 /* Pods-The Ballad of SigurdUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-The Ballad of SigurdUITests.debug.xcconfig"; path = "Target Support Files/Pods-The Ballad of SigurdUITests/Pods-The Ballad of SigurdUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		CA640C2622209682004905E0 /* AbstractPlayerCharacter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbstractPlayerCharacter.swift; sourceTree = "<group>"; };
+		CA640C2A2220987D004905E0 /* Rune.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rune.swift; sourceTree = "<group>"; };
+		CA640C2C2220988F004905E0 /* Weapon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Weapon.swift; sourceTree = "<group>"; };
+		CA640C2E222098AF004905E0 /* Helm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helm.swift; sourceTree = "<group>"; };
+		CA640C30222098BD004905E0 /* BodyArmor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BodyArmor.swift; sourceTree = "<group>"; };
+		CA640C32222098CE004905E0 /* Bracers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bracers.swift; sourceTree = "<group>"; };
+		CA640C34222098E4004905E0 /* Shield.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shield.swift; sourceTree = "<group>"; };
+		CA640C36222098FA004905E0 /* Necklace.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Necklace.swift; sourceTree = "<group>"; };
+		CA640C382220990B004905E0 /* Boots.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Boots.swift; sourceTree = "<group>"; };
+		CA640C3A22209925004905E0 /* Gloves.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gloves.swift; sourceTree = "<group>"; };
+		CA640C3C22209A40004905E0 /* InventoryManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InventoryManager.swift; sourceTree = "<group>"; };
+		CA640C3E22209AD1004905E0 /* InventoryItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InventoryItem.swift; sourceTree = "<group>"; };
+		CA640C4122209BBC004905E0 /* Enums.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enums.swift; sourceTree = "<group>"; };
+		CA640C582220B46F004905E0 /* Orbitron-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Orbitron-Bold.ttf"; sourceTree = "<group>"; };
+		CA640C592220B46F004905E0 /* Ubuntu-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Ubuntu-Medium.ttf"; sourceTree = "<group>"; };
+		CAB4EAD9221F693B0066EDC4 /* The Ballad of Sigurd.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "The Ballad of Sigurd.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CAB4EADC221F693B0066EDC4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		CAB4EADE221F693B0066EDC4 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
+		CAB4EAE0221F693B0066EDC4 /* Actions.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Actions.sks; sourceTree = "<group>"; };
+		CAB4EAE2221F693B0066EDC4 /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
+		CAB4EAE4221F693B0066EDC4 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+		CAB4EAE7221F693B0066EDC4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CAB4EAE9221F693D0066EDC4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CAB4EAEC221F693D0066EDC4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CAB4EAEE221F693D0066EDC4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CAB4EAF3221F693D0066EDC4 /* The Ballad of SigurdTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "The Ballad of SigurdTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CAB4EAF7221F693D0066EDC4 /* The_Ballad_of_SigurdTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = The_Ballad_of_SigurdTests.swift; sourceTree = "<group>"; };
+		CAB4EAF9221F693D0066EDC4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CAB4EAFE221F693D0066EDC4 /* The Ballad of SigurdUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "The Ballad of SigurdUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CAB4EB02221F693D0066EDC4 /* The_Ballad_of_SigurdUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = The_Ballad_of_SigurdUITests.swift; sourceTree = "<group>"; };
+		CAB4EB04221F693D0066EDC4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CAB4EB10221F696F0066EDC4 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		CAB4EC17221F6A550066EDC4 /* The Ballad of Sigurd-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "The Ballad of Sigurd-Bridging-Header.h"; sourceTree = "<group>"; };
+		CAB4EC18221F6A560066EDC4 /* JSTileMap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSTileMap.h; sourceTree = "<group>"; };
+		CAB4EC19221F6A560066EDC4 /* LFCGzipUtility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LFCGzipUtility.h; sourceTree = "<group>"; };
+		CAB4EC1A221F6A560066EDC4 /* LFCGzipUtility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LFCGzipUtility.m; sourceTree = "<group>"; };
+		CAB4EC1B221F6A560066EDC4 /* The Ballad of Sigurd-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "The Ballad of Sigurd-Bridging-Header.h"; path = "../../../../Projects/theballadofsigurd/The Ballad of Sigurd-Bridging-Header.h"; sourceTree = "<group>"; };
+		CAB4EC1C221F6A570066EDC4 /* JSTileMap.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSTileMap.m; sourceTree = "<group>"; };
+		CAB4EC20221F6A660066EDC4 /* The Ballad of Sigurd-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "The Ballad of Sigurd-Bridging-Header.h"; sourceTree = "<group>"; };
+		CAB4EC22221F6AB90066EDC4 /* AbstractScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbstractScene.swift; sourceTree = "<group>"; };
+		E5E2CD9154DEFA4645E0B7B4 /* Pods-The Ballad of Sigurd.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-The Ballad of Sigurd.debug.xcconfig"; path = "Target Support Files/Pods-The Ballad of Sigurd/Pods-The Ballad of Sigurd.debug.xcconfig"; sourceTree = "<group>"; };
+		EF9FC4E34C3984F6686151D6 /* Pods-The Ballad of SigurdTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-The Ballad of SigurdTests.debug.xcconfig"; path = "Target Support Files/Pods-The Ballad of SigurdTests/Pods-The Ballad of SigurdTests.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CAB4EAD6221F693B0066EDC4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EB7FDCC16600EE77DEF99F5F /* Pods_The_Ballad_of_Sigurd.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CAB4EAF0221F693D0066EDC4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9D4A62EC3D3C4C740C7C1FCF /* Pods_The_Ballad_of_SigurdTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CAB4EAFB221F693D0066EDC4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				60707F5A1FBBF586D51E8776 /* Pods_The_Ballad_of_SigurdUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		70A596667E77F1B82D98B252 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E5E2CD9154DEFA4645E0B7B4 /* Pods-The Ballad of Sigurd.debug.xcconfig */,
+				A0E70B37BE82543C425A1373 /* Pods-The Ballad of Sigurd.release.xcconfig */,
+				EF9FC4E34C3984F6686151D6 /* Pods-The Ballad of SigurdTests.debug.xcconfig */,
+				510F921F2FBEA32777BD9CB4 /* Pods-The Ballad of SigurdTests.release.xcconfig */,
+				AE82BB8F9771EABDB5D8FCF8 /* Pods-The Ballad of SigurdUITests.debug.xcconfig */,
+				4B6C69EF00AF47D5B0D6E6E2 /* Pods-The Ballad of SigurdUITests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		901D37DD23C5CCE2A15D95C4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6059DB171FC9D443A925B423 /* Pods_The_Ballad_of_Sigurd.framework */,
+				53F3519C373C20127125D289 /* Pods_The_Ballad_of_SigurdTests.framework */,
+				9D7D236FADCA30916E631D8C /* Pods_The_Ballad_of_SigurdUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CA640C1622208C78004905E0 /* Controls */ = {
+			isa = PBXGroup;
+			children = (
+				CA640C1D22208CE1004905E0 /* Overworld Controls */,
+				CA640C1C22208CD0004905E0 /* Menu Controls */,
+				CA640C1722208C89004905E0 /* Battle Controls */,
+			);
+			path = Controls;
+			sourceTree = "<group>";
+		};
+		CA640C1722208C89004905E0 /* Battle Controls */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Battle Controls";
+			sourceTree = "<group>";
+		};
+		CA640C1C22208CD0004905E0 /* Menu Controls */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Menu Controls";
+			sourceTree = "<group>";
+		};
+		CA640C1D22208CE1004905E0 /* Overworld Controls */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Overworld Controls";
+			sourceTree = "<group>";
+		};
+		CA640C1E22208D34004905E0 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				CA640C2522208D92004905E0 /* Overworld */,
+				CA640C2022208D48004905E0 /* Battle */,
+				CA640C1F22208D3D004905E0 /* Player Characters */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		CA640C1F22208D3D004905E0 /* Player Characters */ = {
+			isa = PBXGroup;
+			children = (
+				CA640C2622209682004905E0 /* AbstractPlayerCharacter.swift */,
+			);
+			path = "Player Characters";
+			sourceTree = "<group>";
+		};
+		CA640C2022208D48004905E0 /* Battle */ = {
+			isa = PBXGroup;
+			children = (
+				CA640C2422208D7C004905E0 /* Battle Runes */,
+				CA640C2222208D62004905E0 /* Battle Enemies */,
+				CA640C2122208D53004905E0 /* Battle Characters */,
+			);
+			path = Battle;
+			sourceTree = "<group>";
+		};
+		CA640C2122208D53004905E0 /* Battle Characters */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Battle Characters";
+			sourceTree = "<group>";
+		};
+		CA640C2222208D62004905E0 /* Battle Enemies */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Battle Enemies";
+			sourceTree = "<group>";
+		};
+		CA640C2422208D7C004905E0 /* Battle Runes */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Battle Runes";
+			sourceTree = "<group>";
+		};
+		CA640C2522208D92004905E0 /* Overworld */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Overworld;
+			sourceTree = "<group>";
+		};
+		CA640C282220985A004905E0 /* Inventory */ = {
+			isa = PBXGroup;
+			children = (
+				CA640C2A2220987D004905E0 /* Rune.swift */,
+				CA640C2C2220988F004905E0 /* Weapon.swift */,
+				CA640C2E222098AF004905E0 /* Helm.swift */,
+				CA640C30222098BD004905E0 /* BodyArmor.swift */,
+				CA640C32222098CE004905E0 /* Bracers.swift */,
+				CA640C34222098E4004905E0 /* Shield.swift */,
+				CA640C36222098FA004905E0 /* Necklace.swift */,
+				CA640C382220990B004905E0 /* Boots.swift */,
+				CA640C3A22209925004905E0 /* Gloves.swift */,
+				CA640C3C22209A40004905E0 /* InventoryManager.swift */,
+				CA640C3E22209AD1004905E0 /* InventoryItem.swift */,
+			);
+			path = Inventory;
+			sourceTree = "<group>";
+		};
+		CA640C4022209BAF004905E0 /* Enums and Structs */ = {
+			isa = PBXGroup;
+			children = (
+				CA640C4122209BBC004905E0 /* Enums.swift */,
+			);
+			path = "Enums and Structs";
+			sourceTree = "<group>";
+		};
+		CA640C432220AFE0004905E0 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				CA640C582220B46F004905E0 /* Orbitron-Bold.ttf */,
+				CA640C592220B46F004905E0 /* Ubuntu-Medium.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		CAB4EAD0221F693B0066EDC4 = {
+			isa = PBXGroup;
+			children = (
+				CAB4EB10221F696F0066EDC4 /* libz.dylib */,
+				CAB4EC1F221F6A5E0066EDC4 /* External */,
+				CAB4EADB221F693B0066EDC4 /* The Ballad of Sigurd */,
+				CAB4EAF6221F693D0066EDC4 /* The Ballad of SigurdTests */,
+				CAB4EB01221F693D0066EDC4 /* The Ballad of SigurdUITests */,
+				CAB4EADA221F693B0066EDC4 /* Products */,
+				70A596667E77F1B82D98B252 /* Pods */,
+				901D37DD23C5CCE2A15D95C4 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		CAB4EADA221F693B0066EDC4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CAB4EAD9221F693B0066EDC4 /* The Ballad of Sigurd.app */,
+				CAB4EAF3221F693D0066EDC4 /* The Ballad of SigurdTests.xctest */,
+				CAB4EAFE221F693D0066EDC4 /* The Ballad of SigurdUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CAB4EADB221F693B0066EDC4 /* The Ballad of Sigurd */ = {
+			isa = PBXGroup;
+			children = (
+				CA640C432220AFE0004905E0 /* Fonts */,
+				CA640C4022209BAF004905E0 /* Enums and Structs */,
+				CA640C282220985A004905E0 /* Inventory */,
+				CA640C1E22208D34004905E0 /* Entities */,
+				CA640C1622208C78004905E0 /* Controls */,
+				CAB4EC21221F6AA70066EDC4 /* Scenes */,
+				CAB4EC1B221F6A560066EDC4 /* The Ballad of Sigurd-Bridging-Header.h */,
+				CAB4EADC221F693B0066EDC4 /* AppDelegate.swift */,
+				CAB4EADE221F693B0066EDC4 /* GameScene.sks */,
+				CAB4EAE0221F693B0066EDC4 /* Actions.sks */,
+				CAB4EAE2221F693B0066EDC4 /* GameScene.swift */,
+				CAB4EAE4221F693B0066EDC4 /* GameViewController.swift */,
+				CAB4EAE6221F693B0066EDC4 /* Main.storyboard */,
+				CAB4EAE9221F693D0066EDC4 /* Assets.xcassets */,
+				CAB4EAEB221F693D0066EDC4 /* LaunchScreen.storyboard */,
+				CAB4EAEE221F693D0066EDC4 /* Info.plist */,
+				CAB4EC17221F6A550066EDC4 /* The Ballad of Sigurd-Bridging-Header.h */,
+			);
+			path = "The Ballad of Sigurd";
+			sourceTree = "<group>";
+		};
+		CAB4EAF6221F693D0066EDC4 /* The Ballad of SigurdTests */ = {
+			isa = PBXGroup;
+			children = (
+				CAB4EAF7221F693D0066EDC4 /* The_Ballad_of_SigurdTests.swift */,
+				CAB4EAF9221F693D0066EDC4 /* Info.plist */,
+			);
+			path = "The Ballad of SigurdTests";
+			sourceTree = "<group>";
+		};
+		CAB4EB01221F693D0066EDC4 /* The Ballad of SigurdUITests */ = {
+			isa = PBXGroup;
+			children = (
+				CAB4EB02221F693D0066EDC4 /* The_Ballad_of_SigurdUITests.swift */,
+				CAB4EB04221F693D0066EDC4 /* Info.plist */,
+			);
+			path = "The Ballad of SigurdUITests";
+			sourceTree = "<group>";
+		};
+		CAB4EC1F221F6A5E0066EDC4 /* External */ = {
+			isa = PBXGroup;
+			children = (
+				CAB4EC18221F6A560066EDC4 /* JSTileMap.h */,
+				CAB4EC1C221F6A570066EDC4 /* JSTileMap.m */,
+				CAB4EC19221F6A560066EDC4 /* LFCGzipUtility.h */,
+				CAB4EC20221F6A660066EDC4 /* The Ballad of Sigurd-Bridging-Header.h */,
+				CAB4EC1A221F6A560066EDC4 /* LFCGzipUtility.m */,
+			);
+			path = External;
+			sourceTree = "<group>";
+		};
+		CAB4EC21221F6AA70066EDC4 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				CAB4EC22221F6AB90066EDC4 /* AbstractScene.swift */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CAB4EAD8221F693B0066EDC4 /* The Ballad of Sigurd */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CAB4EB07221F693D0066EDC4 /* Build configuration list for PBXNativeTarget "The Ballad of Sigurd" */;
+			buildPhases = (
+				1B301303F2017219A4EBDD78 /* [CP] Check Pods Manifest.lock */,
+				CAB4EAD5221F693B0066EDC4 /* Sources */,
+				CAB4EAD6221F693B0066EDC4 /* Frameworks */,
+				CAB4EAD7221F693B0066EDC4 /* Resources */,
+				67233363110ACC25A240FF08 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "The Ballad of Sigurd";
+			productName = "The Ballad of Sigurd";
+			productReference = CAB4EAD9221F693B0066EDC4 /* The Ballad of Sigurd.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CAB4EAF2221F693D0066EDC4 /* The Ballad of SigurdTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CAB4EB0A221F693D0066EDC4 /* Build configuration list for PBXNativeTarget "The Ballad of SigurdTests" */;
+			buildPhases = (
+				95F83BD59EBBF01D42FE803D /* [CP] Check Pods Manifest.lock */,
+				CAB4EAEF221F693D0066EDC4 /* Sources */,
+				CAB4EAF0221F693D0066EDC4 /* Frameworks */,
+				CAB4EAF1221F693D0066EDC4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CAB4EAF5221F693D0066EDC4 /* PBXTargetDependency */,
+			);
+			name = "The Ballad of SigurdTests";
+			productName = "The Ballad of SigurdTests";
+			productReference = CAB4EAF3221F693D0066EDC4 /* The Ballad of SigurdTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		CAB4EAFD221F693D0066EDC4 /* The Ballad of SigurdUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CAB4EB0D221F693D0066EDC4 /* Build configuration list for PBXNativeTarget "The Ballad of SigurdUITests" */;
+			buildPhases = (
+				3BD0CE89A0BC2919F74BA553 /* [CP] Check Pods Manifest.lock */,
+				CAB4EAFA221F693D0066EDC4 /* Sources */,
+				CAB4EAFB221F693D0066EDC4 /* Frameworks */,
+				CAB4EAFC221F693D0066EDC4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CAB4EB00221F693D0066EDC4 /* PBXTargetDependency */,
+			);
+			name = "The Ballad of SigurdUITests";
+			productName = "The Ballad of SigurdUITests";
+			productReference = CAB4EAFE221F693D0066EDC4 /* The Ballad of SigurdUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CAB4EAD1221F693B0066EDC4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = "Planet Nine";
+				TargetAttributes = {
+					CAB4EAD8221F693B0066EDC4 = {
+						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1010;
+					};
+					CAB4EAF2221F693D0066EDC4 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = CAB4EAD8221F693B0066EDC4;
+					};
+					CAB4EAFD221F693D0066EDC4 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = CAB4EAD8221F693B0066EDC4;
+					};
+				};
+			};
+			buildConfigurationList = CAB4EAD4221F693B0066EDC4 /* Build configuration list for PBXProject "The Ballad of Sigurd" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CAB4EAD0221F693B0066EDC4;
+			productRefGroup = CAB4EADA221F693B0066EDC4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CAB4EAD8221F693B0066EDC4 /* The Ballad of Sigurd */,
+				CAB4EAF2221F693D0066EDC4 /* The Ballad of SigurdTests */,
+				CAB4EAFD221F693D0066EDC4 /* The Ballad of SigurdUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CAB4EAD7221F693B0066EDC4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CAB4EAE8221F693B0066EDC4 /* Main.storyboard in Resources */,
+				CAB4EADF221F693B0066EDC4 /* GameScene.sks in Resources */,
+				CA640C5B2220B46F004905E0 /* Ubuntu-Medium.ttf in Resources */,
+				CA640C5A2220B46F004905E0 /* Orbitron-Bold.ttf in Resources */,
+				CAB4EAEA221F693D0066EDC4 /* Assets.xcassets in Resources */,
+				CAB4EAED221F693D0066EDC4 /* LaunchScreen.storyboard in Resources */,
+				CAB4EAE1221F693B0066EDC4 /* Actions.sks in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CAB4EAF1221F693D0066EDC4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CAB4EAFC221F693D0066EDC4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1B301303F2017219A4EBDD78 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-The Ballad of Sigurd-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3BD0CE89A0BC2919F74BA553 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-The Ballad of SigurdUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		67233363110ACC25A240FF08 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-The Ballad of Sigurd/Pods-The Ballad of Sigurd-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/PlanetNineGateway/PlanetNineGateway.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PlanetNineGateway.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-The Ballad of Sigurd/Pods-The Ballad of Sigurd-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		95F83BD59EBBF01D42FE803D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-The Ballad of SigurdTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CAB4EAD5221F693B0066EDC4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CAB4EC23221F6AB90066EDC4 /* AbstractScene.swift in Sources */,
+				CA640C3D22209A40004905E0 /* InventoryManager.swift in Sources */,
+				CA640C35222098E4004905E0 /* Shield.swift in Sources */,
+				CA640C3F22209AD1004905E0 /* InventoryItem.swift in Sources */,
+				CAB4EAE3221F693B0066EDC4 /* GameScene.swift in Sources */,
+				CA640C33222098CE004905E0 /* Bracers.swift in Sources */,
+				CAB4EC1E221F6A570066EDC4 /* JSTileMap.m in Sources */,
+				CAB4EAE5221F693B0066EDC4 /* GameViewController.swift in Sources */,
+				CAB4EC1D221F6A570066EDC4 /* LFCGzipUtility.m in Sources */,
+				CA640C3B22209925004905E0 /* Gloves.swift in Sources */,
+				CA640C2F222098AF004905E0 /* Helm.swift in Sources */,
+				CA640C392220990B004905E0 /* Boots.swift in Sources */,
+				CA640C2722209682004905E0 /* AbstractPlayerCharacter.swift in Sources */,
+				CAB4EADD221F693B0066EDC4 /* AppDelegate.swift in Sources */,
+				CA640C2B2220987D004905E0 /* Rune.swift in Sources */,
+				CA640C37222098FA004905E0 /* Necklace.swift in Sources */,
+				CA640C31222098BD004905E0 /* BodyArmor.swift in Sources */,
+				CA640C2D2220988F004905E0 /* Weapon.swift in Sources */,
+				CA640C4222209BBC004905E0 /* Enums.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CAB4EAEF221F693D0066EDC4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CAB4EAF8221F693D0066EDC4 /* The_Ballad_of_SigurdTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CAB4EAFA221F693D0066EDC4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CAB4EB03221F693D0066EDC4 /* The_Ballad_of_SigurdUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CAB4EAF5221F693D0066EDC4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CAB4EAD8221F693B0066EDC4 /* The Ballad of Sigurd */;
+			targetProxy = CAB4EAF4221F693D0066EDC4 /* PBXContainerItemProxy */;
+		};
+		CAB4EB00221F693D0066EDC4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CAB4EAD8221F693B0066EDC4 /* The Ballad of Sigurd */;
+			targetProxy = CAB4EAFF221F693D0066EDC4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		CAB4EAE6221F693B0066EDC4 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CAB4EAE7221F693B0066EDC4 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		CAB4EAEB221F693D0066EDC4 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CAB4EAEC221F693D0066EDC4 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CAB4EB05221F693D0066EDC4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		CAB4EB06221F693D0066EDC4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CAB4EB08221F693D0066EDC4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E5E2CD9154DEFA4645E0B7B4 /* Pods-The Ballad of Sigurd.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = RLJ2FY35FD;
+				INFOPLIST_FILE = "The Ballad of Sigurd/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.planetnine.The-Ballad-of-Sigurd";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "The Ballad of Sigurd/The Ballad of Sigurd-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CAB4EB09221F693D0066EDC4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A0E70B37BE82543C425A1373 /* Pods-The Ballad of Sigurd.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = RLJ2FY35FD;
+				INFOPLIST_FILE = "The Ballad of Sigurd/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.planetnine.The-Ballad-of-Sigurd";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "The Ballad of Sigurd/The Ballad of Sigurd-Bridging-Header.h";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		CAB4EB0B221F693D0066EDC4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EF9FC4E34C3984F6686151D6 /* Pods-The Ballad of SigurdTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "The Ballad of SigurdTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.planetnine.The-Ballad-of-SigurdTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/The Ballad of Sigurd.app/The Ballad of Sigurd";
+			};
+			name = Debug;
+		};
+		CAB4EB0C221F693D0066EDC4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 510F921F2FBEA32777BD9CB4 /* Pods-The Ballad of SigurdTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "The Ballad of SigurdTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.planetnine.The-Ballad-of-SigurdTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/The Ballad of Sigurd.app/The Ballad of Sigurd";
+			};
+			name = Release;
+		};
+		CAB4EB0E221F693D0066EDC4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AE82BB8F9771EABDB5D8FCF8 /* Pods-The Ballad of SigurdUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "The Ballad of SigurdUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.planetnine.The-Ballad-of-SigurdUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "The Ballad of Sigurd";
+			};
+			name = Debug;
+		};
+		CAB4EB0F221F693D0066EDC4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4B6C69EF00AF47D5B0D6E6E2 /* Pods-The Ballad of SigurdUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "The Ballad of SigurdUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.planetnine.The-Ballad-of-SigurdUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "The Ballad of Sigurd";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CAB4EAD4221F693B0066EDC4 /* Build configuration list for PBXProject "The Ballad of Sigurd" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CAB4EB05221F693D0066EDC4 /* Debug */,
+				CAB4EB06221F693D0066EDC4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CAB4EB07221F693D0066EDC4 /* Build configuration list for PBXNativeTarget "The Ballad of Sigurd" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CAB4EB08221F693D0066EDC4 /* Debug */,
+				CAB4EB09221F693D0066EDC4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CAB4EB0A221F693D0066EDC4 /* Build configuration list for PBXNativeTarget "The Ballad of SigurdTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CAB4EB0B221F693D0066EDC4 /* Debug */,
+				CAB4EB0C221F693D0066EDC4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CAB4EB0D221F693D0066EDC4 /* Build configuration list for PBXNativeTarget "The Ballad of SigurdUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CAB4EB0E221F693D0066EDC4 /* Debug */,
+				CAB4EB0F221F693D0066EDC4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CAB4EAD1221F693B0066EDC4 /* Project object */;
+}

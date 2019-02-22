@@ -1,0 +1,6 @@
+framework module Pods_The_Ballad_of_SigurdUITests {
+  umbrella header "Pods-The Ballad of SigurdUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

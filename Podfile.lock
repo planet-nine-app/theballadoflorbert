@@ -1,0 +1,16 @@
+PODS:
+  - PlanetNineGateway (0.0.10)
+
+DEPENDENCIES:
+  - PlanetNineGateway
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - PlanetNineGateway
+
+SPEC CHECKSUMS:
+  PlanetNineGateway: a523229cae7ce33349b320d372ac2793ed8068b1
+
+PODFILE CHECKSUM: 892edd2c6033850a0060dac5d74ff65426a986d0
+
+COCOAPODS: 1.6.0

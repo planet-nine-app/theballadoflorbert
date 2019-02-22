@@ -1,0 +1,6 @@
+framework module PlanetNineGateway {
+  umbrella header "PlanetNineGateway-umbrella.h"
+
+  export *
+  module * { export * }
+}
