@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import PlanetNineGateway
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -41,6 +42,29 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
 
+    func application(_ app: UIApplication, open url: URL, options: [UIApplication.OpenURLOptionsKey : Any] = [:]) -> Bool {
+        guard let components = NSURLComponents(url: url, resolvingAgainstBaseURL: true) else {
+            print("Invalid URL or path missing")
+            return false
+        }
+        
+        guard let success = components.queryItems![0].value else {
+            print("Unsuccessful")
+            return true
+        }
+        guard let userId = components.queryItems![1].value else {
+            print("No userId")
+            return true
+        }
+        if success == "true" && userId != "0" {
+            let signature = Crypto().signMessage(message: "The-Ballad-of-Sigurd-dev")
+            _ = PlanetNineUser(userId: Int(userId)!, gatewayName: "The-Ballad-of-Sigurd-dev", signature: signature) { pnUser in
+                print(pnUser)
+                UserModel().saveUser(user: pnUser)
+            }
+        }
+        return true
+    }
 
 }
 

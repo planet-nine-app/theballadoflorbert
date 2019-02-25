@@ -1,16 +1,20 @@
 PODS:
   - PlanetNineGateway (0.0.10)
+  - Valet (3.2.3)
 
 DEPENDENCIES:
   - PlanetNineGateway
+  - Valet
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - PlanetNineGateway
+    - Valet
 
 SPEC CHECKSUMS:
   PlanetNineGateway: a523229cae7ce33349b320d372ac2793ed8068b1
+  Valet: 4af0382d4a94db5c7861504f751884f653437d24
 
-PODFILE CHECKSUM: 892edd2c6033850a0060dac5d74ff65426a986d0
+PODFILE CHECKSUM: b27b33f94c10fedc8b74fe393b3c7acb39d233eb
 
 COCOAPODS: 1.6.0

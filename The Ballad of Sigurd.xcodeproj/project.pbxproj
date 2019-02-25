@@ -24,6 +24,11 @@
 		CA640C4222209BBC004905E0 /* Enums.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA640C4122209BBC004905E0 /* Enums.swift */; };
 		CA640C5A2220B46F004905E0 /* Orbitron-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CA640C582220B46F004905E0 /* Orbitron-Bold.ttf */; };
 		CA640C5B2220B46F004905E0 /* Ubuntu-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CA640C592220B46F004905E0 /* Ubuntu-Medium.ttf */; };
+		CA640C5D22248A8B004905E0 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA640C5C22248A8B004905E0 /* Utils.swift */; };
+		CA640C5F222491E3004905E0 /* AbstractBattleEnemy.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA640C5E222491E3004905E0 /* AbstractBattleEnemy.swift */; };
+		CA640C6222249AE9004905E0 /* Crypto.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA640C6022249AE9004905E0 /* Crypto.swift */; };
+		CA640C6322249AE9004905E0 /* crypto.js in Resources */ = {isa = PBXBuildFile; fileRef = CA640C6122249AE9004905E0 /* crypto.js */; };
+		CA640C6522249E65004905E0 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA640C6422249E65004905E0 /* UserModel.swift */; };
 		CAB4EADD221F693B0066EDC4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAB4EADC221F693B0066EDC4 /* AppDelegate.swift */; };
 		CAB4EADF221F693B0066EDC4 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = CAB4EADE221F693B0066EDC4 /* GameScene.sks */; };
 		CAB4EAE1221F693B0066EDC4 /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = CAB4EAE0221F693B0066EDC4 /* Actions.sks */; };
@@ -80,6 +85,11 @@
 		CA640C4122209BBC004905E0 /* Enums.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enums.swift; sourceTree = "<group>"; };
 		CA640C582220B46F004905E0 /* Orbitron-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Orbitron-Bold.ttf"; sourceTree = "<group>"; };
 		CA640C592220B46F004905E0 /* Ubuntu-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Ubuntu-Medium.ttf"; sourceTree = "<group>"; };
+		CA640C5C22248A8B004905E0 /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		CA640C5E222491E3004905E0 /* AbstractBattleEnemy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbstractBattleEnemy.swift; sourceTree = "<group>"; };
+		CA640C6022249AE9004905E0 /* Crypto.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Crypto.swift; sourceTree = "<group>"; };
+		CA640C6122249AE9004905E0 /* crypto.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = crypto.js; sourceTree = "<group>"; };
+		CA640C6422249E65004905E0 /* UserModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
 		CAB4EAD9221F693B0066EDC4 /* The Ballad of Sigurd.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "The Ballad of Sigurd.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CAB4EADC221F693B0066EDC4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CAB4EADE221F693B0066EDC4 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
@@ -229,6 +239,7 @@
 		CA640C2222208D62004905E0 /* Battle Enemies */ = {
 			isa = PBXGroup;
 			children = (
+				CA640C5E222491E3004905E0 /* AbstractBattleEnemy.swift */,
 			);
 			path = "Battle Enemies";
 			sourceTree = "<group>";
@@ -265,12 +276,16 @@
 			path = Inventory;
 			sourceTree = "<group>";
 		};
-		CA640C4022209BAF004905E0 /* Enums and Structs */ = {
+		CA640C4022209BAF004905E0 /* Enums and Structs and Utils */ = {
 			isa = PBXGroup;
 			children = (
+				CA640C6122249AE9004905E0 /* crypto.js */,
+				CA640C6022249AE9004905E0 /* Crypto.swift */,
 				CA640C4122209BBC004905E0 /* Enums.swift */,
+				CA640C5C22248A8B004905E0 /* Utils.swift */,
+				CA640C6422249E65004905E0 /* UserModel.swift */,
 			);
-			path = "Enums and Structs";
+			path = "Enums and Structs and Utils";
 			sourceTree = "<group>";
 		};
 		CA640C432220AFE0004905E0 /* Fonts */ = {
@@ -310,7 +325,7 @@
 			isa = PBXGroup;
 			children = (
 				CA640C432220AFE0004905E0 /* Fonts */,
-				CA640C4022209BAF004905E0 /* Enums and Structs */,
+				CA640C4022209BAF004905E0 /* Enums and Structs and Utils */,
 				CA640C282220985A004905E0 /* Inventory */,
 				CA640C1E22208D34004905E0 /* Entities */,
 				CA640C1622208C78004905E0 /* Controls */,
@@ -482,6 +497,7 @@
 				CA640C5B2220B46F004905E0 /* Ubuntu-Medium.ttf in Resources */,
 				CA640C5A2220B46F004905E0 /* Orbitron-Bold.ttf in Resources */,
 				CAB4EAEA221F693D0066EDC4 /* Assets.xcassets in Resources */,
+				CA640C6322249AE9004905E0 /* crypto.js in Resources */,
 				CAB4EAED221F693D0066EDC4 /* LaunchScreen.storyboard in Resources */,
 				CAB4EAE1221F693B0066EDC4 /* Actions.sks in Resources */,
 			);
@@ -558,12 +574,14 @@
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-The Ballad of Sigurd/Pods-The Ballad of Sigurd-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/PlanetNineGateway/PlanetNineGateway.framework",
+				"${BUILT_PRODUCTS_DIR}/Valet/Valet.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
 			);
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PlanetNineGateway.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Valet.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -607,13 +625,17 @@
 				CA640C33222098CE004905E0 /* Bracers.swift in Sources */,
 				CAB4EC1E221F6A570066EDC4 /* JSTileMap.m in Sources */,
 				CAB4EAE5221F693B0066EDC4 /* GameViewController.swift in Sources */,
+				CA640C6522249E65004905E0 /* UserModel.swift in Sources */,
+				CA640C6222249AE9004905E0 /* Crypto.swift in Sources */,
 				CAB4EC1D221F6A570066EDC4 /* LFCGzipUtility.m in Sources */,
 				CA640C3B22209925004905E0 /* Gloves.swift in Sources */,
 				CA640C2F222098AF004905E0 /* Helm.swift in Sources */,
+				CA640C5F222491E3004905E0 /* AbstractBattleEnemy.swift in Sources */,
 				CA640C392220990B004905E0 /* Boots.swift in Sources */,
 				CA640C2722209682004905E0 /* AbstractPlayerCharacter.swift in Sources */,
 				CAB4EADD221F693B0066EDC4 /* AppDelegate.swift in Sources */,
 				CA640C2B2220987D004905E0 /* Rune.swift in Sources */,
+				CA640C5D22248A8B004905E0 /* Utils.swift in Sources */,
 				CA640C37222098FA004905E0 /* Necklace.swift in Sources */,
 				CA640C31222098BD004905E0 /* BodyArmor.swift in Sources */,
 				CA640C2D2220988F004905E0 /* Weapon.swift in Sources */,

@@ -47,5 +47,16 @@
 		<string>Ubuntu-Medium.ttf</string>
 		<string>Orbitron-Bold.ttf</string>
 	</array>
+	<key>CFBundleURLTypes</key>
+	<array>
+		<dict>
+			<key>CFBundleURLName</key>
+			<string></string>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>theballadofsigurd</string>
+			</array>
+		</dict>
+	</array>
 </dict>
 </plist>

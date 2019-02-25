@@ -8,6 +8,16 @@
 
 import SpriteKit
 import GameplayKit
+import PlanetNineGateway
+
+//TODO: Where should this struct live?
+struct GatewayKey: Codable {
+    var gatewayName: String
+    var publicKey: String
+    func toString() -> String {
+        return "{\"gatewayName\":\"\(gatewayName)\",\"publicKey\":\"\(publicKey)\"}"
+    }
+}
 
 class GameScene: SKScene {
     
@@ -16,52 +26,67 @@ class GameScene: SKScene {
     
     override func didMove(to view: SKView) {
         
-        // Get label node from scene and store it for use later
-        self.label = self.childNode(withName: "//helloLabel") as? SKLabelNode
-        if let label = self.label {
-            label.alpha = 0.0
-            label.run(SKAction.fadeIn(withDuration: 2.0))
-            label.fontName = "Orbitron-Bold"
-        }
-        
-        // Create shape node to use during mouse interaction
-        let w = (self.size.width + self.size.height) * 0.05
-        self.spinnyNode = SKShapeNode.init(rectOf: CGSize.init(width: w, height: w), cornerRadius: w * 0.3)
-        
-        if let spinnyNode = self.spinnyNode {
-            spinnyNode.lineWidth = 2.5
-            
-            spinnyNode.run(SKAction.repeatForever(SKAction.rotate(byAngle: CGFloat(Double.pi), duration: 1)))
-            spinnyNode.run(SKAction.sequence([SKAction.wait(forDuration: 0.5),
-                                              SKAction.fadeOut(withDuration: 0.5),
-                                              SKAction.removeFromParent()]))
-        }
+        addTitle()
+        addMenuButtons()
         
         let inventoryManager = InventoryManager()
+        let abstractPlayerCharacter = AbstractPlayerCharacter()
+        for var _ in 1...50 {
+            abstractPlayerCharacter.levelUp()
+        }
     }
     
+    func addTitle() {
+        let labelNode = SKLabelNode(text: "The Ballad of Sigurd")
+        labelNode.fontColor = UIColor.PlanetNineColors.secondary
+        labelNode.fontName = "Orbitron-Bold"
+        labelNode.position = CGPoint(x: 0, y: 100)
+        self.addChild(labelNode)
+    }
+    
+    func addMenuButtons() {
+        let connectButton = SKLabelNode(text: "Connect Planet Nine Account")
+        connectButton.fontColor = UIColor.PlanetNineColors.primary
+        connectButton.fontSize = 17
+        connectButton.fontName = "Ubuntu-Medium"
+        connectButton.position = CGPoint(x: 0, y: -60)
+        connectButton.name = "connectButton"
+        
+        let playButton = SKLabelNode(text: "Play")
+        playButton.fontColor = UIColor.PlanetNineColors.primary
+        playButton.fontSize = 17
+        playButton.fontName = "Ubuntu-Medium"
+        playButton.position = CGPoint(x: 0, y: -100)
+        playButton.name = "playButton"
+        
+        self.addChild(connectButton)
+        self.addChild(playButton)
+    }
     
     func touchDown(atPoint pos : CGPoint) {
-        if let n = self.spinnyNode?.copy() as! SKShapeNode? {
-            n.position = pos
-            n.strokeColor = SKColor.green
-            self.addChild(n)
-        }
+        
     }
     
     func touchMoved(toPoint pos : CGPoint) {
-        if let n = self.spinnyNode?.copy() as! SKShapeNode? {
-            n.position = pos
-            n.strokeColor = SKColor.blue
-            self.addChild(n)
-        }
+        
     }
     
     func touchUp(atPoint pos : CGPoint) {
-        if let n = self.spinnyNode?.copy() as! SKShapeNode? {
-            n.position = pos
-            n.strokeColor = SKColor.red
-            self.addChild(n)
+        let nodesAtPoint = self.nodes(at: pos)
+        for node in nodesAtPoint {
+            if let nameOfNode = node.name {
+                switch nameOfNode {
+                case "connectButton":
+                    print("Connect button tapped")
+                    connectAccount()
+                case "playButton":
+                    print("Play button tapped")
+                default:
+                    print("Default")
+                }
+            } else {
+                print("No Name")
+            }
         }
     }
     
@@ -89,4 +114,18 @@ class GameScene: SKScene {
     override func update(_ currentTime: TimeInterval) {
         // Called before each frame is rendered
     }
+    
+    func connectAccount() {
+        var keys = Crypto().getKeys()
+        if keys == nil {
+            keys = Crypto().generateKeys(seed: "The Ballad of Sigurd dev")
+        }
+        let gatewayKey = GatewayKey(gatewayName: "The-Ballad-of-Sigurd-dev", publicKey: keys!.publicKey)
+        let signature = Crypto().signMessage(message: gatewayKey.toString())
+        
+        let planetNineGateway = PlanetNineGateway()
+        planetNineGateway.ongoingGateway(gatewayName: "The-Ballad-of-Sigurd-dev", publicKey: keys!.publicKey, gatewayURL: "theballadofsigurd://ongoing", signature: signature)
+        planetNineGateway.askForOngoingGatewayUsage()
+    }
 }
+

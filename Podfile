@@ -6,6 +6,7 @@ target 'The Ballad of Sigurd' do
   use_frameworks!
 
   pod 'PlanetNineGateway'
+  pod 'Valet'
 
   # Pods for The Ballad of Sigurd
 
