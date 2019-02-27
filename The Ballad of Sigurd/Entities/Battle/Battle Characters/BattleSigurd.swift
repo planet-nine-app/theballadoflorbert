@@ -7,8 +7,20 @@
 //
 
 import Foundation
+import SpriteKit
 
 class BattleSigurd: AbstractBattleCharacter {
     
+    let readyTexture = SKTexture(imageNamed: "Baal_ready_pose_4x.png")
+    let actionTexture = SKTexture(imageNamed: "Baal_action_pose_10x.png")
     
+    override func tapped() {
+        hasPriority = true
+        spriteNode.texture = actionTexture
+    }
+    
+    override func relinquishPriority() {
+        hasPriority = false
+        spriteNode.texture = readyTexture
+    }
 }

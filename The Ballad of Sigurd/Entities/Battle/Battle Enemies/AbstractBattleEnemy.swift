@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import SpriteKit
 
 class AbstractBattleEnemy {
     var name = "abstract"
@@ -26,6 +27,8 @@ class AbstractBattleEnemy {
     var aura: Int = 8
     var perception: Int = 8
     var luck: Int = 8
+    
+    var spriteNode = SKSpriteNode()
 
     func levelUp() {
         level = level + 1
@@ -44,5 +47,10 @@ class AbstractBattleEnemy {
         currentMP = maxMP
         
         print("Stats at level \(level): \(strength), \(vitality), \(agility), \(dexterity), \(wisdom), \(aura), \(perception), \(luck)")
+    }
+    
+    func damage(_ amount: Int) {
+        currentHP = currentHP - amount
+        print(currentHP)
     }
 }

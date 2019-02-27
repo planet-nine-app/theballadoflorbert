@@ -12,6 +12,7 @@ import SpriteKit
 class AbstractBattleCharacter {
     let playerCharacter: AbstractPlayerCharacter
     let spriteNode: SKSpriteNode
+    var hasPriority = false
     
     init(character: AbstractPlayerCharacter) {
         playerCharacter = character
@@ -25,6 +26,7 @@ class AbstractBattleCharacter {
             //spriteNode.position = CGPoint(x: 180, y: 500)
         }
         spriteNode.name = character.name.rawValue
+        spriteNode.zPosition = ZPositions.entity.rawValue
     }
     
     func tapped() {

@@ -7,7 +7,19 @@
 //
 
 import Foundation
+import SpriteKit
 
 class BattleBryn: AbstractBattleCharacter {
+    let readyTexture = SKTexture(imageNamed: "Bryn_4x_ready.png")
+    let actionTexture = SKTexture(imageNamed: "Bryn_4x_attack.png")
     
+    override func tapped() {
+        hasPriority = true
+        spriteNode.texture = actionTexture
+    }
+    
+    override func relinquishPriority() {
+        hasPriority = false
+        spriteNode.texture = readyTexture
+    }
 }

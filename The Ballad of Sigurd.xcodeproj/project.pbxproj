@@ -39,6 +39,13 @@
 		CA640C782226077B004905E0 /* BattleBryn.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA640C772226077B004905E0 /* BattleBryn.swift */; };
 		CA640C7A22260A3F004905E0 /* Structs.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA640C7922260A3F004905E0 /* Structs.swift */; };
 		CA640C7C22260EFC004905E0 /* BattleControls.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA640C7B22260EFC004905E0 /* BattleControls.swift */; };
+		CA640C7E2227399A004905E0 /* Baal_action_pose_10x.png in Resources */ = {isa = PBXBuildFile; fileRef = CA640C7D2227399A004905E0 /* Baal_action_pose_10x.png */; };
+		CA640C80222739A2004905E0 /* Bryn_4x_attack.png in Resources */ = {isa = PBXBuildFile; fileRef = CA640C7F222739A2004905E0 /* Bryn_4x_attack.png */; };
+		CA640C8222273D0C004905E0 /* WoodElemental.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA640C8122273D0C004905E0 /* WoodElemental.swift */; };
+		CA640C8422273D37004905E0 /* wood_elemental_4x_game.png in Resources */ = {isa = PBXBuildFile; fileRef = CA640C8322273D37004905E0 /* wood_elemental_4x_game.png */; };
+		CA640C8722274274004905E0 /* AbstractBattleEffect.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA640C8622274274004905E0 /* AbstractBattleEffect.swift */; };
+		CA640C892227429C004905E0 /* Damage.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA640C882227429C004905E0 /* Damage.swift */; };
+		CA640C8B22274F54004905E0 /* DrawingManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA640C8A22274F54004905E0 /* DrawingManager.swift */; };
 		CAB4EADD221F693B0066EDC4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAB4EADC221F693B0066EDC4 /* AppDelegate.swift */; };
 		CAB4EADF221F693B0066EDC4 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = CAB4EADE221F693B0066EDC4 /* GameScene.sks */; };
 		CAB4EAE1221F693B0066EDC4 /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = CAB4EAE0221F693B0066EDC4 /* Actions.sks */; };
@@ -110,6 +117,13 @@
 		CA640C772226077B004905E0 /* BattleBryn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BattleBryn.swift; sourceTree = "<group>"; };
 		CA640C7922260A3F004905E0 /* Structs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Structs.swift; sourceTree = "<group>"; };
 		CA640C7B22260EFC004905E0 /* BattleControls.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BattleControls.swift; sourceTree = "<group>"; };
+		CA640C7D2227399A004905E0 /* Baal_action_pose_10x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Baal_action_pose_10x.png; sourceTree = "<group>"; };
+		CA640C7F222739A2004905E0 /* Bryn_4x_attack.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Bryn_4x_attack.png; sourceTree = "<group>"; };
+		CA640C8122273D0C004905E0 /* WoodElemental.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WoodElemental.swift; sourceTree = "<group>"; };
+		CA640C8322273D37004905E0 /* wood_elemental_4x_game.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = wood_elemental_4x_game.png; sourceTree = "<group>"; };
+		CA640C8622274274004905E0 /* AbstractBattleEffect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbstractBattleEffect.swift; sourceTree = "<group>"; };
+		CA640C882227429C004905E0 /* Damage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Damage.swift; sourceTree = "<group>"; };
+		CA640C8A22274F54004905E0 /* DrawingManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawingManager.swift; sourceTree = "<group>"; };
 		CAB4EAD9221F693B0066EDC4 /* The Ballad of Sigurd.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "The Ballad of Sigurd.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CAB4EADC221F693B0066EDC4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CAB4EADE221F693B0066EDC4 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
@@ -204,6 +218,7 @@
 			isa = PBXGroup;
 			children = (
 				CA640C7B22260EFC004905E0 /* BattleControls.swift */,
+				CA640C8A22274F54004905E0 /* DrawingManager.swift */,
 			);
 			path = "Battle Controls";
 			sourceTree = "<group>";
@@ -243,6 +258,7 @@
 		CA640C2022208D48004905E0 /* Battle */ = {
 			isa = PBXGroup;
 			children = (
+				CA640C852227425D004905E0 /* Battle Effects */,
 				CA640C2422208D7C004905E0 /* Battle Runes */,
 				CA640C2222208D62004905E0 /* Battle Enemies */,
 				CA640C2122208D53004905E0 /* Battle Characters */,
@@ -264,6 +280,7 @@
 			isa = PBXGroup;
 			children = (
 				CA640C5E222491E3004905E0 /* AbstractBattleEnemy.swift */,
+				CA640C8122273D0C004905E0 /* WoodElemental.swift */,
 			);
 			path = "Battle Enemies";
 			sourceTree = "<group>";
@@ -328,8 +345,20 @@
 				CA640C6D22260378004905E0 /* grassy_lake.png */,
 				CA640C732226071C004905E0 /* Baal_ready_pose_4x.png */,
 				CA640C7522260746004905E0 /* Bryn_4x_ready.png */,
+				CA640C7F222739A2004905E0 /* Bryn_4x_attack.png */,
+				CA640C7D2227399A004905E0 /* Baal_action_pose_10x.png */,
+				CA640C8322273D37004905E0 /* wood_elemental_4x_game.png */,
 			);
 			path = Images;
+			sourceTree = "<group>";
+		};
+		CA640C852227425D004905E0 /* Battle Effects */ = {
+			isa = PBXGroup;
+			children = (
+				CA640C8622274274004905E0 /* AbstractBattleEffect.swift */,
+				CA640C882227429C004905E0 /* Damage.swift */,
+			);
+			path = "Battle Effects";
 			sourceTree = "<group>";
 		};
 		CAB4EAD0221F693B0066EDC4 = {
@@ -534,8 +563,11 @@
 				CAB4EADF221F693B0066EDC4 /* GameScene.sks in Resources */,
 				CA640C742226071D004905E0 /* Baal_ready_pose_4x.png in Resources */,
 				CA640C5B2220B46F004905E0 /* Ubuntu-Medium.ttf in Resources */,
+				CA640C80222739A2004905E0 /* Bryn_4x_attack.png in Resources */,
 				CA640C5A2220B46F004905E0 /* Orbitron-Bold.ttf in Resources */,
 				CAB4EAEA221F693D0066EDC4 /* Assets.xcassets in Resources */,
+				CA640C7E2227399A004905E0 /* Baal_action_pose_10x.png in Resources */,
+				CA640C8422273D37004905E0 /* wood_elemental_4x_game.png in Resources */,
 				CA640C7622260746004905E0 /* Bryn_4x_ready.png in Resources */,
 				CA640C6322249AE9004905E0 /* crypto.js in Resources */,
 				CAB4EAED221F693D0066EDC4 /* LaunchScreen.storyboard in Resources */,
@@ -658,6 +690,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CA640C8B22274F54004905E0 /* DrawingManager.swift in Sources */,
 				CAB4EC23221F6AB90066EDC4 /* AbstractScene.swift in Sources */,
 				CA640C3D22209A40004905E0 /* InventoryManager.swift in Sources */,
 				CA640C35222098E4004905E0 /* Shield.swift in Sources */,
@@ -665,6 +698,7 @@
 				CA640C7022260492004905E0 /* BattleSigurd.swift in Sources */,
 				CA640C672225F1CC004905E0 /* InventoryScene.swift in Sources */,
 				CA640C3F22209AD1004905E0 /* InventoryItem.swift in Sources */,
+				CA640C8222273D0C004905E0 /* WoodElemental.swift in Sources */,
 				CAB4EAE3221F693B0066EDC4 /* GameScene.swift in Sources */,
 				CA640C33222098CE004905E0 /* Bracers.swift in Sources */,
 				CAB4EC1E221F6A570066EDC4 /* JSTileMap.m in Sources */,
@@ -675,6 +709,7 @@
 				CAB4EC1D221F6A570066EDC4 /* LFCGzipUtility.m in Sources */,
 				CA640C782226077B004905E0 /* BattleBryn.swift in Sources */,
 				CA640C692225F80A004905E0 /* BattleScene.swift in Sources */,
+				CA640C8722274274004905E0 /* AbstractBattleEffect.swift in Sources */,
 				CA640C3B22209925004905E0 /* Gloves.swift in Sources */,
 				CA640C2F222098AF004905E0 /* Helm.swift in Sources */,
 				CA640C5F222491E3004905E0 /* AbstractBattleEnemy.swift in Sources */,
@@ -688,6 +723,7 @@
 				CA640C2D2220988F004905E0 /* Weapon.swift in Sources */,
 				CA640C7A22260A3F004905E0 /* Structs.swift in Sources */,
 				CA640C4222209BBC004905E0 /* Enums.swift in Sources */,
+				CA640C892227429C004905E0 /* Damage.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

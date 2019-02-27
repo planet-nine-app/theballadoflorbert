@@ -33,6 +33,13 @@ extension Int {
         }
         return 1
     }
+    
+    static func plusOrMinus() -> Int {
+        if Bool.random() {
+            return 1
+        }
+        return -1
+    }
 }
 
 extension UIColor {
