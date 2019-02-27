@@ -20,7 +20,9 @@ enum InventoryType: String {
     case gloves = "Gloves"
 }
 
-class InventoryItem {
+class InventoryItem: Comparable {
+    
+    
     var inventoryType: InventoryType = .weapon
     var element: Elements = .air
     var elementBoost = 0
@@ -44,7 +46,7 @@ class InventoryItem {
     
     func toString() -> String {
         
-        var statModifier = ""
+        var statModifier = "Minor"
         if statBoost > 8 {
             statModifier = "Great"
         }
@@ -55,7 +57,7 @@ class InventoryItem {
             statModifier = "Peerless"
         }
         
-        var elementModifier = ""
+        var elementModifier = "Minor"
         if elementBoost > 8 {
             elementModifier = "Great"
         }
@@ -66,7 +68,9 @@ class InventoryItem {
             elementModifier = "Peerless"
         }
         
-        return "A \(rarity.rawValue) \(inventoryType.rawValue) of \(statModifier) \(stat.rawValue) and \(elementModifier) \(element.rawValue)"
+        let article = (rarity == .uncommon || rarity == .epic) ? "An" : "A"
+        
+        return "\(article) \(rarity.rawValue) \(inventoryType.rawValue) of \(statModifier) \(stat.rawValue) and \(elementModifier) \(element.rawValue)"
     }
     
     func getInventoryTypeForNineum(nineum: Nineum) -> InventoryType {
@@ -130,5 +134,19 @@ class InventoryItem {
         case .torus:
             return .wisdom
         }
+    }
+    
+    static func < (lhs: InventoryItem, rhs: InventoryItem) -> Bool {
+        let lhsBoost = lhs.elementBoost + lhs.statBoost
+        let rhsBoost = rhs.elementBoost + rhs.statBoost
+        
+        return lhsBoost < rhsBoost
+    }
+    
+    static func == (lhs: InventoryItem, rhs: InventoryItem) -> Bool {
+        let lhsBoost = lhs.elementBoost + lhs.statBoost
+        let rhsBoost = rhs.elementBoost + rhs.statBoost
+        
+        return lhsBoost == rhsBoost
     }
 }

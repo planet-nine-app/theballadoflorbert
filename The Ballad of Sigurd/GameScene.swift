@@ -30,7 +30,7 @@ class GameScene: SKScene {
         addMenuButtons()
         
         let inventoryManager = InventoryManager()
-        let abstractPlayerCharacter = AbstractPlayerCharacter()
+        let abstractPlayerCharacter = AbstractPlayerCharacter(named: .bryn)
         for var _ in 1...50 {
             abstractPlayerCharacter.levelUp()
         }
@@ -81,6 +81,7 @@ class GameScene: SKScene {
                     connectAccount()
                 case "playButton":
                     print("Play button tapped")
+                    play()
                 default:
                     print("Default")
                 }
@@ -126,6 +127,15 @@ class GameScene: SKScene {
         let planetNineGateway = PlanetNineGateway()
         planetNineGateway.ongoingGateway(gatewayName: "The-Ballad-of-Sigurd-dev", publicKey: keys!.publicKey, gatewayURL: "theballadofsigurd://ongoing", signature: signature)
         planetNineGateway.askForOngoingGatewayUsage()
+    }
+    
+    func play() {
+        /*let inventoryScene = InventoryScene(size: CGSize(width: 1920, height: 1280))
+        inventoryScene.scaleMode = .fill
+        self.view?.presentScene(inventoryScene)*/
+        let battleScene = BattleScene(size: CGSize(width: 1920, height: 1280))
+        battleScene.scaleMode = .fill
+        self.view?.presentScene(battleScene)
     }
 }
 

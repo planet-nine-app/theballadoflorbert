@@ -29,3 +29,10 @@ enum Stats: String {
     case perception = "Perception"
     case luck = "Luck"
 }
+
+enum CharacterNames: String {
+    case sigurd = "Sigurd"
+    case bryn = "Bryn"
+}
+
+

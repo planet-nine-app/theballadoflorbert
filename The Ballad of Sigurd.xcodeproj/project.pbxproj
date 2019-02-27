@@ -29,6 +29,15 @@
 		CA640C6222249AE9004905E0 /* Crypto.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA640C6022249AE9004905E0 /* Crypto.swift */; };
 		CA640C6322249AE9004905E0 /* crypto.js in Resources */ = {isa = PBXBuildFile; fileRef = CA640C6122249AE9004905E0 /* crypto.js */; };
 		CA640C6522249E65004905E0 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA640C6422249E65004905E0 /* UserModel.swift */; };
+		CA640C672225F1CC004905E0 /* InventoryScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA640C662225F1CC004905E0 /* InventoryScene.swift */; };
+		CA640C692225F80A004905E0 /* BattleScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA640C682225F80A004905E0 /* BattleScene.swift */; };
+		CA640C6E22260378004905E0 /* grassy_lake.png in Resources */ = {isa = PBXBuildFile; fileRef = CA640C6D22260378004905E0 /* grassy_lake.png */; };
+		CA640C7022260492004905E0 /* BattleSigurd.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA640C6F22260492004905E0 /* BattleSigurd.swift */; };
+		CA640C722226053A004905E0 /* AbstractBattleCharacter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA640C712226053A004905E0 /* AbstractBattleCharacter.swift */; };
+		CA640C742226071D004905E0 /* Baal_ready_pose_4x.png in Resources */ = {isa = PBXBuildFile; fileRef = CA640C732226071C004905E0 /* Baal_ready_pose_4x.png */; };
+		CA640C7622260746004905E0 /* Bryn_4x_ready.png in Resources */ = {isa = PBXBuildFile; fileRef = CA640C7522260746004905E0 /* Bryn_4x_ready.png */; };
+		CA640C782226077B004905E0 /* BattleBryn.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA640C772226077B004905E0 /* BattleBryn.swift */; };
+		CA640C7A22260A3F004905E0 /* Structs.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA640C7922260A3F004905E0 /* Structs.swift */; };
 		CAB4EADD221F693B0066EDC4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAB4EADC221F693B0066EDC4 /* AppDelegate.swift */; };
 		CAB4EADF221F693B0066EDC4 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = CAB4EADE221F693B0066EDC4 /* GameScene.sks */; };
 		CAB4EAE1221F693B0066EDC4 /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = CAB4EAE0221F693B0066EDC4 /* Actions.sks */; };
@@ -90,6 +99,15 @@
 		CA640C6022249AE9004905E0 /* Crypto.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Crypto.swift; sourceTree = "<group>"; };
 		CA640C6122249AE9004905E0 /* crypto.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = crypto.js; sourceTree = "<group>"; };
 		CA640C6422249E65004905E0 /* UserModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
+		CA640C662225F1CC004905E0 /* InventoryScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InventoryScene.swift; sourceTree = "<group>"; };
+		CA640C682225F80A004905E0 /* BattleScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BattleScene.swift; sourceTree = "<group>"; };
+		CA640C6D22260378004905E0 /* grassy_lake.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = grassy_lake.png; sourceTree = "<group>"; };
+		CA640C6F22260492004905E0 /* BattleSigurd.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BattleSigurd.swift; sourceTree = "<group>"; };
+		CA640C712226053A004905E0 /* AbstractBattleCharacter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbstractBattleCharacter.swift; sourceTree = "<group>"; };
+		CA640C732226071C004905E0 /* Baal_ready_pose_4x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Baal_ready_pose_4x.png; sourceTree = "<group>"; };
+		CA640C7522260746004905E0 /* Bryn_4x_ready.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Bryn_4x_ready.png; sourceTree = "<group>"; };
+		CA640C772226077B004905E0 /* BattleBryn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BattleBryn.swift; sourceTree = "<group>"; };
+		CA640C7922260A3F004905E0 /* Structs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Structs.swift; sourceTree = "<group>"; };
 		CAB4EAD9221F693B0066EDC4 /* The Ballad of Sigurd.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "The Ballad of Sigurd.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CAB4EADC221F693B0066EDC4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CAB4EADE221F693B0066EDC4 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
@@ -232,6 +250,9 @@
 		CA640C2122208D53004905E0 /* Battle Characters */ = {
 			isa = PBXGroup;
 			children = (
+				CA640C712226053A004905E0 /* AbstractBattleCharacter.swift */,
+				CA640C772226077B004905E0 /* BattleBryn.swift */,
+				CA640C6F22260492004905E0 /* BattleSigurd.swift */,
 			);
 			path = "Battle Characters";
 			sourceTree = "<group>";
@@ -284,6 +305,7 @@
 				CA640C4122209BBC004905E0 /* Enums.swift */,
 				CA640C5C22248A8B004905E0 /* Utils.swift */,
 				CA640C6422249E65004905E0 /* UserModel.swift */,
+				CA640C7922260A3F004905E0 /* Structs.swift */,
 			);
 			path = "Enums and Structs and Utils";
 			sourceTree = "<group>";
@@ -295,6 +317,16 @@
 				CA640C592220B46F004905E0 /* Ubuntu-Medium.ttf */,
 			);
 			path = Fonts;
+			sourceTree = "<group>";
+		};
+		CA640C6A22260296004905E0 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				CA640C6D22260378004905E0 /* grassy_lake.png */,
+				CA640C732226071C004905E0 /* Baal_ready_pose_4x.png */,
+				CA640C7522260746004905E0 /* Bryn_4x_ready.png */,
+			);
+			path = Images;
 			sourceTree = "<group>";
 		};
 		CAB4EAD0221F693B0066EDC4 = {
@@ -324,6 +356,7 @@
 		CAB4EADB221F693B0066EDC4 /* The Ballad of Sigurd */ = {
 			isa = PBXGroup;
 			children = (
+				CA640C6A22260296004905E0 /* Images */,
 				CA640C432220AFE0004905E0 /* Fonts */,
 				CA640C4022209BAF004905E0 /* Enums and Structs and Utils */,
 				CA640C282220985A004905E0 /* Inventory */,
@@ -379,6 +412,8 @@
 			isa = PBXGroup;
 			children = (
 				CAB4EC22221F6AB90066EDC4 /* AbstractScene.swift */,
+				CA640C662225F1CC004905E0 /* InventoryScene.swift */,
+				CA640C682225F80A004905E0 /* BattleScene.swift */,
 			);
 			path = Scenes;
 			sourceTree = "<group>";
@@ -494,11 +529,14 @@
 			files = (
 				CAB4EAE8221F693B0066EDC4 /* Main.storyboard in Resources */,
 				CAB4EADF221F693B0066EDC4 /* GameScene.sks in Resources */,
+				CA640C742226071D004905E0 /* Baal_ready_pose_4x.png in Resources */,
 				CA640C5B2220B46F004905E0 /* Ubuntu-Medium.ttf in Resources */,
 				CA640C5A2220B46F004905E0 /* Orbitron-Bold.ttf in Resources */,
 				CAB4EAEA221F693D0066EDC4 /* Assets.xcassets in Resources */,
+				CA640C7622260746004905E0 /* Bryn_4x_ready.png in Resources */,
 				CA640C6322249AE9004905E0 /* crypto.js in Resources */,
 				CAB4EAED221F693D0066EDC4 /* LaunchScreen.storyboard in Resources */,
+				CA640C6E22260378004905E0 /* grassy_lake.png in Resources */,
 				CAB4EAE1221F693B0066EDC4 /* Actions.sks in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -620,14 +658,19 @@
 				CAB4EC23221F6AB90066EDC4 /* AbstractScene.swift in Sources */,
 				CA640C3D22209A40004905E0 /* InventoryManager.swift in Sources */,
 				CA640C35222098E4004905E0 /* Shield.swift in Sources */,
+				CA640C7022260492004905E0 /* BattleSigurd.swift in Sources */,
+				CA640C672225F1CC004905E0 /* InventoryScene.swift in Sources */,
 				CA640C3F22209AD1004905E0 /* InventoryItem.swift in Sources */,
 				CAB4EAE3221F693B0066EDC4 /* GameScene.swift in Sources */,
 				CA640C33222098CE004905E0 /* Bracers.swift in Sources */,
 				CAB4EC1E221F6A570066EDC4 /* JSTileMap.m in Sources */,
 				CAB4EAE5221F693B0066EDC4 /* GameViewController.swift in Sources */,
 				CA640C6522249E65004905E0 /* UserModel.swift in Sources */,
+				CA640C722226053A004905E0 /* AbstractBattleCharacter.swift in Sources */,
 				CA640C6222249AE9004905E0 /* Crypto.swift in Sources */,
 				CAB4EC1D221F6A570066EDC4 /* LFCGzipUtility.m in Sources */,
+				CA640C782226077B004905E0 /* BattleBryn.swift in Sources */,
+				CA640C692225F80A004905E0 /* BattleScene.swift in Sources */,
 				CA640C3B22209925004905E0 /* Gloves.swift in Sources */,
 				CA640C2F222098AF004905E0 /* Helm.swift in Sources */,
 				CA640C5F222491E3004905E0 /* AbstractBattleEnemy.swift in Sources */,
@@ -639,6 +682,7 @@
 				CA640C37222098FA004905E0 /* Necklace.swift in Sources */,
 				CA640C31222098BD004905E0 /* BodyArmor.swift in Sources */,
 				CA640C2D2220988F004905E0 /* Weapon.swift in Sources */,
+				CA640C7A22260A3F004905E0 /* Structs.swift in Sources */,
 				CA640C4222209BBC004905E0 /* Enums.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

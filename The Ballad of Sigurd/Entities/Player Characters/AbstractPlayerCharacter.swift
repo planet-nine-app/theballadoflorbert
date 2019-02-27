@@ -10,7 +10,7 @@ import Foundation
 
 class AbstractPlayerCharacter {
     
-    var name = "abstract"
+    var name: CharacterNames
     var level: Int = 1
     var maxHP: Int = 50
     var currentHP: Int = 50
@@ -37,8 +37,8 @@ class AbstractPlayerCharacter {
     var feet: Boots = Boots()
     var neck: Necklace = Necklace()
     
-    init() {
-        
+    init(named: CharacterNames) {
+        name = named
     }
     
     func levelUp() {
