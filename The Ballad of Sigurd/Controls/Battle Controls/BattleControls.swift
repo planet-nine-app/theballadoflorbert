@@ -49,8 +49,10 @@ class BattleControls {
         let nodesAtPoint = scene.nodes(at: touch.location(in: scene))
         for node in nodesAtPoint {
             if node.name == runeNodeName {
+                print("rune node name")
                 if controlState == .sigurd || controlState == .bryn || controlState == .alvis {
                     controlState = .drawing
+                    print("should set state to drawing")
                     drawingManager.startNewTouchArray(location: touch.location(in: scene))
                 }
             }
@@ -66,6 +68,7 @@ class BattleControls {
             return
         }
         if controlState == .drawing {
+            print("Should be adding locations")
             drawingManager.addLocationToTouchManager(location: touch.location(in: scene))
         }
         if controlState == .sigurd {
@@ -93,6 +96,7 @@ class BattleControls {
                     case runeNodeName:
                         drawingManager.addLocationToTouchManager(location: touch.location(in: scene))
                         let runeCheck = drawingManager.checkTouches()
+                        print("Checked rune and found \(runeCheck)")
                         if runeCheck != Runes.none {
                             print("Draw your rune here")
                         }

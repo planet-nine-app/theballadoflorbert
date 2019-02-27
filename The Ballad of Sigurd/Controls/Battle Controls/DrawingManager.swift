@@ -29,6 +29,9 @@ struct DirectionCoordinator {
     }
     
     func isUp(x: Double, y: Double) -> Bool {
+        if x.isNaN || y.isNaN {
+            return true
+        }
         if(x > 70 && x < 110 && y > 70 && y < 110) {
             return true
         }
@@ -43,6 +46,7 @@ struct DirectionCoordinator {
     }
     
     func getDirectionFromAngles(arcsin: Double, arccos: Double) -> Direction {
+        print("Angles are \(arcsin) and \(arccos)")
         var direction = Direction.none
         var left = false
         var right = false
@@ -102,6 +106,7 @@ struct DirectionCoordinator {
     }
     
     func considerDirection(_ touches: [CGPoint]) -> Direction {
+        print("Considering direction")
         var directions = [Direction]()
         var previousTouch = CGPoint(x: 0, y: 0)
         touches.map { touchLocation -> CGPoint in
@@ -128,6 +133,7 @@ struct DirectionCoordinator {
             $0.1 > $1.1
         }
         let directionToReturn = descending[descending.startIndex].0
+        print("Direction to return is \(directionToReturn)")
         return directionToReturn
     }
 }

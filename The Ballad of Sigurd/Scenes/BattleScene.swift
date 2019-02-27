@@ -36,6 +36,7 @@ class BattleScene: AbstractScene {
         let runeNode = SKShapeNode(rect: CGRect(x: 300, y: 0, width: 1000, height: 1280))
         runeNode.zPosition = ZPositions.runeNode.rawValue
         runeNode.name = "RuneNode"
+        runeNode.lineWidth = 0
         self.addChild(runeNode)
     }
     
