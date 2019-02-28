@@ -160,7 +160,7 @@ class DrawingManager {
         var drawingIsARune = Runes.none
         
         if coordinator.direction0 == .up {
-            drawingIsARune = .vestri
+            drawingIsARune = .isa
         }
         
         return drawingIsARune

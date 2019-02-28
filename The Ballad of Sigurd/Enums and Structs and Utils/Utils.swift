@@ -42,6 +42,15 @@ extension Int {
     }
 }
 
+extension CGFloat {
+    static func plusOrMinus() -> CGFloat {
+        if Bool.random() {
+            return 1.0
+        }
+        return -1.0
+    }
+}
+
 extension UIColor {
     struct PlanetNineColors {
         static var primary: UIColor { return UIColor(red: 93/255, green: 193/255, blue: 185/255, alpha: 1.0)}

@@ -45,7 +45,10 @@ class BattleControls {
         guard let touch = touches.first else {
             return
         }
-        
+        if controlState == .runeDrawn {
+            scene.moveRuneToPoint(touch.location(in: scene))
+            return
+        }
         let nodesAtPoint = scene.nodes(at: touch.location(in: scene))
         for node in nodesAtPoint {
             if node.name == runeNodeName {
@@ -54,6 +57,7 @@ class BattleControls {
                     controlState = .drawing
                     print("should set state to drawing")
                     drawingManager.startNewTouchArray(location: touch.location(in: scene))
+                    scene.addRuneDrawingEmitterNode(touch.location(in: scene))
                 }
             }
         }
@@ -67,9 +71,14 @@ class BattleControls {
         guard let touch = touches.first else {
             return
         }
+        if controlState == .runeDrawn {
+            scene.moveRuneToPoint(touch.location(in: scene))
+            return
+        }
         if controlState == .drawing {
             print("Should be adding locations")
             drawingManager.addLocationToTouchManager(location: touch.location(in: scene))
+            scene.addRuneDrawingEmitterNode(touch.location(in: scene))
         }
         if controlState == .sigurd {
             sigurdTouchManager.touchArray.append(touch.location(in: scene))
@@ -79,26 +88,53 @@ class BattleControls {
     
     func touchesEndedHandler(_ touches: Set<UITouch>) {
         for touch in touches {
+            if controlState == .sigurd {
+                if sigurdTouchManager.wasItASlash() {
+                    if sigurdTouchManager.currentEnemy != nil {
+                        scene.enemySlashed(enemy: sigurdTouchManager.currentEnemy!)
+                    }
+                }
+                sigurdTouchManager.touchArray = [CGPoint]()
+                sigurdTouchManager.currentEnemy = nil
+            }
             let nodesAtPoint = scene.nodes(at: touch.location(in: scene))
             for node in nodesAtPoint {
                 if let nameOfNode = node.name {
                     switch nameOfNode {
                     case CharacterNames.sigurd.rawValue:
                         print("Do Sigurd stuff")
-                        scene.characterTapped(character: .sigurd)
-                        controlState = .sigurd
+                        if controlState == .none {
+                            scene.characterTapped(character: .sigurd)
+                            controlState = .sigurd
+                        }
+                        if controlState == .runeDrawn {
+                            scene.usedRuneOnCharacter(character: .sigurd)
+                            scene.removeRuneFromScene()
+                        }
                     case CharacterNames.bryn.rawValue:
                         print("Do Bryn stuff")
-                        scene.characterTapped(character: .bryn)
-                        controlState = .bryn
+                        if controlState == .none {
+                            scene.characterTapped(character: .bryn)
+                            controlState = .bryn
+                        }
+                        if controlState == .runeDrawn {
+                            scene.usedRuneOnCharacter(character: .bryn)
+                            scene.removeRuneFromScene()
+                        }
                     case EnemyNames.enemy1.rawValue, EnemyNames.enemy2.rawValue, EnemyNames.enemy3.rawValue, EnemyNames.enemy4.rawValue:
                         disambiguateTouchesEnded(nameOfNode: nameOfNode)
                     case runeNodeName:
-                        drawingManager.addLocationToTouchManager(location: touch.location(in: scene))
-                        let runeCheck = drawingManager.checkTouches()
-                        print("Checked rune and found \(runeCheck)")
-                        if runeCheck != Runes.none {
-                            print("Draw your rune here")
+                        if controlState == .drawing {
+                            drawingManager.addLocationToTouchManager(location: touch.location(in: scene))
+                            let runeCheck = drawingManager.checkTouches()
+                            print("Checked rune and found \(runeCheck)")
+                            if runeCheck != Runes.none {
+                                print("Draw your rune here")
+                                scene.removeEmitters()
+                                drawingManager.reset()
+                                controlState = .runeDrawn
+                                scene.placeRuneAtPoint(rune: runeCheck, location: touch.location(in: scene))
+                            }
                         }
                     default:
                         print("Do other stuff here")
@@ -151,6 +187,8 @@ class BattleControls {
             print("Drawing")
         case .runeDrawn:
             print("rune drawn")
+            scene.usedRuneOnEnemy(enemy: enemy)
+            scene.removeRuneFromScene()
         case .none:
             print("Do nothing")
         }

@@ -46,6 +46,16 @@
 		CA640C8722274274004905E0 /* AbstractBattleEffect.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA640C8622274274004905E0 /* AbstractBattleEffect.swift */; };
 		CA640C892227429C004905E0 /* Damage.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA640C882227429C004905E0 /* Damage.swift */; };
 		CA640C8B22274F54004905E0 /* DrawingManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA640C8A22274F54004905E0 /* DrawingManager.swift */; };
+		CA640C8D22275F9E004905E0 /* RuneDrawing.sks in Resources */ = {isa = PBXBuildFile; fileRef = CA640C8C22275F9E004905E0 /* RuneDrawing.sks */; };
+		CA640C8F22285811004905E0 /* spark.png in Resources */ = {isa = PBXBuildFile; fileRef = CA640C8E22285811004905E0 /* spark.png */; };
+		CA640C9122285986004905E0 /* AbstractBattleRune.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA640C9022285986004905E0 /* AbstractBattleRune.swift */; };
+		CA640C93222859CD004905E0 /* BattleIsa.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA640C92222859CD004905E0 /* BattleIsa.swift */; };
+		CA640C9522285A81004905E0 /* runeIsa.png in Resources */ = {isa = PBXBuildFile; fileRef = CA640C9422285A81004905E0 /* runeIsa.png */; };
+		CA640C972228690E004905E0 /* icecube.png in Resources */ = {isa = PBXBuildFile; fileRef = CA640C962228690D004905E0 /* icecube.png */; };
+		CA640C9922287298004905E0 /* Healing.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA640C9822287298004905E0 /* Healing.swift */; };
+		CA640C9C222872F8004905E0 /* HealingRain.sks in Resources */ = {isa = PBXBuildFile; fileRef = CA640C9A222872F8004905E0 /* HealingRain.sks */; };
+		CA640C9D222872F8004905E0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CA640C9B222872F8004905E0 /* Assets.xcassets */; };
+		CA640CA52228784D004905E0 /* cloud2.png in Resources */ = {isa = PBXBuildFile; fileRef = CA640CA42228784C004905E0 /* cloud2.png */; };
 		CAB4EADD221F693B0066EDC4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAB4EADC221F693B0066EDC4 /* AppDelegate.swift */; };
 		CAB4EADF221F693B0066EDC4 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = CAB4EADE221F693B0066EDC4 /* GameScene.sks */; };
 		CAB4EAE1221F693B0066EDC4 /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = CAB4EAE0221F693B0066EDC4 /* Actions.sks */; };
@@ -124,6 +134,16 @@
 		CA640C8622274274004905E0 /* AbstractBattleEffect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbstractBattleEffect.swift; sourceTree = "<group>"; };
 		CA640C882227429C004905E0 /* Damage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Damage.swift; sourceTree = "<group>"; };
 		CA640C8A22274F54004905E0 /* DrawingManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawingManager.swift; sourceTree = "<group>"; };
+		CA640C8C22275F9E004905E0 /* RuneDrawing.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = RuneDrawing.sks; sourceTree = "<group>"; };
+		CA640C8E22285811004905E0 /* spark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = spark.png; sourceTree = "<group>"; };
+		CA640C9022285986004905E0 /* AbstractBattleRune.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbstractBattleRune.swift; sourceTree = "<group>"; };
+		CA640C92222859CD004905E0 /* BattleIsa.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BattleIsa.swift; sourceTree = "<group>"; };
+		CA640C9422285A81004905E0 /* runeIsa.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = runeIsa.png; sourceTree = "<group>"; };
+		CA640C962228690D004905E0 /* icecube.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icecube.png; sourceTree = "<group>"; };
+		CA640C9822287298004905E0 /* Healing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Healing.swift; sourceTree = "<group>"; };
+		CA640C9A222872F8004905E0 /* HealingRain.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = HealingRain.sks; sourceTree = "<group>"; };
+		CA640C9B222872F8004905E0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CA640CA42228784C004905E0 /* cloud2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = cloud2.png; path = ../../../../../Downloads/cloud2.png; sourceTree = "<group>"; };
 		CAB4EAD9221F693B0066EDC4 /* The Ballad of Sigurd.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "The Ballad of Sigurd.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CAB4EADC221F693B0066EDC4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CAB4EADE221F693B0066EDC4 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
@@ -288,6 +308,8 @@
 		CA640C2422208D7C004905E0 /* Battle Runes */ = {
 			isa = PBXGroup;
 			children = (
+				CA640C9022285986004905E0 /* AbstractBattleRune.swift */,
+				CA640C92222859CD004905E0 /* BattleIsa.swift */,
 			);
 			path = "Battle Runes";
 			sourceTree = "<group>";
@@ -348,6 +370,10 @@
 				CA640C7F222739A2004905E0 /* Bryn_4x_attack.png */,
 				CA640C7D2227399A004905E0 /* Baal_action_pose_10x.png */,
 				CA640C8322273D37004905E0 /* wood_elemental_4x_game.png */,
+				CA640C8E22285811004905E0 /* spark.png */,
+				CA640C9422285A81004905E0 /* runeIsa.png */,
+				CA640C962228690D004905E0 /* icecube.png */,
+				CA640CA42228784C004905E0 /* cloud2.png */,
 			);
 			path = Images;
 			sourceTree = "<group>";
@@ -357,6 +383,10 @@
 			children = (
 				CA640C8622274274004905E0 /* AbstractBattleEffect.swift */,
 				CA640C882227429C004905E0 /* Damage.swift */,
+				CA640C9822287298004905E0 /* Healing.swift */,
+				CA640C8C22275F9E004905E0 /* RuneDrawing.sks */,
+				CA640C9A222872F8004905E0 /* HealingRain.sks */,
+				CA640C9B222872F8004905E0 /* Assets.xcassets */,
 			);
 			path = "Battle Effects";
 			sourceTree = "<group>";
@@ -568,11 +598,18 @@
 				CAB4EAEA221F693D0066EDC4 /* Assets.xcassets in Resources */,
 				CA640C7E2227399A004905E0 /* Baal_action_pose_10x.png in Resources */,
 				CA640C8422273D37004905E0 /* wood_elemental_4x_game.png in Resources */,
+				CA640C9C222872F8004905E0 /* HealingRain.sks in Resources */,
 				CA640C7622260746004905E0 /* Bryn_4x_ready.png in Resources */,
+				CA640C972228690E004905E0 /* icecube.png in Resources */,
 				CA640C6322249AE9004905E0 /* crypto.js in Resources */,
+				CA640C8D22275F9E004905E0 /* RuneDrawing.sks in Resources */,
+				CA640C9D222872F8004905E0 /* Assets.xcassets in Resources */,
+				CA640CA52228784D004905E0 /* cloud2.png in Resources */,
 				CAB4EAED221F693D0066EDC4 /* LaunchScreen.storyboard in Resources */,
+				CA640C8F22285811004905E0 /* spark.png in Resources */,
 				CA640C6E22260378004905E0 /* grassy_lake.png in Resources */,
 				CAB4EAE1221F693B0066EDC4 /* Actions.sks in Resources */,
+				CA640C9522285A81004905E0 /* runeIsa.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -692,6 +729,7 @@
 			files = (
 				CA640C8B22274F54004905E0 /* DrawingManager.swift in Sources */,
 				CAB4EC23221F6AB90066EDC4 /* AbstractScene.swift in Sources */,
+				CA640C9122285986004905E0 /* AbstractBattleRune.swift in Sources */,
 				CA640C3D22209A40004905E0 /* InventoryManager.swift in Sources */,
 				CA640C35222098E4004905E0 /* Shield.swift in Sources */,
 				CA640C7C22260EFC004905E0 /* BattleControls.swift in Sources */,
@@ -711,6 +749,7 @@
 				CA640C692225F80A004905E0 /* BattleScene.swift in Sources */,
 				CA640C8722274274004905E0 /* AbstractBattleEffect.swift in Sources */,
 				CA640C3B22209925004905E0 /* Gloves.swift in Sources */,
+				CA640C9922287298004905E0 /* Healing.swift in Sources */,
 				CA640C2F222098AF004905E0 /* Helm.swift in Sources */,
 				CA640C5F222491E3004905E0 /* AbstractBattleEnemy.swift in Sources */,
 				CA640C392220990B004905E0 /* Boots.swift in Sources */,
@@ -723,6 +762,7 @@
 				CA640C2D2220988F004905E0 /* Weapon.swift in Sources */,
 				CA640C7A22260A3F004905E0 /* Structs.swift in Sources */,
 				CA640C4222209BBC004905E0 /* Enums.swift in Sources */,
+				CA640C93222859CD004905E0 /* BattleIsa.swift in Sources */,
 				CA640C892227429C004905E0 /* Damage.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -36,4 +36,21 @@ class AbstractBattleCharacter {
     func relinquishPriority() {
         
     }
+    
+    func damage(_ amount: Int, scene: BattleScene) {
+        playerCharacter.currentHP = playerCharacter.currentHP - amount
+        print(playerCharacter.currentHP)
+        let damage = Damage(amount, location: self.spriteNode.position)
+        damage.addToSceneAndRun(scene: scene)
+    }
+    
+    func heal(_ amount: Int, scene: BattleScene) {
+        playerCharacter.currentHP = playerCharacter.currentHP + amount
+        if playerCharacter.currentHP > playerCharacter.maxHP {
+            playerCharacter.currentHP = playerCharacter.maxHP
+        }
+        let healing = Healing(amount, location: self.spriteNode.position)
+        healing.addToSceneAndRun(scene: scene)
+    }
 }
+

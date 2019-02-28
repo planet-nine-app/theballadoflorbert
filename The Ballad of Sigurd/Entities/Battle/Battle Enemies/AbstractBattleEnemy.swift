@@ -49,8 +49,10 @@ class AbstractBattleEnemy {
         print("Stats at level \(level): \(strength), \(vitality), \(agility), \(dexterity), \(wisdom), \(aura), \(perception), \(luck)")
     }
     
-    func damage(_ amount: Int) {
+    func damage(_ amount: Int, scene: BattleScene) {
         currentHP = currentHP - amount
         print(currentHP)
+        let damage = Damage(amount, location: self.spriteNode.position)
+        damage.addToSceneAndRun(scene: scene)
     }
 }
