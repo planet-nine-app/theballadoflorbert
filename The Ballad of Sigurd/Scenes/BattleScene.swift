@@ -211,4 +211,14 @@ class BattleScene: AbstractScene {
         
         runeUsed!.runAnimationOnCharacter(character: characterToUseRuneOn, runeUsingCharacter: characterThatUsedRune, scene: self)
     }
+    
+    func whoHasPriority() -> CharacterNames {
+        let charactersWithPriority = battleCharacters.filter { character in
+            return character.hasPriority
+        }
+        if charactersWithPriority.count > 0 {
+            return charactersWithPriority[0].playerCharacter.name
+        }
+        return .sigurd //TODO do we want a none character name?
+    }
 }

@@ -103,7 +103,7 @@ class BattleControls {
                     switch nameOfNode {
                     case CharacterNames.sigurd.rawValue:
                         print("Do Sigurd stuff")
-                        if controlState == .none {
+                        if controlState == .none || controlState == .bryn || controlState == .alvis {
                             scene.characterTapped(character: .sigurd)
                             controlState = .sigurd
                         }
@@ -113,7 +113,7 @@ class BattleControls {
                         }
                     case CharacterNames.bryn.rawValue:
                         print("Do Bryn stuff")
-                        if controlState == .none {
+                        if controlState == .none || controlState == .sigurd || controlState == .alvis {
                             scene.characterTapped(character: .bryn)
                             controlState = .bryn
                         }
@@ -189,6 +189,13 @@ class BattleControls {
             print("rune drawn")
             scene.usedRuneOnEnemy(enemy: enemy)
             scene.removeRuneFromScene()
+            let characterWhoHasPriority = scene.whoHasPriority()
+            switch characterWhoHasPriority {
+            case .sigurd:
+                controlState = .sigurd
+            case .bryn:
+                controlState = .bryn
+            }
         case .none:
             print("Do nothing")
         }

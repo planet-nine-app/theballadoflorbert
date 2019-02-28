@@ -21,8 +21,9 @@ struct GatewayKey: Codable {
 
 class GameScene: SKScene {
     
-    private var label : SKLabelNode?
-    private var spinnyNode : SKShapeNode?
+    private var connectButton = SKLabelNode()
+    private var playButton = SKLabelNode()
+    private var user: PNUser?
     
     override func didMove(to view: SKView) {
         
@@ -34,6 +35,8 @@ class GameScene: SKScene {
         for var _ in 1...50 {
             abstractPlayerCharacter.levelUp()
         }
+        
+        user = UserModel().getUser()
     }
     
     func addTitle() {
@@ -45,19 +48,22 @@ class GameScene: SKScene {
     }
     
     func addMenuButtons() {
-        let connectButton = SKLabelNode(text: "Connect Planet Nine Account")
+        connectButton = SKLabelNode(text: "Connect Planet Nine Account")
         connectButton.fontColor = UIColor.PlanetNineColors.primary
         connectButton.fontSize = 17
         connectButton.fontName = "Ubuntu-Medium"
         connectButton.position = CGPoint(x: 0, y: -60)
         connectButton.name = "connectButton"
         
-        let playButton = SKLabelNode(text: "Play")
+        playButton = SKLabelNode(text: "Play")
         playButton.fontColor = UIColor.PlanetNineColors.primary
         playButton.fontSize = 17
         playButton.fontName = "Ubuntu-Medium"
         playButton.position = CGPoint(x: 0, y: -100)
         playButton.name = "playButton"
+        if user == nil {
+            playButton.alpha = 0.3
+        }
         
         self.addChild(connectButton)
         self.addChild(playButton)
@@ -92,9 +98,6 @@ class GameScene: SKScene {
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-        if let label = self.label {
-            label.run(SKAction.init(named: "Pulse")!, withKey: "fadeInOut")
-        }
         
         for t in touches { self.touchDown(atPoint: t.location(in: self)) }
     }
@@ -133,9 +136,20 @@ class GameScene: SKScene {
         /*let inventoryScene = InventoryScene(size: CGSize(width: 1920, height: 1280))
         inventoryScene.scaleMode = .fill
         self.view?.presentScene(inventoryScene)*/
+        if UserModel().getUser() == nil {
+            print("Please connect a user account first")
+            return
+        }
         let battleScene = BattleScene(size: CGSize(width: 1920, height: 1280))
         battleScene.scaleMode = .fill
         self.view?.presentScene(battleScene)
+    }
+    
+    override func didFinishUpdate() {
+        super.didFinishUpdate()
+        if user != nil {
+            playButton.alpha = 1.0
+        }
     }
 }
 
