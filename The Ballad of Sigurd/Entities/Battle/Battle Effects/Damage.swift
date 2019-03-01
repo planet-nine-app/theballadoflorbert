@@ -15,7 +15,11 @@ class Damage: AbstractBattleEffect {
     init(_ amount: Int, location: CGPoint) {
         super.init()
         
-        node = SKLabelNode(text: "\(amount)")
+        if amount == 0 {
+            node = SKLabelNode(text: "Miss")
+        } else {
+            node = SKLabelNode(text: "\(amount)")
+        }
         let labelNode = node as! SKLabelNode
         labelNode.position = location
         labelNode.fontName = "Ubuntu-Medium"

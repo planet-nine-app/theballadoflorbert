@@ -143,6 +143,9 @@ class GameScene: SKScene {
         let battleScene = BattleScene(size: CGSize(width: 1920, height: 1280))
         battleScene.scaleMode = .fill
         self.view?.presentScene(battleScene)
+        /*let tutorialScene = TutorialScene(size: CGSize(width: 1920, height: 1280))
+        tutorialScene.scaleMode = .fill
+        self.view?.presentScene(tutorialScene)*/
     }
     
     override func didFinishUpdate() {

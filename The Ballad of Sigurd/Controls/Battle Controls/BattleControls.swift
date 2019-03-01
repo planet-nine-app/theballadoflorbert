@@ -9,14 +9,7 @@
 import Foundation
 import SpriteKit
 
-enum ControlStates {
-    case none
-    case sigurd
-    case bryn
-    case alvis
-    case drawing
-    case runeDrawn
-}
+
 
 struct SigurdTouchManager {
     var currentEnemy: EnemyNames?
@@ -29,7 +22,16 @@ struct SigurdTouchManager {
     }
 }
 
-class BattleControls {
+class BattleControls: AbstractControls {
+    
+    enum ControlStates {
+        case none
+        case sigurd
+        case bryn
+        case alvis
+        case drawing
+        case runeDrawn
+    }
     
     let scene: BattleScene
     let runeNodeName = "RuneNode"
@@ -41,7 +43,7 @@ class BattleControls {
         self.scene = scene
     }
     
-    func touchesBeganHandler(_ touches: Set<UITouch>) {
+    override func touchesBeganHandler(_ touches: Set<UITouch>) {
         guard let touch = touches.first else {
             return
         }
@@ -67,7 +69,7 @@ class BattleControls {
         }
     }
     
-    func touchesMovedHandler(_ touches: Set<UITouch>) {
+    override func touchesMovedHandler(_ touches: Set<UITouch>) {
         guard let touch = touches.first else {
             return
         }
@@ -86,7 +88,7 @@ class BattleControls {
         }
     }
     
-    func touchesEndedHandler(_ touches: Set<UITouch>) {
+    override func touchesEndedHandler(_ touches: Set<UITouch>) {
         for touch in touches {
             if controlState == .sigurd {
                 if sigurdTouchManager.wasItASlash() {
@@ -107,6 +109,12 @@ class BattleControls {
                             scene.characterTapped(character: .sigurd)
                             controlState = .sigurd
                         }
+                        if controlState == .drawing {
+                            drawingManager.reset()
+                            scene.removeEmitters()
+                            scene.characterTapped(character: .sigurd)
+                            controlState = .sigurd
+                        }
                         if controlState == .runeDrawn {
                             scene.usedRuneOnCharacter(character: .sigurd)
                             scene.removeRuneFromScene()
@@ -114,6 +122,12 @@ class BattleControls {
                     case CharacterNames.bryn.rawValue:
                         print("Do Bryn stuff")
                         if controlState == .none || controlState == .sigurd || controlState == .alvis {
+                            scene.characterTapped(character: .bryn)
+                            controlState = .bryn
+                        }
+                        if controlState == .drawing {
+                            drawingManager.reset()
+                            scene.removeEmitters()
                             scene.characterTapped(character: .bryn)
                             controlState = .bryn
                         }
@@ -185,6 +199,15 @@ class BattleControls {
             print("Alvis")
         case .drawing:
             print("Drawing")
+            let runeCheck = drawingManager.checkTouches()
+            print("Checked rune and found \(runeCheck)")
+            if runeCheck != Runes.none {
+                print("Draw your rune here")
+                scene.removeEmitters()
+                drawingManager.reset()
+                controlState = .runeDrawn
+                scene.placeRuneAtPoint(rune: runeCheck, location: CGPoint(x: 960, y: 800))
+            }
         case .runeDrawn:
             print("rune drawn")
             scene.usedRuneOnEnemy(enemy: enemy)

@@ -14,7 +14,6 @@ class BattleScene: AbstractScene {
     var emitters = [SKEmitterNode]()
     var battleCharacters = [AbstractBattleCharacter]()
     var battleEnemies = [AbstractBattleEnemy]()
-    var controls: BattleControls?
     var runeUsed: AbstractBattleRune?
     let battleMath = BattleMath()
     

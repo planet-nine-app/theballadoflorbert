@@ -10,5 +10,6 @@ import SpriteKit
 
 class AbstractScene: SKScene {
     
+    var controls: AbstractControls?
     
 }
