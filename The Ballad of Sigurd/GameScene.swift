@@ -140,12 +140,12 @@ class GameScene: SKScene {
             print("Please connect a user account first")
             return
         }
-        let battleScene = BattleScene(size: CGSize(width: 1920, height: 1280))
+        /*let battleScene = BattleScene(size: CGSize(width: 1920, height: 1280))
         battleScene.scaleMode = .fill
-        self.view?.presentScene(battleScene)
-        /*let tutorialScene = TutorialScene(size: CGSize(width: 1920, height: 1280))
+        self.view?.presentScene(battleScene)*/
+        let tutorialScene = TutorialScene(size: CGSize(width: 1920, height: 1280))
         tutorialScene.scaleMode = .fill
-        self.view?.presentScene(tutorialScene)*/
+        self.view?.presentScene(tutorialScene)
     }
     
     override func didFinishUpdate() {

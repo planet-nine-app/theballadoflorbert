@@ -23,6 +23,7 @@ class BattleScene: AbstractScene {
         let backgroundNode = SKSpriteNode(imageNamed: "grassy_lake.png")
         backgroundNode.position = CGPoint(x: self.size.width / 2, y: self.size.height / 2)
         backgroundNode.zPosition = ZPositions.background.rawValue
+        backgroundNode.name = "Background"
         
         
         self.addChild(backgroundNode)

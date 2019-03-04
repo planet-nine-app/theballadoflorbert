@@ -59,6 +59,7 @@
 		CA640CAB2229E601004905E0 /* TutorialScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA640CAA2229E601004905E0 /* TutorialScene.swift */; };
 		CA640CAD2229E6EE004905E0 /* TutorialControls.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA640CAC2229E6EE004905E0 /* TutorialControls.swift */; };
 		CA640CAF2229E8D3004905E0 /* AbstractControls.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA640CAE2229E8D3004905E0 /* AbstractControls.swift */; };
+		CA75E204222DCF7300F2D5B8 /* BattleDialog.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA75E203222DCF7300F2D5B8 /* BattleDialog.swift */; };
 		CAB4EADD221F693B0066EDC4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAB4EADC221F693B0066EDC4 /* AppDelegate.swift */; };
 		CAB4EADF221F693B0066EDC4 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = CAB4EADE221F693B0066EDC4 /* GameScene.sks */; };
 		CAB4EAE1221F693B0066EDC4 /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = CAB4EAE0221F693B0066EDC4 /* Actions.sks */; };
@@ -150,6 +151,7 @@
 		CA640CAA2229E601004905E0 /* TutorialScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorialScene.swift; sourceTree = "<group>"; };
 		CA640CAC2229E6EE004905E0 /* TutorialControls.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorialControls.swift; sourceTree = "<group>"; };
 		CA640CAE2229E8D3004905E0 /* AbstractControls.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbstractControls.swift; sourceTree = "<group>"; };
+		CA75E203222DCF7300F2D5B8 /* BattleDialog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BattleDialog.swift; sourceTree = "<group>"; };
 		CAB4EAD9221F693B0066EDC4 /* The Ballad of Sigurd.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "The Ballad of Sigurd.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CAB4EADC221F693B0066EDC4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CAB4EADE221F693B0066EDC4 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
@@ -395,6 +397,7 @@
 				CA640C8C22275F9E004905E0 /* RuneDrawing.sks */,
 				CA640C9A222872F8004905E0 /* HealingRain.sks */,
 				CA640C9B222872F8004905E0 /* Assets.xcassets */,
+				CA75E203222DCF7300F2D5B8 /* BattleDialog.swift */,
 			);
 			path = "Battle Effects";
 			sourceTree = "<group>";
@@ -739,6 +742,7 @@
 				CA640C8B22274F54004905E0 /* DrawingManager.swift in Sources */,
 				CAB4EC23221F6AB90066EDC4 /* AbstractScene.swift in Sources */,
 				CA640C9122285986004905E0 /* AbstractBattleRune.swift in Sources */,
+				CA75E204222DCF7300F2D5B8 /* BattleDialog.swift in Sources */,
 				CA640C3D22209A40004905E0 /* InventoryManager.swift in Sources */,
 				CA640C35222098E4004905E0 /* Shield.swift in Sources */,
 				CA640C7C22260EFC004905E0 /* BattleControls.swift in Sources */,

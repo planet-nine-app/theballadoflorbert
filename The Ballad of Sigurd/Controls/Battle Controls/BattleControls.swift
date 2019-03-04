@@ -53,6 +53,9 @@ class BattleControls: AbstractControls {
         }
         let nodesAtPoint = scene.nodes(at: touch.location(in: scene))
         for node in nodesAtPoint {
+            if node.name == "Background" {
+                continue
+            }
             if node.name == runeNodeName {
                 print("rune node name")
                 if controlState == .sigurd || controlState == .bryn || controlState == .alvis {
@@ -101,6 +104,9 @@ class BattleControls: AbstractControls {
             }
             let nodesAtPoint = scene.nodes(at: touch.location(in: scene))
             for node in nodesAtPoint {
+                if node.name == "Background" {
+                    continue
+                }
                 if let nameOfNode = node.name {
                     switch nameOfNode {
                     case CharacterNames.sigurd.rawValue:
