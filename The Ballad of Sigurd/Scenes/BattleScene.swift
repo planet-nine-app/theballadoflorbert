@@ -16,6 +16,7 @@ class BattleScene: AbstractScene {
     var battleEnemies = [AbstractBattleEnemy]()
     var runeUsed: AbstractBattleRune?
     let battleMath = BattleMath()
+    var lastTime: TimeInterval?
     
     override func didMove(to view: SKView) {
         super.didMove(to: view)
@@ -100,6 +101,8 @@ class BattleScene: AbstractScene {
         case .enemy4:
             battleEnemies[3].damage(battleMath.calculateBrynDamageToEnemy(enemy: battleEnemies[3], bryn: battleCharacters[1] as! BattleBryn), scene: self)
         }
+        
+        battleCharacters[1].playerCharacter.currentStamina = battleCharacters[1].playerCharacter.currentStamina - 15
     }
     
     func enemySlashed(enemy: EnemyNames) {
@@ -115,6 +118,7 @@ class BattleScene: AbstractScene {
         case .enemy4:
             battleEnemies[3].damage(battleMath.calculateSigurdDamageToEnemy(enemy: battleEnemies[3], sigurd: battleCharacters[0] as! BattleSigurd), scene: self)
         }
+        battleCharacters[0].playerCharacter.currentStamina = battleCharacters[0].playerCharacter.currentStamina - 20
     }
     
     func addRuneDrawingEmitterNode(_ location: CGPoint) {
@@ -220,5 +224,17 @@ class BattleScene: AbstractScene {
             return charactersWithPriority[0].playerCharacter.name
         }
         return .sigurd //TODO do we want a none character name?
+    }
+    
+    override func update(_ currentTime: TimeInterval) {
+        guard let theLastTime = lastTime else {
+            lastTime = currentTime
+            return
+        }
+        let timeDiff = currentTime - theLastTime
+        for battleCharacter in battleCharacters {
+            battleCharacter.updateStatusBar(timeDiff)
+        }
+        lastTime = currentTime
     }
 }

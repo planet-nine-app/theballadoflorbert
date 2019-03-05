@@ -10,9 +10,9 @@ import Foundation
 import UIKit
 
 struct BattlePositions {
-    let character1 = CGPoint(x: 180, y: 750)
+    let character1 = CGPoint(x: 180, y: 950)
     let character2 = CGPoint(x: 180, y: 500)
-    let character3 = CGPoint(x: 180, y: 250)
+    let character3 = CGPoint(x: 180, y: 50)
     let enemy1 = CGPoint(x: 1520, y: 500)
 }
 

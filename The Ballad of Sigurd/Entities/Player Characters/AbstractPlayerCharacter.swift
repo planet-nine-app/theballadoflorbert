@@ -12,10 +12,12 @@ class AbstractPlayerCharacter {
     
     var name: CharacterNames
     var level: Int = 1
-    var maxHP: Int = 50
-    var currentHP: Int = 50
-    var maxMP: Int = 16
-    var currentMP: Int = 16
+    var maxHP: Double = 50.0
+    var currentHP: Double = 50.0
+    var maxStamina: Double = 50.0
+    var currentStamina: Double = 50.0
+    var maxMP: Double = 16.0
+    var currentMP: Double = 16.0
     var experience: Int = 0
     //stats
     var strength: Int = 8
@@ -52,9 +54,9 @@ class AbstractPlayerCharacter {
         perception = perception + Int.statIncrease()
         luck = luck + Int.statIncrease()
         
-        maxHP = 50 + (vitality * 2)
+        maxHP = 50.0 + (Double(vitality) * 2.0)
         currentHP = maxHP
-        maxMP = wisdom + aura
+        maxMP = Double(wisdom + aura)
         currentMP = maxMP
         
         print("Stats at level \(level): \(strength), \(vitality), \(agility), \(dexterity), \(wisdom), \(aura), \(perception), \(luck)")

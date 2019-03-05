@@ -16,11 +16,11 @@ class BattleSigurd: AbstractBattleCharacter {
     
     override func tapped() {
         hasPriority = true
-        spriteNode.texture = actionTexture
+        characterNode.texture = actionTexture
     }
     
     override func relinquishPriority() {
         hasPriority = false
-        spriteNode.texture = readyTexture
+        characterNode.texture = readyTexture
     }
 }
