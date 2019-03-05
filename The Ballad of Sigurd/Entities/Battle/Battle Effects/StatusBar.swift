@@ -48,10 +48,12 @@ class StatusBar {
         staminaNode.removeFromParent()
         magicNode.removeFromParent()
         staminaNode = SKShapeNode(rectOf: CGSize(width: staminaWidth, height: 25))
-        staminaNode.position = CGPoint(x: 0, y: 35)
+        let staminaXDiff = (otherNodeSize.width - staminaNode.frame.width) / 2
+        staminaNode.position = CGPoint(x: 0 - staminaXDiff, y: 35)
         staminaNode.fillColor = UIColor.red
         magicNode = SKShapeNode(rectOf: CGSize(width: magicWidth, height: 25))
-        magicNode.position = CGPoint(x: 0, y: 5)
+        let magicXDiff = (otherNodeSize.width - magicNode.frame.width) / 2
+        magicNode.position = CGPoint(x: 0 - magicXDiff, y: 5)
         magicNode.fillColor = UIColor.blue
         backgroundNode.addChild(staminaNode)
         backgroundNode.addChild(magicNode)

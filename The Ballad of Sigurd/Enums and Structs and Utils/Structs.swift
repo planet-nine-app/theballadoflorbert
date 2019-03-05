@@ -17,22 +17,35 @@ struct BattlePositions {
 }
 
 struct BattleMath {
+    
+    func modifyPhysicalAttack(damage: Int, character: AbstractBattleCharacter) -> Int {
+        let modifier = character.playerCharacter.currentStamina > 0 ? character.playerCharacter.currentStamina / character.playerCharacter.maxStamina : 0
+        let damageDouble = Double(damage) * modifier
+        return Int(damageDouble.rounded())
+    }
+    
+    func modifyMagicalDamage(damage: Int, character: AbstractBattleCharacter) -> Int {
+        let modifier = character.playerCharacter.currentMP > 0 ? character.playerCharacter.currentMP / character.playerCharacter.maxMP : 0
+        let damageDouble = Double(damage) * modifier
+        return Int(damageDouble.rounded())
+    }
+    
     func calculateSigurdDamageToEnemy(enemy: AbstractBattleEnemy, sigurd: BattleSigurd) -> Int {
-        return 16
+        return modifyPhysicalAttack(damage: 16, character: sigurd)
     }
     func calculateBrynDamageToEnemy(enemy: AbstractBattleEnemy, bryn: BattleBryn) -> Int {
-        return 17
+        return modifyPhysicalAttack(damage: 17, character: bryn)
     }
     func calculatePhysicalEnemyDamageToCharacter(enemy: AbstractBattleEnemy, character: AbstractBattleCharacter) -> Int {
         return 18
     }
     func calculateMagicalDamageToEnemy(character: AbstractBattleCharacter, enemy: AbstractBattleEnemy) -> Int {
-        return 19
+        return modifyMagicalDamage(damage: 19, character: character)
     }
     func calculateMagicalDamageToCharacter(enemy: AbstractBattleEnemy, character: AbstractBattleCharacter) -> Int {
         return 20
     }
     func calculateHealingToCharacter(character: AbstractBattleCharacter, characterThatUsedRune: AbstractBattleCharacter) -> Int {
-        return 21
+        return modifyMagicalDamage(damage: 21, character: characterThatUsedRune)
     }
 }

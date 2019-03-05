@@ -193,6 +193,8 @@ class BattleScene: AbstractScene {
             return character.hasPriority
         }[0]
         
+        characterThatUsedRune.playerCharacter.currentMP = characterThatUsedRune.playerCharacter.currentMP - 10
+        
         runeUsed!.runAnimationOnEnemy(enemy: enemyToUseRuneOn, character: characterThatUsedRune, scene: self)
     }
     
@@ -212,6 +214,8 @@ class BattleScene: AbstractScene {
         let characterThatUsedRune = battleCharacters.filter { character in
             return character.hasPriority
             }[0]
+        
+        characterThatUsedRune.playerCharacter.currentMP = characterThatUsedRune.playerCharacter.currentMP - 10
         
         runeUsed!.runAnimationOnCharacter(character: characterToUseRuneOn, runeUsingCharacter: characterThatUsedRune, scene: self)
     }
