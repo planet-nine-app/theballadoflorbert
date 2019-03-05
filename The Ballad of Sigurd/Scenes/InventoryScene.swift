@@ -17,5 +17,9 @@ class InventoryScene: AbstractScene {
         //backgroundNode.position = CGPoint(x: self.size.width / 2, y: self.size.height / 2)
         backgroundNode.position = CGPoint(x: 0, y: 0)
         self.addChild(backgroundNode)
+        
+        let statColumn = StatColumn(character: AbstractPlayerCharacter(named: .sigurd))
+        statColumn.columnNode.position = CGPoint(x: 200, y: 450)
+        self.addChild(statColumn.columnNode)
     }
 }
