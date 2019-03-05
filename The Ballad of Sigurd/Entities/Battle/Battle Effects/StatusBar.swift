@@ -43,8 +43,8 @@ class StatusBar {
     }
     
     func updateStatusBar(staminaRatio: Double, magicRatio: Double) {
-        let staminaWidth = otherNodeSize.width * CGFloat(staminaRatio)
-        let magicWidth = otherNodeSize.width * CGFloat(magicRatio)
+        let staminaWidth = staminaRatio > 0 ? otherNodeSize.width * CGFloat(staminaRatio) : 0
+        let magicWidth = magicRatio > 0 ? otherNodeSize.width * CGFloat(magicRatio) : 0
         staminaNode.removeFromParent()
         magicNode.removeFromParent()
         staminaNode = SKShapeNode(rectOf: CGSize(width: staminaWidth, height: 25))

@@ -23,7 +23,7 @@ class GameScene: SKScene {
     
     private var connectButton = SKLabelNode()
     private var playButton = SKLabelNode()
-    private var user: PNUser?
+    var user: PNUser?
     
     override func didMove(to view: SKView) {
         
@@ -145,6 +145,7 @@ class GameScene: SKScene {
         self.view?.presentScene(battleScene)*/
         let tutorialScene = TutorialScene(size: CGSize(width: 1920, height: 1280))
         tutorialScene.scaleMode = .fill
+        tutorialScene.presentingScene = self
         self.view?.presentScene(tutorialScene)
     }
     

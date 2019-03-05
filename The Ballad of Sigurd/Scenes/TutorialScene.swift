@@ -13,22 +13,26 @@ class TutorialScene: BattleScene {
     
     var highlightNode: SKShapeNode
     var dialogNode: BattleDialog
+    var presentingScene: GameScene
     
     override init() {
         highlightNode = SKShapeNode()
         dialogNode = BattleDialog(sizeOf: CGSize(width: 100, height: 100), at: CGPoint(x: 100, y: 100), with: "Hello World")
+        presentingScene = GameScene()
         super.init()
     }
     
     required init?(coder aDecoder: NSCoder) {
         highlightNode = SKShapeNode()
         dialogNode = BattleDialog(sizeOf: CGSize(width: 100, height: 100), at: CGPoint(x: 100, y: 100), with: "Hello World")
+        presentingScene = GameScene()
         super.init(coder: aDecoder)
     }
     
     override init(size: CGSize) {
         highlightNode = SKShapeNode()
         dialogNode = BattleDialog(sizeOf: CGSize(width: 100, height: 100), at: CGPoint(x: 100, y: 100), with: "Hello World")
+        presentingScene = GameScene()
         super.init(size: size)
     }
     
@@ -87,6 +91,14 @@ class TutorialScene: BattleScene {
     func endTutorial() {
         dialogNode.backgroundNode.position = CGPoint(x: 860, y: 700)
         dialogNode.textNode.text = "Great work! You're now ready to take on\nthe hordes of The Ballad of Sigurd."
+        let _ = Timer.scheduledTimer(withTimeInterval: 5.0, repeats: false) { _ in
+            DispatchQueue.main.async {
+                let battleScene = BattleScene(size: CGSize(width: 1920, height: 1280))
+                battleScene.scaleMode = .fill
+                let transition = SKTransition.crossFade(withDuration: 2.0)
+                self.view?.presentScene(battleScene, transition: transition)
+            }
+        }
     }
     
     func runeDrawingFailed() {
