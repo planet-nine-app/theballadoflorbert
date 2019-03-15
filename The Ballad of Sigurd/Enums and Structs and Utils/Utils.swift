@@ -58,5 +58,6 @@ extension UIColor {
         static var textColor: UIColor { return UIColor(red: 40/255, green: 100/255, blue: 90/255, alpha: 1.0)}
         static var darkPrimary: UIColor { return UIColor(red: 40/255, green: 100/255, blue: 97/255, alpha: 1.0)}
         static var darkSecondary: UIColor { return UIColor(red: 137/255, green: 123/255, blue: 116/255, alpha: 1.0)}
+        static var blankInventory: UIColor { return UIColor(red: 155/255, green: 199/255, blue: 196/255, alpha: 1.0)}
     }
 }

@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		60707F5A1FBBF586D51E8776 /* Pods_The_Ballad_of_SigurdUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D7D236FADCA30916E631D8C /* Pods_The_Ballad_of_SigurdUITests.framework */; };
 		9D4A62EC3D3C4C740C7C1FCF /* Pods_The_Ballad_of_SigurdTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53F3519C373C20127125D289 /* Pods_The_Ballad_of_SigurdTests.framework */; };
+		CA1E76C3223C28A200EA0FAF /* EquipmentConsole.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA1E76C2223C28A200EA0FAF /* EquipmentConsole.swift */; };
+		CA1E76C5223C3BE500EA0FAF /* InventorySelector.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA1E76C4223C3BE500EA0FAF /* InventorySelector.swift */; };
 		CA640C2722209682004905E0 /* AbstractPlayerCharacter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA640C2622209682004905E0 /* AbstractPlayerCharacter.swift */; };
 		CA640C2B2220987D004905E0 /* Rune.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA640C2A2220987D004905E0 /* Rune.swift */; };
 		CA640C2D2220988F004905E0 /* Weapon.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA640C2C2220988F004905E0 /* Weapon.swift */; };
@@ -103,6 +105,8 @@
 		9D7D236FADCA30916E631D8C /* Pods_The_Ballad_of_SigurdUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_The_Ballad_of_SigurdUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A0E70B37BE82543C425A1373 /* Pods-The Ballad of Sigurd.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-The Ballad of Sigurd.release.xcconfig"; path = "Target Support Files/Pods-The Ballad of Sigurd/Pods-The Ballad of Sigurd.release.xcconfig"; sourceTree = "<group>"; };
 		AE82BB8F9771EABDB5D8FCF8 /* Pods-The Ballad of SigurdUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-The Ballad of SigurdUITests.debug.xcconfig"; path = "Target Support Files/Pods-The Ballad of SigurdUITests/Pods-The Ballad of SigurdUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		CA1E76C2223C28A200EA0FAF /* EquipmentConsole.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EquipmentConsole.swift; sourceTree = "<group>"; };
+		CA1E76C4223C3BE500EA0FAF /* InventorySelector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InventorySelector.swift; sourceTree = "<group>"; };
 		CA640C2622209682004905E0 /* AbstractPlayerCharacter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbstractPlayerCharacter.swift; sourceTree = "<group>"; };
 		CA640C2A2220987D004905E0 /* Rune.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rune.swift; sourceTree = "<group>"; };
 		CA640C2C2220988F004905E0 /* Weapon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Weapon.swift; sourceTree = "<group>"; };
@@ -412,6 +416,8 @@
 			isa = PBXGroup;
 			children = (
 				CA75E208222F377B00F2D5B8 /* StatColumn.swift */,
+				CA1E76C2223C28A200EA0FAF /* EquipmentConsole.swift */,
+				CA1E76C4223C3BE500EA0FAF /* InventorySelector.swift */,
 			);
 			path = Menu;
 			sourceTree = "<group>";
@@ -768,6 +774,7 @@
 				CA640C33222098CE004905E0 /* Bracers.swift in Sources */,
 				CA640CAD2229E6EE004905E0 /* TutorialControls.swift in Sources */,
 				CAB4EC1E221F6A570066EDC4 /* JSTileMap.m in Sources */,
+				CA1E76C5223C3BE500EA0FAF /* InventorySelector.swift in Sources */,
 				CAB4EAE5221F693B0066EDC4 /* GameViewController.swift in Sources */,
 				CA640CAB2229E601004905E0 /* TutorialScene.swift in Sources */,
 				CA640C6522249E65004905E0 /* UserModel.swift in Sources */,
@@ -777,6 +784,7 @@
 				CA75E206222DEE5600F2D5B8 /* StatusBar.swift in Sources */,
 				CA640C782226077B004905E0 /* BattleBryn.swift in Sources */,
 				CA640C692225F80A004905E0 /* BattleScene.swift in Sources */,
+				CA1E76C3223C28A200EA0FAF /* EquipmentConsole.swift in Sources */,
 				CA640C8722274274004905E0 /* AbstractBattleEffect.swift in Sources */,
 				CA640C3B22209925004905E0 /* Gloves.swift in Sources */,
 				CA640C9922287298004905E0 /* Healing.swift in Sources */,

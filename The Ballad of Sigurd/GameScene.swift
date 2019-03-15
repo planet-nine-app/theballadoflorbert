@@ -133,9 +133,11 @@ class GameScene: SKScene {
     }
     
     func play() {
-        /*let inventoryScene = InventoryScene(size: CGSize(width: 1920, height: 1280))
-        inventoryScene.scaleMode = .fill
-        self.view?.presentScene(inventoryScene)*/
+        //let inventoryScene = InventoryScene(size: CGSize(width: 1920, height: 1280))
+        let inventoryScene = InventoryScene(size: CGSize(width: 667, height: 375))
+        inventoryScene.scaleMode = .aspectFit
+        //inventoryScene.scaleMode = .aspectFill
+        self.view?.presentScene(inventoryScene)
         if UserModel().getUser() == nil {
             print("Please connect a user account first")
             return
@@ -143,10 +145,10 @@ class GameScene: SKScene {
         /*let battleScene = BattleScene(size: CGSize(width: 1920, height: 1280))
         battleScene.scaleMode = .fill
         self.view?.presentScene(battleScene)*/
-        let tutorialScene = TutorialScene(size: CGSize(width: 1920, height: 1280))
+        /*let tutorialScene = TutorialScene(size: CGSize(width: 1920, height: 1280))
         tutorialScene.scaleMode = .fill
         tutorialScene.presentingScene = self
-        self.view?.presentScene(tutorialScene)
+        self.view?.presentScene(tutorialScene)*/
     }
     
     override func didFinishUpdate() {
