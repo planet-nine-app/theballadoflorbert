@@ -29,6 +29,7 @@ class InventoryItem: Comparable {
     var stat: Stats = .strength
     var statBoost = 0
     var rarity: Rarities = .common
+    var nineum: Nineum?
     
     init(inventoryType: InventoryType) {
         self.inventoryType = inventoryType
@@ -42,6 +43,7 @@ class InventoryItem: Comparable {
         self.element = getElementForNineum(nineum: nineum)
         self.stat = getStatForNineum(nineum: nineum)
         self.rarity = nineum.rarity
+        self.nineum = nineum
     }
     
     func toString() -> String {

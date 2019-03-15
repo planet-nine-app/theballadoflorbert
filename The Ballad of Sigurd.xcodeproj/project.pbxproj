@@ -11,6 +11,28 @@
 		9D4A62EC3D3C4C740C7C1FCF /* Pods_The_Ballad_of_SigurdTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53F3519C373C20127125D289 /* Pods_The_Ballad_of_SigurdTests.framework */; };
 		CA1E76C3223C28A200EA0FAF /* EquipmentConsole.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA1E76C2223C28A200EA0FAF /* EquipmentConsole.swift */; };
 		CA1E76C5223C3BE500EA0FAF /* InventorySelector.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA1E76C4223C3BE500EA0FAF /* InventorySelector.swift */; };
+		CA1E76C8223C54FA00EA0FAF /* InventorySelectorTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA1E76C7223C54FA00EA0FAF /* InventorySelectorTableViewCell.swift */; };
+		CA1E76DE223C55CD00EA0FAF /* Nineum5_Small@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = CA1E76C9223C55CC00EA0FAF /* Nineum5_Small@3x.png */; };
+		CA1E76DF223C55CD00EA0FAF /* Nineum6_Small@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = CA1E76CA223C55CC00EA0FAF /* Nineum6_Small@3x.png */; };
+		CA1E76E0223C55CD00EA0FAF /* Nineum4_Small@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = CA1E76CB223C55CC00EA0FAF /* Nineum4_Small@3x.png */; };
+		CA1E76E1223C55CD00EA0FAF /* Nineum1_Small@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = CA1E76CC223C55CC00EA0FAF /* Nineum1_Small@3x.png */; };
+		CA1E76E2223C55CD00EA0FAF /* Nineum7_Small@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CA1E76CD223C55CC00EA0FAF /* Nineum7_Small@2x.png */; };
+		CA1E76E3223C55CD00EA0FAF /* Nineum7_Small@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = CA1E76CE223C55CC00EA0FAF /* Nineum7_Small@3x.png */; };
+		CA1E76E4223C55CD00EA0FAF /* Nineum7_Small.png in Resources */ = {isa = PBXBuildFile; fileRef = CA1E76CF223C55CC00EA0FAF /* Nineum7_Small.png */; };
+		CA1E76E5223C55CD00EA0FAF /* Nineum1_Small.png in Resources */ = {isa = PBXBuildFile; fileRef = CA1E76D0223C55CC00EA0FAF /* Nineum1_Small.png */; };
+		CA1E76E6223C55CD00EA0FAF /* Nineum2_Small@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CA1E76D1223C55CC00EA0FAF /* Nineum2_Small@2x.png */; };
+		CA1E76E7223C55CD00EA0FAF /* Nineum5_Small@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CA1E76D2223C55CC00EA0FAF /* Nineum5_Small@2x.png */; };
+		CA1E76E8223C55CD00EA0FAF /* Nineum2_Small.png in Resources */ = {isa = PBXBuildFile; fileRef = CA1E76D3223C55CC00EA0FAF /* Nineum2_Small.png */; };
+		CA1E76E9223C55CD00EA0FAF /* Nineum6_Small.png in Resources */ = {isa = PBXBuildFile; fileRef = CA1E76D4223C55CC00EA0FAF /* Nineum6_Small.png */; };
+		CA1E76EA223C55CD00EA0FAF /* Nineum1_Small@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CA1E76D5223C55CC00EA0FAF /* Nineum1_Small@2x.png */; };
+		CA1E76EB223C55CD00EA0FAF /* Nineum3_Small.png in Resources */ = {isa = PBXBuildFile; fileRef = CA1E76D6223C55CD00EA0FAF /* Nineum3_Small.png */; };
+		CA1E76EC223C55CD00EA0FAF /* Nineum3_Small@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CA1E76D7223C55CD00EA0FAF /* Nineum3_Small@2x.png */; };
+		CA1E76ED223C55CD00EA0FAF /* Nineum5_Small.png in Resources */ = {isa = PBXBuildFile; fileRef = CA1E76D8223C55CD00EA0FAF /* Nineum5_Small.png */; };
+		CA1E76EE223C55CD00EA0FAF /* Nineum2_Small@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = CA1E76D9223C55CD00EA0FAF /* Nineum2_Small@3x.png */; };
+		CA1E76EF223C55CD00EA0FAF /* Nineum4_Small.png in Resources */ = {isa = PBXBuildFile; fileRef = CA1E76DA223C55CD00EA0FAF /* Nineum4_Small.png */; };
+		CA1E76F0223C55CD00EA0FAF /* Nineum3_Small@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = CA1E76DB223C55CD00EA0FAF /* Nineum3_Small@3x.png */; };
+		CA1E76F1223C55CD00EA0FAF /* Nineum6_Small@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CA1E76DC223C55CD00EA0FAF /* Nineum6_Small@2x.png */; };
+		CA1E76F2223C55CD00EA0FAF /* Nineum4_Small@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CA1E76DD223C55CD00EA0FAF /* Nineum4_Small@2x.png */; };
 		CA640C2722209682004905E0 /* AbstractPlayerCharacter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA640C2622209682004905E0 /* AbstractPlayerCharacter.swift */; };
 		CA640C2B2220987D004905E0 /* Rune.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA640C2A2220987D004905E0 /* Rune.swift */; };
 		CA640C2D2220988F004905E0 /* Weapon.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA640C2C2220988F004905E0 /* Weapon.swift */; };
@@ -107,6 +129,28 @@
 		AE82BB8F9771EABDB5D8FCF8 /* Pods-The Ballad of SigurdUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-The Ballad of SigurdUITests.debug.xcconfig"; path = "Target Support Files/Pods-The Ballad of SigurdUITests/Pods-The Ballad of SigurdUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		CA1E76C2223C28A200EA0FAF /* EquipmentConsole.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EquipmentConsole.swift; sourceTree = "<group>"; };
 		CA1E76C4223C3BE500EA0FAF /* InventorySelector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InventorySelector.swift; sourceTree = "<group>"; };
+		CA1E76C7223C54FA00EA0FAF /* InventorySelectorTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InventorySelectorTableViewCell.swift; sourceTree = "<group>"; };
+		CA1E76C9223C55CC00EA0FAF /* Nineum5_Small@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Nineum5_Small@3x.png"; sourceTree = "<group>"; };
+		CA1E76CA223C55CC00EA0FAF /* Nineum6_Small@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Nineum6_Small@3x.png"; sourceTree = "<group>"; };
+		CA1E76CB223C55CC00EA0FAF /* Nineum4_Small@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Nineum4_Small@3x.png"; sourceTree = "<group>"; };
+		CA1E76CC223C55CC00EA0FAF /* Nineum1_Small@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Nineum1_Small@3x.png"; sourceTree = "<group>"; };
+		CA1E76CD223C55CC00EA0FAF /* Nineum7_Small@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Nineum7_Small@2x.png"; sourceTree = "<group>"; };
+		CA1E76CE223C55CC00EA0FAF /* Nineum7_Small@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Nineum7_Small@3x.png"; sourceTree = "<group>"; };
+		CA1E76CF223C55CC00EA0FAF /* Nineum7_Small.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Nineum7_Small.png; sourceTree = "<group>"; };
+		CA1E76D0223C55CC00EA0FAF /* Nineum1_Small.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Nineum1_Small.png; sourceTree = "<group>"; };
+		CA1E76D1223C55CC00EA0FAF /* Nineum2_Small@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Nineum2_Small@2x.png"; sourceTree = "<group>"; };
+		CA1E76D2223C55CC00EA0FAF /* Nineum5_Small@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Nineum5_Small@2x.png"; sourceTree = "<group>"; };
+		CA1E76D3223C55CC00EA0FAF /* Nineum2_Small.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Nineum2_Small.png; sourceTree = "<group>"; };
+		CA1E76D4223C55CC00EA0FAF /* Nineum6_Small.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Nineum6_Small.png; sourceTree = "<group>"; };
+		CA1E76D5223C55CC00EA0FAF /* Nineum1_Small@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Nineum1_Small@2x.png"; sourceTree = "<group>"; };
+		CA1E76D6223C55CD00EA0FAF /* Nineum3_Small.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Nineum3_Small.png; sourceTree = "<group>"; };
+		CA1E76D7223C55CD00EA0FAF /* Nineum3_Small@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Nineum3_Small@2x.png"; sourceTree = "<group>"; };
+		CA1E76D8223C55CD00EA0FAF /* Nineum5_Small.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Nineum5_Small.png; sourceTree = "<group>"; };
+		CA1E76D9223C55CD00EA0FAF /* Nineum2_Small@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Nineum2_Small@3x.png"; sourceTree = "<group>"; };
+		CA1E76DA223C55CD00EA0FAF /* Nineum4_Small.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Nineum4_Small.png; sourceTree = "<group>"; };
+		CA1E76DB223C55CD00EA0FAF /* Nineum3_Small@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Nineum3_Small@3x.png"; sourceTree = "<group>"; };
+		CA1E76DC223C55CD00EA0FAF /* Nineum6_Small@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Nineum6_Small@2x.png"; sourceTree = "<group>"; };
+		CA1E76DD223C55CD00EA0FAF /* Nineum4_Small@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Nineum4_Small@2x.png"; sourceTree = "<group>"; };
 		CA640C2622209682004905E0 /* AbstractPlayerCharacter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbstractPlayerCharacter.swift; sourceTree = "<group>"; };
 		CA640C2A2220987D004905E0 /* Rune.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rune.swift; sourceTree = "<group>"; };
 		CA640C2C2220988F004905E0 /* Weapon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Weapon.swift; sourceTree = "<group>"; };
@@ -238,6 +282,34 @@
 				9D7D236FADCA30916E631D8C /* Pods_The_Ballad_of_SigurdUITests.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CA1E76C6223C54E000EA0FAF /* Nineum Images */ = {
+			isa = PBXGroup;
+			children = (
+				CA1E76D0223C55CC00EA0FAF /* Nineum1_Small.png */,
+				CA1E76D5223C55CC00EA0FAF /* Nineum1_Small@2x.png */,
+				CA1E76CC223C55CC00EA0FAF /* Nineum1_Small@3x.png */,
+				CA1E76D3223C55CC00EA0FAF /* Nineum2_Small.png */,
+				CA1E76D1223C55CC00EA0FAF /* Nineum2_Small@2x.png */,
+				CA1E76D9223C55CD00EA0FAF /* Nineum2_Small@3x.png */,
+				CA1E76D6223C55CD00EA0FAF /* Nineum3_Small.png */,
+				CA1E76D7223C55CD00EA0FAF /* Nineum3_Small@2x.png */,
+				CA1E76DB223C55CD00EA0FAF /* Nineum3_Small@3x.png */,
+				CA1E76DA223C55CD00EA0FAF /* Nineum4_Small.png */,
+				CA1E76DD223C55CD00EA0FAF /* Nineum4_Small@2x.png */,
+				CA1E76CB223C55CC00EA0FAF /* Nineum4_Small@3x.png */,
+				CA1E76D8223C55CD00EA0FAF /* Nineum5_Small.png */,
+				CA1E76D2223C55CC00EA0FAF /* Nineum5_Small@2x.png */,
+				CA1E76C9223C55CC00EA0FAF /* Nineum5_Small@3x.png */,
+				CA1E76D4223C55CC00EA0FAF /* Nineum6_Small.png */,
+				CA1E76DC223C55CD00EA0FAF /* Nineum6_Small@2x.png */,
+				CA1E76CA223C55CC00EA0FAF /* Nineum6_Small@3x.png */,
+				CA1E76CF223C55CC00EA0FAF /* Nineum7_Small.png */,
+				CA1E76CD223C55CC00EA0FAF /* Nineum7_Small@2x.png */,
+				CA1E76CE223C55CC00EA0FAF /* Nineum7_Small@3x.png */,
+			);
+			path = "Nineum Images";
 			sourceTree = "<group>";
 		};
 		CA640C1622208C78004905E0 /* Controls */ = {
@@ -383,6 +455,7 @@
 		CA640C6A22260296004905E0 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				CA1E76C6223C54E000EA0FAF /* Nineum Images */,
 				CA640C6D22260378004905E0 /* grassy_lake.png */,
 				CA640C732226071C004905E0 /* Baal_ready_pose_4x.png */,
 				CA640C7522260746004905E0 /* Bryn_4x_ready.png */,
@@ -418,6 +491,7 @@
 				CA75E208222F377B00F2D5B8 /* StatColumn.swift */,
 				CA1E76C2223C28A200EA0FAF /* EquipmentConsole.swift */,
 				CA1E76C4223C3BE500EA0FAF /* InventorySelector.swift */,
+				CA1E76C7223C54FA00EA0FAF /* InventorySelectorTableViewCell.swift */,
 			);
 			path = Menu;
 			sourceTree = "<group>";
@@ -621,27 +695,48 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CA1E76EC223C55CD00EA0FAF /* Nineum3_Small@2x.png in Resources */,
+				CA1E76F2223C55CD00EA0FAF /* Nineum4_Small@2x.png in Resources */,
+				CA1E76E9223C55CD00EA0FAF /* Nineum6_Small.png in Resources */,
 				CAB4EAE8221F693B0066EDC4 /* Main.storyboard in Resources */,
 				CAB4EADF221F693B0066EDC4 /* GameScene.sks in Resources */,
+				CA1E76E3223C55CD00EA0FAF /* Nineum7_Small@3x.png in Resources */,
 				CA640C742226071D004905E0 /* Baal_ready_pose_4x.png in Resources */,
+				CA1E76F1223C55CD00EA0FAF /* Nineum6_Small@2x.png in Resources */,
 				CA640C5B2220B46F004905E0 /* Ubuntu-Medium.ttf in Resources */,
 				CA640C80222739A2004905E0 /* Bryn_4x_attack.png in Resources */,
 				CA640C5A2220B46F004905E0 /* Orbitron-Bold.ttf in Resources */,
 				CAB4EAEA221F693D0066EDC4 /* Assets.xcassets in Resources */,
+				CA1E76DF223C55CD00EA0FAF /* Nineum6_Small@3x.png in Resources */,
+				CA1E76E1223C55CD00EA0FAF /* Nineum1_Small@3x.png in Resources */,
 				CA640C7E2227399A004905E0 /* Baal_action_pose_10x.png in Resources */,
+				CA1E76EA223C55CD00EA0FAF /* Nineum1_Small@2x.png in Resources */,
+				CA1E76E6223C55CD00EA0FAF /* Nineum2_Small@2x.png in Resources */,
 				CA640C8422273D37004905E0 /* wood_elemental_4x_game.png in Resources */,
+				CA1E76E0223C55CD00EA0FAF /* Nineum4_Small@3x.png in Resources */,
+				CA1E76DE223C55CD00EA0FAF /* Nineum5_Small@3x.png in Resources */,
 				CA640C9C222872F8004905E0 /* HealingRain.sks in Resources */,
 				CA640C7622260746004905E0 /* Bryn_4x_ready.png in Resources */,
 				CA640C972228690E004905E0 /* icecube.png in Resources */,
+				CA1E76E7223C55CD00EA0FAF /* Nineum5_Small@2x.png in Resources */,
+				CA1E76EB223C55CD00EA0FAF /* Nineum3_Small.png in Resources */,
+				CA1E76E5223C55CD00EA0FAF /* Nineum1_Small.png in Resources */,
 				CA640C6322249AE9004905E0 /* crypto.js in Resources */,
 				CA640C8D22275F9E004905E0 /* RuneDrawing.sks in Resources */,
 				CA640C9D222872F8004905E0 /* Assets.xcassets in Resources */,
 				CA640CA52228784D004905E0 /* cloud2.png in Resources */,
+				CA1E76EE223C55CD00EA0FAF /* Nineum2_Small@3x.png in Resources */,
 				CAB4EAED221F693D0066EDC4 /* LaunchScreen.storyboard in Resources */,
 				CA640C8F22285811004905E0 /* spark.png in Resources */,
+				CA1E76E8223C55CD00EA0FAF /* Nineum2_Small.png in Resources */,
+				CA1E76E2223C55CD00EA0FAF /* Nineum7_Small@2x.png in Resources */,
+				CA1E76F0223C55CD00EA0FAF /* Nineum3_Small@3x.png in Resources */,
 				CA640C6E22260378004905E0 /* grassy_lake.png in Resources */,
+				CA1E76EF223C55CD00EA0FAF /* Nineum4_Small.png in Resources */,
 				CAB4EAE1221F693B0066EDC4 /* Actions.sks in Resources */,
+				CA1E76ED223C55CD00EA0FAF /* Nineum5_Small.png in Resources */,
 				CA640C9522285A81004905E0 /* runeIsa.png in Resources */,
+				CA1E76E4223C55CD00EA0FAF /* Nineum7_Small.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -776,6 +871,7 @@
 				CAB4EC1E221F6A570066EDC4 /* JSTileMap.m in Sources */,
 				CA1E76C5223C3BE500EA0FAF /* InventorySelector.swift in Sources */,
 				CAB4EAE5221F693B0066EDC4 /* GameViewController.swift in Sources */,
+				CA1E76C8223C54FA00EA0FAF /* InventorySelectorTableViewCell.swift in Sources */,
 				CA640CAB2229E601004905E0 /* TutorialScene.swift in Sources */,
 				CA640C6522249E65004905E0 /* UserModel.swift in Sources */,
 				CA640C722226053A004905E0 /* AbstractBattleCharacter.swift in Sources */,

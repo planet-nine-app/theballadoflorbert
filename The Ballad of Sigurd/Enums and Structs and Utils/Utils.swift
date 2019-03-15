@@ -54,6 +54,7 @@ extension CGFloat {
 extension UIColor {
     struct PlanetNineColors {
         static var primary: UIColor { return UIColor(red: 93/255, green: 193/255, blue: 185/255, alpha: 1.0)}
+        static var closePrimary: UIColor { return UIColor(red: 90/255, green: 196/255, blue: 189/255, alpha: 1.0)}
         static var secondary: UIColor { return UIColor(red: 228/255, green: 210/255, blue: 197/255, alpha: 1.0)}
         static var textColor: UIColor { return UIColor(red: 40/255, green: 100/255, blue: 90/255, alpha: 1.0)}
         static var darkPrimary: UIColor { return UIColor(red: 40/255, green: 100/255, blue: 97/255, alpha: 1.0)}
