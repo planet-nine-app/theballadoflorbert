@@ -177,7 +177,7 @@ class EquipmentConsole {
         unwrappedNineumNode.scale(to: CGSize(width: 60.0, height: 60.0))
         
         let firstLine = SKLabelNode(text: equipment.toString())
-        firstLine.fontName = "Obitron-Bold"
+        firstLine.fontName = "Orbitron-Bold"
         firstLine.fontSize = 10
         firstLine.fontColor = UIColor.PlanetNineColors.secondary
         firstLine.position = CGPoint(x: 0, y: -12)
