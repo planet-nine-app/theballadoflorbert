@@ -131,19 +131,42 @@ class StatColumn {
     let playerCharacter: AbstractPlayerCharacter
     let subNodeSize = CGSize(width: 110, height: 37)
     let columnNode: SKShapeNode
+    var modifiedStats: [Stats: Int]
     
     init(character: AbstractPlayerCharacter) {
         playerCharacter = character
+        
+        modifiedStats = [Stats: Int]()
+        modifiedStats[.strength] = playerCharacter.strength
+        modifiedStats[.agility] = playerCharacter.agility
+        modifiedStats[.dexterity] = playerCharacter.dexterity
+        modifiedStats[.vitality] = playerCharacter.vitality
+        modifiedStats[.wisdom] = playerCharacter.wisdom
+        modifiedStats[.aura] = playerCharacter.aura
+        modifiedStats[.perception] = playerCharacter.perception
+        modifiedStats[.luck] = playerCharacter.luck
         
         columnNode = SKShapeNode(rectOf: CGSize(width: 110, height: 375))
         //columnNode.fillColor = UIColor.blue
         columnNode.lineWidth = 0
         
+        addLevelNode()
+        
+        addStatNodes()
+        
+    }
+    
+    func addLevelNode() {
         let levelNode = SKShapeNode(rectOf: subNodeSize)
         addLevelToNode(node: levelNode)
         levelNode.position = CGPoint(x: 0, y: 149)
         levelNode.zPosition = ZPositions.runeNode.rawValue
         levelNode.lineWidth = 0
+        
+        columnNode.addChild(levelNode)
+    }
+    
+    func addStatNodes() {
         
         let strengthNode = SKShapeNode(rectOf: subNodeSize)
         addStatToNode(stat: .strength, node: strengthNode)
@@ -156,44 +179,44 @@ class StatColumn {
         vitalityNode.position = CGPoint(x: 0, y: 63)
         vitalityNode.zPosition = ZPositions.runeNode.rawValue
         vitalityNode.lineWidth = 0
-
+        
         let agilityNode = SKShapeNode(rectOf: subNodeSize)
         addStatToNode(stat: .agility, node: agilityNode)
         agilityNode.position = CGPoint(x: 0, y: 26)
         agilityNode.zPosition = ZPositions.runeNode.rawValue
         agilityNode.lineWidth = 0
-
+        
         let dexterityNode = SKShapeNode(rectOf: subNodeSize)
         addStatToNode(stat: .dexterity, node: dexterityNode)
         dexterityNode.position = CGPoint(x: 0, y: -10)
         dexterityNode.zPosition = ZPositions.runeNode.rawValue
         dexterityNode.lineWidth = 0
-
+        
         let wisdomNode = SKShapeNode(rectOf: subNodeSize)
         addStatToNode(stat: .wisdom, node: wisdomNode)
         wisdomNode.position = CGPoint(x: 0, y: -48)
         wisdomNode.zPosition = ZPositions.runeNode.rawValue
         wisdomNode.lineWidth = 0
-
+        
         let auraNode = SKShapeNode(rectOf: subNodeSize)
         addStatToNode(stat: .aura, node: auraNode)
         auraNode.position = CGPoint(x: 0, y: -84)
         auraNode.zPosition = ZPositions.runeNode.rawValue
         auraNode.lineWidth = 0
-
+        
         let perceptionNode = SKShapeNode(rectOf: subNodeSize)
         addStatToNode(stat: .perception, node: perceptionNode)
         perceptionNode.position = CGPoint(x: 0, y: -121)
         perceptionNode.zPosition = ZPositions.runeNode.rawValue
         perceptionNode.lineWidth = 0
-
+        
         let luckNode = SKShapeNode(rectOf: subNodeSize)
         addStatToNode(stat: .luck, node: luckNode)
         luckNode.position = CGPoint(x: 0, y: -159)
         luckNode.zPosition = ZPositions.runeNode.rawValue
         luckNode.lineWidth = 0
-
-        columnNode.addChild(levelNode)
+        
+        
         columnNode.addChild(strengthNode)
         columnNode.addChild(vitalityNode)
         columnNode.addChild(agilityNode)
@@ -220,28 +243,28 @@ class StatColumn {
         switch stat {
         case .strength:
             statAbbr = "Strength"
-            statAmount = "\(playerCharacter.strength)"
+            statAmount = "\(modifiedStats[.strength]!)"
         case .vitality:
             statAbbr = "Vitality"
-            statAmount = "\(playerCharacter.vitality)"
+            statAmount = "\(modifiedStats[.vitality]!)"
         case .agility:
             statAbbr = "Agility"
-            statAmount = "\(playerCharacter.agility)"
+            statAmount = "\(modifiedStats[.agility]!)"
         case .dexterity:
             statAbbr = "Dexterity"
-            statAmount = "\(playerCharacter.dexterity)"
+            statAmount = "\(modifiedStats[.dexterity]!)"
         case .wisdom:
             statAbbr = "Wisdom"
-            statAmount = "\(playerCharacter.wisdom)"
+            statAmount = "\(modifiedStats[.wisdom]!)"
         case .aura:
             statAbbr = "Aura"
-            statAmount = "\(playerCharacter.aura)"
+            statAmount = "\(modifiedStats[.aura]!)"
         case .perception:
             statAbbr = "Perception"
-            statAmount = "\(playerCharacter.perception)"
+            statAmount = "\(modifiedStats[.perception]!)"
         case .luck:
             statAbbr = "Luck"
-            statAmount = "\(playerCharacter.luck)"
+            statAmount = "\(modifiedStats[.luck]!)"
         }
         
         let statNode = SKLabelNode(text: statAmount)
@@ -261,5 +284,60 @@ class StatColumn {
         
         node.addChild(statNode)
         node.addChild(abbreviationNode)
+    }
+    
+    func updateStatsWithInventory(inventory: Inventory) {
+        modifiedStats[.strength] = playerCharacter.strength
+        modifiedStats[.agility] = playerCharacter.agility
+        modifiedStats[.dexterity] = playerCharacter.dexterity
+        modifiedStats[.vitality] = playerCharacter.vitality
+        modifiedStats[.wisdom] = playerCharacter.wisdom
+        modifiedStats[.aura] = playerCharacter.aura
+        modifiedStats[.perception] = playerCharacter.perception
+        modifiedStats[.luck] = playerCharacter.luck
+        if inventory.weapons.count > 0 {
+            let stat = inventory.weapons[0].stat
+            let boost = inventory.weapons[0].statBoost
+            modifiedStats[stat] = modifiedStats[stat]! + boost
+        }
+        if inventory.helms.count > 0 {
+            let stat = inventory.helms[0].stat
+            let boost = inventory.helms[0].statBoost
+            modifiedStats[stat] = modifiedStats[stat]! + boost
+        }
+        if inventory.bodyArmor.count > 0 {
+            let stat = inventory.bodyArmor[0].stat
+            let boost = inventory.bodyArmor[0].statBoost
+            modifiedStats[stat] = modifiedStats[stat]! + boost
+        }
+        if inventory.bracers.count > 0 {
+            let stat = inventory.bracers[0].stat
+            let boost = inventory.bracers[0].statBoost
+            modifiedStats[stat] = modifiedStats[stat]! + boost
+        }
+        if inventory.shields.count > 0 {
+            let stat = inventory.shields[0].stat
+            let boost = inventory.shields[0].statBoost
+            modifiedStats[stat] = modifiedStats[stat]! + boost
+        }
+        if inventory.gloves.count > 0 {
+            let stat = inventory.gloves[0].stat
+            let boost = inventory.gloves[0].statBoost
+            modifiedStats[stat] = modifiedStats[stat]! + boost
+        }
+        if inventory.necklaces.count > 0 {
+            let stat = inventory.necklaces[0].stat
+            let boost = inventory.necklaces[0].statBoost
+            modifiedStats[stat] = modifiedStats[stat]! + boost
+        }
+        if inventory.boots.count > 0 {
+            let stat = inventory.boots[0].stat
+            let boost = inventory.boots[0].statBoost
+            modifiedStats[stat] = modifiedStats[stat]! + boost
+        }
+        
+        columnNode.removeAllChildren()
+        addLevelNode()
+        addStatNodes()
     }
 }

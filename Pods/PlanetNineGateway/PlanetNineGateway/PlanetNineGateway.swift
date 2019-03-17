@@ -13,6 +13,7 @@ public class PlanetNineGateway {
     var oneTime: OneTimeGateway?
     var bleOneTime: OneTimeBLEGateway?
     var ongoing: OngoingGateway?
+    let network = Network()
     
     public init() {
         
@@ -60,5 +61,9 @@ public class PlanetNineGateway {
             return
         }
         gateway.askForOngoingGatewayUsage()
+    }
+    
+    public func refreshUser(userId: Int, gatewayName: String, signature: String, callback: @escaping (Error?, Data?) -> Void) {
+        network.getUserById(userId: userId, gatewayName: gatewayName, signature: signature, callback: callback)
     }
 }

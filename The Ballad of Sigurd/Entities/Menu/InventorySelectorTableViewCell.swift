@@ -16,7 +16,7 @@ class InventorySelectorTableViewCell: UITableViewCell {
     var nineumTitle = UILabel(frame: CGRect(x: 65, y: 10, width: 164, height: 15))
     var statExplainer = UILabel(frame: CGRect(x: 65, y: 24, width: 164, height: 15))
     
-    func setNineumForCell(nineum: Nineum) {
+    func setInventoryItemForCell(inventoryItem: InventoryItem) {
         
         self.backgroundColor = UIColor.clear
         
@@ -34,6 +34,8 @@ class InventorySelectorTableViewCell: UITableViewCell {
         """
             )
         }
+        
+        let nineum = inventoryItem.nineum!
         
         switch nineum.rarity {
         case .common:
@@ -53,10 +55,14 @@ class InventorySelectorTableViewCell: UITableViewCell {
         }
         
         nineumImageView.frame = CGRect(x: 18, y: 4, width: 40, height: 40)
-        nineumTitle.text = "Test Title"
+        nineumTitle.text = inventoryItem.toString()
         nineumTitle.font = orbitronFont
         nineumTitle.textColor = UIColor.PlanetNineColors.secondary
-        statExplainer.text = "Strength + 2"
+        
+        let stat = inventoryItem.stat.rawValue
+        let boost = inventoryItem.statBoost
+        
+        statExplainer.text = "\(stat) +\(boost)"
         statExplainer.font = ubuntuFont
         statExplainer.textColor = UIColor.white
         

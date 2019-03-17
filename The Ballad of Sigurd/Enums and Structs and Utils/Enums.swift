@@ -70,4 +70,15 @@ enum ZPositions: CGFloat {
     case effect = 3.0
 }
 
+enum InventorySelections: String {
+    case weapon = "Weapon"
+    case helm = "Helm"
+    case bodyArmor = "Body Armor"
+    case bracers = "Bracer"
+    case shield = "Shield"
+    case gloves = "Gloves"
+    case necklace = "Necklace"
+    case boots = "Boots"
+}
+
 

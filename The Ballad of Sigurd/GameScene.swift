@@ -37,6 +37,15 @@ class GameScene: SKScene {
         }
         
         user = UserModel().getUser()
+        
+        if user != nil {
+            let signature = Crypto().signMessage(message: "The-Ballad-of-Sigurd-dev")
+            let _ = PlanetNineUser(userId: user!.userId, gatewayName: "The-Ballad-of-Sigurd-dev", signature: signature) { pnUser in
+                print(pnUser)
+                UserModel().saveUser(user: pnUser)
+                self.user = UserModel().getUser()
+            }
+        }
     }
     
     func addTitle() {

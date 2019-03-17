@@ -20,8 +20,14 @@ class InventorySelector: NSObject, UITableViewDelegate, UITableViewDataSource {
     let backingNode: SKShapeNode
     let tableView = UITableView()
     var nineum = [String]()
+    let inventory: Inventory
+    var scene: InventoryScene?
+    var currentSelection: InventorySelections = .weapon
     
-    init(character: AbstractPlayerCharacter) {
+    
+    init(character: AbstractPlayerCharacter, inventory: Inventory) {
+        
+        self.inventory = inventory
         
         playerCharacter = character
         backingNode = SKShapeNode(rectOf: backingNodeSize)
@@ -64,18 +70,79 @@ class InventorySelector: NSObject, UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        guard let user = UserModel().getUser() else {
+        guard let _ = UserModel().getUser() else {
             return 0
         }
-        print(user.nineum.count)
-        print(section)
-        return user.nineum.count
+        switch currentSelection {
+        case .weapon:
+            return inventory.weapons.count
+        case .helm:
+            return inventory.helms.count
+        case .bodyArmor:
+            return inventory.bodyArmor.count
+        case .bracers:
+            return inventory.bracers.count
+        case .shield:
+            return inventory.shields.count
+        case .gloves:
+            return inventory.gloves.count
+        case .necklace:
+            return inventory.necklaces.count
+        case .boots:
+            return inventory.boots.count
+        }
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        var cell = tableView.dequeueReusableCell(withIdentifier: "inventorySelectorTableViewCell") as! InventorySelectorTableViewCell
-        cell.setNineumForCell(nineum: NineumModel().getNineumFromHexString(hexString: nineum[indexPath[1]]))
+        let cell = tableView.dequeueReusableCell(withIdentifier: "inventorySelectorTableViewCell") as! InventorySelectorTableViewCell
+        switch currentSelection {
+        case .weapon:
+            cell.setInventoryItemForCell(inventoryItem: inventory.weapons[indexPath[1]])
+        case .helm:
+            cell.setInventoryItemForCell(inventoryItem: inventory.helms[indexPath[1]])
+        case .bodyArmor:
+            cell.setInventoryItemForCell(inventoryItem: inventory.bodyArmor[indexPath[1]])
+        case .bracers:
+            cell.setInventoryItemForCell(inventoryItem: inventory.bracers[indexPath[1]])
+        case .shield:
+            cell.setInventoryItemForCell(inventoryItem: inventory.shields[indexPath[1]])
+        case .gloves:
+            cell.setInventoryItemForCell(inventoryItem: inventory.gloves[indexPath[1]])
+        case .necklace:
+            cell.setInventoryItemForCell(inventoryItem: inventory.necklaces[indexPath[1]])
+        case .boots:
+            cell.setInventoryItemForCell(inventoryItem: inventory.boots[indexPath[1]])
+        }
         return cell
     }
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        guard let inventoryScene = scene else {
+            print("You need to set the scene for Inventory Selector")
+            return
+        }
+        switch currentSelection {
+        case .weapon:
+            inventoryScene.equipItem(inventoryItem: inventory.weapons[indexPath[1]])
+        case .helm:
+            inventoryScene.equipItem(inventoryItem: inventory.helms[indexPath[1]])
+        case .bodyArmor:
+            inventoryScene.equipItem(inventoryItem: inventory.bodyArmor[indexPath[1]])
+        case .bracers:
+            inventoryScene.equipItem(inventoryItem: inventory.bracers[indexPath[1]])
+        case .shield:
+            inventoryScene.equipItem(inventoryItem: inventory.shields[indexPath[1]])
+        case .gloves:
+            inventoryScene.equipItem(inventoryItem: inventory.gloves[indexPath[1]])
+        case .necklace:
+            inventoryScene.equipItem(inventoryItem: inventory.necklaces[indexPath[1]])
+        case .boots:
+            inventoryScene.equipItem(inventoryItem: inventory.boots[indexPath[1]])
+        }
+    }
+    
+    func updateInventorySelection(selection: InventorySelections) {
+        currentSelection = selection
+        tableView.reloadData()
+    }
 }

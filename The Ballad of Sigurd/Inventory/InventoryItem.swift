@@ -72,7 +72,9 @@ class InventoryItem: Comparable {
         
         let article = (rarity == .uncommon || rarity == .epic) ? "An" : "A"
         
-        return "\(article) \(rarity.rawValue) \(inventoryType.rawValue) of \(statModifier) \(stat.rawValue) and \(elementModifier) \(element.rawValue)"
+        //return "\(article) \(rarity.rawValue) \(inventoryType.rawValue) of \(statModifier) \(stat.rawValue) and \(elementModifier) \(element.rawValue)"
+        
+        return "\(statModifier) \(stat.rawValue)"
     }
     
     func getInventoryTypeForNineum(nineum: Nineum) -> InventoryType {

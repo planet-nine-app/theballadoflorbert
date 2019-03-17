@@ -86,6 +86,7 @@
 		CA75E204222DCF7300F2D5B8 /* BattleDialog.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA75E203222DCF7300F2D5B8 /* BattleDialog.swift */; };
 		CA75E206222DEE5600F2D5B8 /* StatusBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA75E205222DEE5600F2D5B8 /* StatusBar.swift */; };
 		CA75E209222F377B00F2D5B8 /* StatColumn.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA75E208222F377B00F2D5B8 /* StatColumn.swift */; };
+		CAB009B5223DA0DA00900F3E /* InventoryControls.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAB009B4223DA0DA00900F3E /* InventoryControls.swift */; };
 		CAB4EADD221F693B0066EDC4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAB4EADC221F693B0066EDC4 /* AppDelegate.swift */; };
 		CAB4EADF221F693B0066EDC4 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = CAB4EADE221F693B0066EDC4 /* GameScene.sks */; };
 		CAB4EAE1221F693B0066EDC4 /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = CAB4EAE0221F693B0066EDC4 /* Actions.sks */; };
@@ -204,6 +205,7 @@
 		CA75E203222DCF7300F2D5B8 /* BattleDialog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BattleDialog.swift; sourceTree = "<group>"; };
 		CA75E205222DEE5600F2D5B8 /* StatusBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusBar.swift; sourceTree = "<group>"; };
 		CA75E208222F377B00F2D5B8 /* StatColumn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatColumn.swift; sourceTree = "<group>"; };
+		CAB009B4223DA0DA00900F3E /* InventoryControls.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InventoryControls.swift; sourceTree = "<group>"; };
 		CAB4EAD9221F693B0066EDC4 /* The Ballad of Sigurd.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "The Ballad of Sigurd.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CAB4EADC221F693B0066EDC4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CAB4EADE221F693B0066EDC4 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
@@ -315,6 +317,7 @@
 		CA640C1622208C78004905E0 /* Controls */ = {
 			isa = PBXGroup;
 			children = (
+				CA640CAE2229E8D3004905E0 /* AbstractControls.swift */,
 				CA640C1D22208CE1004905E0 /* Overworld Controls */,
 				CA640C1C22208CD0004905E0 /* Menu Controls */,
 				CA640C1722208C89004905E0 /* Battle Controls */,
@@ -328,7 +331,6 @@
 				CA640C7B22260EFC004905E0 /* BattleControls.swift */,
 				CA640C8A22274F54004905E0 /* DrawingManager.swift */,
 				CA640CAC2229E6EE004905E0 /* TutorialControls.swift */,
-				CA640CAE2229E8D3004905E0 /* AbstractControls.swift */,
 			);
 			path = "Battle Controls";
 			sourceTree = "<group>";
@@ -336,6 +338,7 @@
 		CA640C1C22208CD0004905E0 /* Menu Controls */ = {
 			isa = PBXGroup;
 			children = (
+				CAB009B4223DA0DA00900F3E /* InventoryControls.swift */,
 			);
 			path = "Menu Controls";
 			sourceTree = "<group>";
@@ -886,6 +889,7 @@
 				CA640C9922287298004905E0 /* Healing.swift in Sources */,
 				CA640C2F222098AF004905E0 /* Helm.swift in Sources */,
 				CA640C5F222491E3004905E0 /* AbstractBattleEnemy.swift in Sources */,
+				CAB009B5223DA0DA00900F3E /* InventoryControls.swift in Sources */,
 				CA640C392220990B004905E0 /* Boots.swift in Sources */,
 				CA640C2722209682004905E0 /* AbstractPlayerCharacter.swift in Sources */,
 				CAB4EADD221F693B0066EDC4 /* AppDelegate.swift in Sources */,
