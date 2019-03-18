@@ -49,3 +49,9 @@ struct BattleMath {
         return modifyMagicalDamage(damage: 21, character: characterThatUsedRune)
     }
 }
+
+struct Party {
+    let sigurd = AbstractPlayerCharacter(named: .sigurd)
+    let bryn = AbstractPlayerCharacter(named: .bryn)
+    let anders = AbstractPlayerCharacter(named: .anders)
+}

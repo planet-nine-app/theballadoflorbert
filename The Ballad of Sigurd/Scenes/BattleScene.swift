@@ -85,6 +85,8 @@ class BattleScene: AbstractScene {
         case .bryn:
             battleCharacters[0].relinquishPriority()
             battleCharacters[1].tapped()
+        case .anders:
+            print("Anders case not handled yet")
         }
     }
     
@@ -209,6 +211,9 @@ class BattleScene: AbstractScene {
             characterToUseRuneOn = battleCharacters[0]
         case .bryn:
             characterToUseRuneOn = battleCharacters[1]
+        case .anders:
+            print("Anders case not handled yet")
+            characterToUseRuneOn = battleCharacters[2]
         }
         
         let characterThatUsedRune = battleCharacters.filter { character in

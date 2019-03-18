@@ -39,6 +39,8 @@ class AbstractPlayerCharacter {
     var feet: Boots = Boots()
     var neck: Necklace = Necklace()
     
+    var inventory = Inventory()
+    
     init(named: CharacterNames) {
         name = named
     }

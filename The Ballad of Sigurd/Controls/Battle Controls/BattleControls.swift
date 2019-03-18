@@ -28,7 +28,7 @@ class BattleControls: AbstractControls {
         case none
         case sigurd
         case bryn
-        case alvis
+        case anders
         case drawing
         case runeDrawn
     }
@@ -58,7 +58,7 @@ class BattleControls: AbstractControls {
             }
             if node.name == runeNodeName {
                 print("rune node name")
-                if controlState == .sigurd || controlState == .bryn || controlState == .alvis {
+                if controlState == .sigurd || controlState == .bryn || controlState == .anders {
                     controlState = .drawing
                     print("should set state to drawing")
                     drawingManager.startNewTouchArray(location: touch.location(in: scene))
@@ -111,7 +111,7 @@ class BattleControls: AbstractControls {
                     switch nameOfNode {
                     case CharacterNames.sigurd.rawValue:
                         print("Do Sigurd stuff")
-                        if controlState == .none || controlState == .bryn || controlState == .alvis {
+                        if controlState == .none || controlState == .bryn || controlState == .anders {
                             scene.characterTapped(character: .sigurd)
                             controlState = .sigurd
                         }
@@ -127,7 +127,7 @@ class BattleControls: AbstractControls {
                         }
                     case CharacterNames.bryn.rawValue:
                         print("Do Bryn stuff")
-                        if controlState == .none || controlState == .sigurd || controlState == .alvis {
+                        if controlState == .none || controlState == .sigurd || controlState == .anders {
                             scene.characterTapped(character: .bryn)
                             controlState = .bryn
                         }
@@ -201,8 +201,8 @@ class BattleControls: AbstractControls {
             print("Sigurd stuff")
         case .bryn:
             scene.enemyTapped(enemy: enemy)
-        case .alvis:
-            print("Alvis")
+        case .anders:
+            print("Anders")
         case .drawing:
             print("Drawing")
             let runeCheck = drawingManager.checkTouches()
@@ -224,6 +224,8 @@ class BattleControls: AbstractControls {
                 controlState = .sigurd
             case .bryn:
                 controlState = .bryn
+            case .anders:
+                controlState = .anders
             }
         case .none:
             print("Do nothing")

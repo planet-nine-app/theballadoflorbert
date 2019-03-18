@@ -117,6 +117,7 @@ class InventorySelector: NSObject, UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
         guard let inventoryScene = scene else {
             print("You need to set the scene for Inventory Selector")
             return

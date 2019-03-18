@@ -142,9 +142,13 @@ class GameScene: SKScene {
     }
     
     func play() {
+        
+        let party = Party()
+        
         //let inventoryScene = InventoryScene(size: CGSize(width: 1920, height: 1280))
         let inventoryScene = InventoryScene(size: CGSize(width: 667, height: 375))
         inventoryScene.scaleMode = .aspectFit
+        inventoryScene.party = party
         //inventoryScene.scaleMode = .aspectFill
         self.view?.presentScene(inventoryScene)
         if UserModel().getUser() == nil {

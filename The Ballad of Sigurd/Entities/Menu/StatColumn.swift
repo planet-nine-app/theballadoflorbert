@@ -336,6 +336,8 @@ class StatColumn {
             modifiedStats[stat] = modifiedStats[stat]! + boost
         }
         
+        playerCharacter.inventory = inventory
+        
         columnNode.removeAllChildren()
         addLevelNode()
         addStatNodes()
