@@ -14,6 +14,9 @@ class InventoryScene: AbstractScene {
     var statColumn: StatColumn = StatColumn(character: AbstractPlayerCharacter(named: .sigurd))
     var equipmentConsole: EquipmentConsole = EquipmentConsole(character: AbstractPlayerCharacter(named: .sigurd))
     var inventorySelector: InventorySelector = InventorySelector(character: AbstractPlayerCharacter(named: .sigurd), inventory: Inventory())
+    var blurringView = UIView()
+    var characterSelector = CharacterSelector()
+    var opacityNode = SKShapeNode()
     
     override func didMove(to view: SKView) {
         
@@ -52,11 +55,27 @@ class InventoryScene: AbstractScene {
         inventorySelector.backingNode.position = CGPoint(x: 552.5, y: 187.5)
         inventorySelector.scene = self
         
+        /*blurringView = UIView(frame: view.frame)
+        blurringView.backgroundColor = UIColor.PlanetNineColors.primary
+        blurringView.layer.opacity = 0.7*/
+        
         self.addChild(statColumn.columnNode)
         self.addChild(equipmentConsole.backingNode)
         self.addChild(inventorySelector.backingNode)
         
+        inventorySelector.tableView.layer.opacity = 0.7
         view.addSubview(inventorySelector.tableView)
+        
+        //view.addSubview(blurringView)
+        
+        opacityNode = SKShapeNode(rectOf: CGSize(width: 667, height: 375))
+        opacityNode.fillColor = UIColor.PlanetNineColors.primary
+        opacityNode.alpha = 0.7
+        opacityNode.position = CGPoint(x: 333.5, y: 187.5)
+        opacityNode.zPosition = 99.0
+        
+        self.addChild(opacityNode)
+        self.addChild(characterSelector.backingNode)
     }
     
     func updateSelectedEquipmentSlot(equipmentSlot: String) {
@@ -70,6 +89,12 @@ class InventoryScene: AbstractScene {
     func equipItem(inventoryItem: InventoryItem) {
         equipmentConsole.equipItem(inventoryItem: inventoryItem)
         statColumn.updateStatsWithInventory(inventory: equipmentConsole.equippedInventory)
+    }
+    
+    func characterSelected(character: CharacterNames) {
+        opacityNode.removeFromParent()
+        inventorySelector.tableView.layer.opacity = 1.0
+        characterSelector.backingNode.removeFromParent()
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {

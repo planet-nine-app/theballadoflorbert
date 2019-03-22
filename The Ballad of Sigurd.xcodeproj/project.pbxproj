@@ -87,6 +87,7 @@
 		CA75E206222DEE5600F2D5B8 /* StatusBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA75E205222DEE5600F2D5B8 /* StatusBar.swift */; };
 		CA75E209222F377B00F2D5B8 /* StatColumn.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA75E208222F377B00F2D5B8 /* StatColumn.swift */; };
 		CAB009B5223DA0DA00900F3E /* InventoryControls.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAB009B4223DA0DA00900F3E /* InventoryControls.swift */; };
+		CAB009B722458DCD00900F3E /* CharacterSelector.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAB009B622458DCD00900F3E /* CharacterSelector.swift */; };
 		CAB4EADD221F693B0066EDC4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAB4EADC221F693B0066EDC4 /* AppDelegate.swift */; };
 		CAB4EADF221F693B0066EDC4 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = CAB4EADE221F693B0066EDC4 /* GameScene.sks */; };
 		CAB4EAE1221F693B0066EDC4 /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = CAB4EAE0221F693B0066EDC4 /* Actions.sks */; };
@@ -206,6 +207,7 @@
 		CA75E205222DEE5600F2D5B8 /* StatusBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusBar.swift; sourceTree = "<group>"; };
 		CA75E208222F377B00F2D5B8 /* StatColumn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatColumn.swift; sourceTree = "<group>"; };
 		CAB009B4223DA0DA00900F3E /* InventoryControls.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InventoryControls.swift; sourceTree = "<group>"; };
+		CAB009B622458DCD00900F3E /* CharacterSelector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterSelector.swift; sourceTree = "<group>"; };
 		CAB4EAD9221F693B0066EDC4 /* The Ballad of Sigurd.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "The Ballad of Sigurd.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CAB4EADC221F693B0066EDC4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CAB4EADE221F693B0066EDC4 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
@@ -494,6 +496,7 @@
 				CA75E208222F377B00F2D5B8 /* StatColumn.swift */,
 				CA1E76C2223C28A200EA0FAF /* EquipmentConsole.swift */,
 				CA1E76C4223C3BE500EA0FAF /* InventorySelector.swift */,
+				CAB009B622458DCD00900F3E /* CharacterSelector.swift */,
 				CA1E76C7223C54FA00EA0FAF /* InventorySelectorTableViewCell.swift */,
 			);
 			path = Menu;
@@ -857,6 +860,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CAB009B722458DCD00900F3E /* CharacterSelector.swift in Sources */,
 				CA640C8B22274F54004905E0 /* DrawingManager.swift in Sources */,
 				CAB4EC23221F6AB90066EDC4 /* AbstractScene.swift in Sources */,
 				CA640C9122285986004905E0 /* AbstractBattleRune.swift in Sources */,

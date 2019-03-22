@@ -11,7 +11,13 @@ import SpriteKit
 
 class InventoryControls: AbstractControls {
     
+    enum ControlStates {
+        case characterSelection
+        case equipmentSelection
+    }
+    
     let scene: InventoryScene
+    var controlState: ControlStates = .characterSelection
     
     init(scene: InventoryScene) {
         self.scene = scene
@@ -34,34 +40,54 @@ class InventoryControls: AbstractControls {
                 print(node.position)
                 print(node.name)
                 if node.name != nil {
-                    print("Node name is \(node.name)")
-                    switch node.name {
-                    case "equipment0":
-                        scene.updateInventorySelection(selection: .weapon)
-                        scene.updateSelectedEquipmentSlot(equipmentSlot: node.name!)
-                    case "equipment1":
-                        scene.updateInventorySelection(selection: .helm)
-                        scene.updateSelectedEquipmentSlot(equipmentSlot: node.name!)
-                    case "equipment2":
-                        scene.updateInventorySelection(selection: .bodyArmor)
-                        scene.updateSelectedEquipmentSlot(equipmentSlot: node.name!)
-                    case "equipment3":
-                        scene.updateInventorySelection(selection: .bracers)
-                        scene.updateSelectedEquipmentSlot(equipmentSlot: node.name!)
-                    case "equipment4":
-                        scene.updateInventorySelection(selection: .shield)
-                        scene.updateSelectedEquipmentSlot(equipmentSlot: node.name!)
-                    case "equipment5":
-                        scene.updateInventorySelection(selection: .gloves)
-                        scene.updateSelectedEquipmentSlot(equipmentSlot: node.name!)
-                    case "equipment6":
-                        scene.updateInventorySelection(selection: .necklace)
-                        scene.updateSelectedEquipmentSlot(equipmentSlot: node.name!)
-                    case "equipment7":
-                        scene.updateInventorySelection(selection: .boots)
-                        scene.updateSelectedEquipmentSlot(equipmentSlot: node.name!)
-                    default:
-                        print("Found unhandled node name: \(node.name)")
+                    if controlState == .characterSelection {
+                        
+                        switch node.name {
+                        case "characterSigurd":
+                            print("Sigurd")
+                            scene.characterSelected(character: .sigurd)
+                            controlState = .equipmentSelection
+                        case "characterBryn":
+                            print("Bryn")
+                            scene.characterSelected(character: .bryn)
+                            controlState = .equipmentSelection
+                        case "characterAnders":
+                            print("Anders")
+                            scene.characterSelected(character: .anders)
+                            controlState = .equipmentSelection
+                        default:
+                            print("Default")
+                        }
+                    } else if controlState == .equipmentSelection {
+                        print("Node name is \(node.name)")
+                        switch node.name {
+                        case "equipment0":
+                            scene.updateInventorySelection(selection: .weapon)
+                            scene.updateSelectedEquipmentSlot(equipmentSlot: node.name!)
+                        case "equipment1":
+                            scene.updateInventorySelection(selection: .helm)
+                            scene.updateSelectedEquipmentSlot(equipmentSlot: node.name!)
+                        case "equipment2":
+                            scene.updateInventorySelection(selection: .bodyArmor)
+                            scene.updateSelectedEquipmentSlot(equipmentSlot: node.name!)
+                        case "equipment3":
+                            scene.updateInventorySelection(selection: .bracers)
+                            scene.updateSelectedEquipmentSlot(equipmentSlot: node.name!)
+                        case "equipment4":
+                            scene.updateInventorySelection(selection: .shield)
+                            scene.updateSelectedEquipmentSlot(equipmentSlot: node.name!)
+                        case "equipment5":
+                            scene.updateInventorySelection(selection: .gloves)
+                            scene.updateSelectedEquipmentSlot(equipmentSlot: node.name!)
+                        case "equipment6":
+                            scene.updateInventorySelection(selection: .necklace)
+                            scene.updateSelectedEquipmentSlot(equipmentSlot: node.name!)
+                        case "equipment7":
+                            scene.updateInventorySelection(selection: .boots)
+                            scene.updateSelectedEquipmentSlot(equipmentSlot: node.name!)
+                        default:
+                            print("Found unhandled node name: \(node.name)")
+                        }
                     }
                 }
             }
