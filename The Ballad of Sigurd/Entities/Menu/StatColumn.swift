@@ -286,6 +286,10 @@ class StatColumn {
         node.addChild(abbreviationNode)
     }
     
+    func updateStatsWithInventoryCharacterInventory() {
+        updateStatsWithInventory(inventory: playerCharacter.inventory)
+    }
+    
     func updateStatsWithInventory(inventory: Inventory) {
         modifiedStats[.strength] = playerCharacter.strength
         modifiedStats[.agility] = playerCharacter.agility

@@ -55,9 +55,25 @@ class EquipmentConsole {
         
         generateEquipmentNodes()
         
+        let autoEquipNode = SKShapeNode(path: CGPath(roundedRect: CGRect(x: 0, y: 0, width: 118, height: 22), cornerWidth: 11, cornerHeight: 11, transform: nil))
+        autoEquipNode.lineWidth = 2
+        autoEquipNode.strokeColor = UIColor.PlanetNineColors.primary
+        autoEquipNode.position = CGPoint(x: -80, y: -167.5)
+        autoEquipNode.zPosition = ZPositions.runeNode.rawValue
+        autoEquipNode.name = "autoEquip"
+        
+        let autoEquipLabel = SKLabelNode(text: "Auto Equip")
+        autoEquipLabel.fontName = "Orbitron-Bold"
+        autoEquipLabel.fontColor = UIColor.PlanetNineColors.primary
+        autoEquipLabel.fontSize = 12
+        autoEquipLabel.position = CGPoint(x: 59, y: 8)
+        
+        autoEquipNode.addChild(autoEquipLabel)
+        
         backingNode.addChild(powerNode)
         backingNode.addChild(equipNode)
         backingNode.addChild(useNode)
+        backingNode.addChild(autoEquipNode)
         
         for (equipmentKey, equipmentNode) in equipmentNodes {
             print("Adding \(equipmentKey)")
@@ -282,6 +298,32 @@ class EquipmentConsole {
         equippedInventory = character.inventory
         print(character.name.rawValue)
         print(character.inventory)
+        updateEquipmentSlots()
+    }
+    
+    func autoEquip() {
+        print("Here is where you auto equip")
+        guard let user = UserModel().getUser() else {
+            print("Could not find a user")
+            return
+        }
+        print("About to get inventory")
+        print(user.nineum.count)
+        let inventoryManager = InventoryManager()
+        print("Initialized inventoryManager")
+        let inventory = inventoryManager.getInventoryForNineumHexStrings(nineumHexStrings: user.nineum)
+        var autoEquippedInventory = Inventory()
+        autoEquippedInventory.weapons.append(inventory.weapons[0])
+        autoEquippedInventory.helms.append(inventory.helms[0])
+        autoEquippedInventory.bodyArmor.append(inventory.bodyArmor[0])
+        autoEquippedInventory.shields.append(inventory.shields[0])
+        autoEquippedInventory.bracers.append(inventory.bracers[0])
+        autoEquippedInventory.necklaces.append(inventory.necklaces[0])
+        autoEquippedInventory.gloves.append(inventory.gloves[0])
+        autoEquippedInventory.boots.append(inventory.boots[0])
+        
+        equippedInventory = autoEquippedInventory
+        playerCharacter.inventory = autoEquippedInventory
         updateEquipmentSlots()
     }
 }

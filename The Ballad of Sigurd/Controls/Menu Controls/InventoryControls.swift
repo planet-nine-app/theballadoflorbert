@@ -63,10 +63,12 @@ class InventoryControls: AbstractControls {
                         print("Node name is \(node.name)")
                         switch node.name {
                         case "exit":
-                            print("Here is where you exit")
+                            scene.exit()
                         case "characterSelected":
                             scene.selectedCharacterTapped()
                             controlState = .characterSelection
+                        case "autoEquip":
+                            scene.autoEquipTapped()
                         case "equipment0":
                             scene.updateInventorySelection(selection: .weapon)
                             scene.updateSelectedEquipmentSlot(equipmentSlot: node.name!)

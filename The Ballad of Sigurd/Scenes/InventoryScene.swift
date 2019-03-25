@@ -101,6 +101,11 @@ class InventoryScene: AbstractScene {
         statColumn.updateStatsWithInventory(inventory: equipmentConsole.equippedInventory)
     }
     
+    func autoEquipTapped() {
+        equipmentConsole.autoEquip()
+        statColumn.updateStatsWithInventoryCharacterInventory()
+    }
+    
     func characterSelected(character: CharacterNames) {
         opacityNode.removeFromParent()
         inventorySelector.tableView.layer.opacity = 1.0
@@ -135,6 +140,13 @@ class InventoryScene: AbstractScene {
         inventorySelector.tableView.layer.opacity = 0.7
         characterSelected.backingNode.alpha = 0.7
         self.addChild(characterSelector.backingNode)
+    }
+    
+    func exit() {
+        inventorySelector.tableView.removeFromSuperview()
+        let battleScene = BattleScene(size: CGSize(width: 1920, height: 1280))
+        battleScene.scaleMode = .fill
+        self.view?.presentScene(battleScene)
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
