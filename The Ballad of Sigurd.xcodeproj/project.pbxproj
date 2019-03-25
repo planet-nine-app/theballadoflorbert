@@ -88,6 +88,8 @@
 		CA75E209222F377B00F2D5B8 /* StatColumn.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA75E208222F377B00F2D5B8 /* StatColumn.swift */; };
 		CAB009B5223DA0DA00900F3E /* InventoryControls.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAB009B4223DA0DA00900F3E /* InventoryControls.swift */; };
 		CAB009B722458DCD00900F3E /* CharacterSelector.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAB009B622458DCD00900F3E /* CharacterSelector.swift */; };
+		CAB009B9224964B700900F3E /* CharacterSelected.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAB009B8224964B700900F3E /* CharacterSelected.swift */; };
+		CAB009BB224964C500900F3E /* ExitButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAB009BA224964C500900F3E /* ExitButton.swift */; };
 		CAB4EADD221F693B0066EDC4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAB4EADC221F693B0066EDC4 /* AppDelegate.swift */; };
 		CAB4EADF221F693B0066EDC4 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = CAB4EADE221F693B0066EDC4 /* GameScene.sks */; };
 		CAB4EAE1221F693B0066EDC4 /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = CAB4EAE0221F693B0066EDC4 /* Actions.sks */; };
@@ -208,6 +210,8 @@
 		CA75E208222F377B00F2D5B8 /* StatColumn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatColumn.swift; sourceTree = "<group>"; };
 		CAB009B4223DA0DA00900F3E /* InventoryControls.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InventoryControls.swift; sourceTree = "<group>"; };
 		CAB009B622458DCD00900F3E /* CharacterSelector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterSelector.swift; sourceTree = "<group>"; };
+		CAB009B8224964B700900F3E /* CharacterSelected.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterSelected.swift; sourceTree = "<group>"; };
+		CAB009BA224964C500900F3E /* ExitButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExitButton.swift; sourceTree = "<group>"; };
 		CAB4EAD9221F693B0066EDC4 /* The Ballad of Sigurd.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "The Ballad of Sigurd.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CAB4EADC221F693B0066EDC4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CAB4EADE221F693B0066EDC4 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
@@ -498,6 +502,8 @@
 				CA1E76C4223C3BE500EA0FAF /* InventorySelector.swift */,
 				CAB009B622458DCD00900F3E /* CharacterSelector.swift */,
 				CA1E76C7223C54FA00EA0FAF /* InventorySelectorTableViewCell.swift */,
+				CAB009B8224964B700900F3E /* CharacterSelected.swift */,
+				CAB009BA224964C500900F3E /* ExitButton.swift */,
 			);
 			path = Menu;
 			sourceTree = "<group>";
@@ -892,8 +898,10 @@
 				CA640C3B22209925004905E0 /* Gloves.swift in Sources */,
 				CA640C9922287298004905E0 /* Healing.swift in Sources */,
 				CA640C2F222098AF004905E0 /* Helm.swift in Sources */,
+				CAB009B9224964B700900F3E /* CharacterSelected.swift in Sources */,
 				CA640C5F222491E3004905E0 /* AbstractBattleEnemy.swift in Sources */,
 				CAB009B5223DA0DA00900F3E /* InventoryControls.swift in Sources */,
+				CAB009BB224964C500900F3E /* ExitButton.swift in Sources */,
 				CA640C392220990B004905E0 /* Boots.swift in Sources */,
 				CA640C2722209682004905E0 /* AbstractPlayerCharacter.swift in Sources */,
 				CAB4EADD221F693B0066EDC4 /* AppDelegate.swift in Sources */,

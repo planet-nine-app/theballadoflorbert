@@ -33,15 +33,16 @@ class InventoryControls: AbstractControls {
     
     override func touchesEndedHandler(_ touches: Set<UITouch>) {
         print("Touches ended")
+        let beginningControlState = controlState
         for touch in touches {
             let nodesAtPoint = scene.nodes(at: touch.location(in: scene))
             print(nodesAtPoint.count)
             for node in nodesAtPoint {
                 print(node.position)
                 print(node.name)
+                
                 if node.name != nil {
-                    if controlState == .characterSelection {
-                        
+                    if beginningControlState == .characterSelection {
                         switch node.name {
                         case "characterSigurd":
                             print("Sigurd")
@@ -58,9 +59,14 @@ class InventoryControls: AbstractControls {
                         default:
                             print("Default")
                         }
-                    } else if controlState == .equipmentSelection {
+                    } else if beginningControlState == .equipmentSelection {
                         print("Node name is \(node.name)")
                         switch node.name {
+                        case "exit":
+                            print("Here is where you exit")
+                        case "characterSelected":
+                            scene.selectedCharacterTapped()
+                            controlState = .characterSelection
                         case "equipment0":
                             scene.updateInventorySelection(selection: .weapon)
                             scene.updateSelectedEquipmentSlot(equipmentSlot: node.name!)

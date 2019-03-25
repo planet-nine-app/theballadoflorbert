@@ -128,7 +128,7 @@ import SpriteKit
 }*/
 
 class StatColumn {
-    let playerCharacter: AbstractPlayerCharacter
+    var playerCharacter: AbstractPlayerCharacter
     let subNodeSize = CGSize(width: 110, height: 37)
     let columnNode: SKShapeNode
     var modifiedStats: [Stats: Int]
@@ -150,7 +150,7 @@ class StatColumn {
         //columnNode.fillColor = UIColor.blue
         columnNode.lineWidth = 0
         
-        addLevelNode()
+        //addLevelNode()
         
         addStatNodes()
         
@@ -339,7 +339,12 @@ class StatColumn {
         playerCharacter.inventory = inventory
         
         columnNode.removeAllChildren()
-        addLevelNode()
+        //addLevelNode()
         addStatNodes()
+    }
+    
+    func updateCharacter(character: AbstractPlayerCharacter) {
+        playerCharacter = character
+        updateStatsWithInventory(inventory: character.inventory)
     }
 }

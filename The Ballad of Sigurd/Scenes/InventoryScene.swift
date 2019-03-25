@@ -13,7 +13,9 @@ class InventoryScene: AbstractScene {
     
     var statColumn: StatColumn = StatColumn(character: AbstractPlayerCharacter(named: .sigurd))
     var equipmentConsole: EquipmentConsole = EquipmentConsole(character: AbstractPlayerCharacter(named: .sigurd))
+    var characterSelected: CharacterSelected = CharacterSelected(character: AbstractPlayerCharacter(named: .sigurd))
     var inventorySelector: InventorySelector = InventorySelector(character: AbstractPlayerCharacter(named: .sigurd), inventory: Inventory())
+    var exitButton: ExitButton = ExitButton()
     var blurringView = UIView()
     var characterSelector = CharacterSelector()
     var opacityNode = SKShapeNode()
@@ -38,8 +40,13 @@ class InventoryScene: AbstractScene {
         //statColumn.columnNode.position = CGPoint(x: 158, y: 640)
         statColumn.columnNode.position = CGPoint(x: 55, y: 187.5)
         
+        exitButton.exitNode.position = CGPoint(x: 32, y: 345)
+        
         equipmentConsole = EquipmentConsole(character: sigurd)
+        equipmentConsole.party = party!
         equipmentConsole.backingNode.position = CGPoint(x: 273.5, y: 187.5)
+        
+        characterSelected.backingNode.position = CGPoint(x: 80, y: 330)
         
         guard let user = UserModel().getUser() else {
             print("Could not find a user")
@@ -60,10 +67,13 @@ class InventoryScene: AbstractScene {
         blurringView.layer.opacity = 0.7*/
         
         self.addChild(statColumn.columnNode)
+        self.addChild(exitButton.exitNode)
         self.addChild(equipmentConsole.backingNode)
+        self.addChild(characterSelected.backingNode)
         self.addChild(inventorySelector.backingNode)
         
         inventorySelector.tableView.layer.opacity = 0.7
+        characterSelected.backingNode.alpha = 0.7
         view.addSubview(inventorySelector.tableView)
         
         //view.addSubview(blurringView)
@@ -94,7 +104,37 @@ class InventoryScene: AbstractScene {
     func characterSelected(character: CharacterNames) {
         opacityNode.removeFromParent()
         inventorySelector.tableView.layer.opacity = 1.0
+        characterSelected.backingNode.alpha = 1.0
         characterSelector.backingNode.removeFromParent()
+        
+        var playerCharacter: AbstractPlayerCharacter
+        switch character {
+        case .sigurd:
+            playerCharacter = party!.sigurd
+        case .bryn:
+            playerCharacter = party!.bryn
+        case .anders:
+            playerCharacter = party!.anders
+        }
+        
+        print("sigurd inventory: \(party!.sigurd.inventory)")
+        print("bryn inventory: \(party!.bryn.inventory)")
+        print("anders inventory: \(party!.anders.inventory)")
+        
+        characterSelected.updateCharacter(character: playerCharacter)
+        statColumn.updateCharacter(character: playerCharacter)
+        equipmentConsole.updateCharacter(character: playerCharacter)
+    }
+    
+    func selectedCharacterTapped() {
+        
+        print("tapped sigurd inventory: \(party!.sigurd.inventory)")
+        print("tapped bryn inventory: \(party!.bryn.inventory)")
+        print("tapped anders inventory: \(party!.anders.inventory)")
+        self.addChild(opacityNode)
+        inventorySelector.tableView.layer.opacity = 0.7
+        characterSelected.backingNode.alpha = 0.7
+        self.addChild(characterSelector.backingNode)
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {

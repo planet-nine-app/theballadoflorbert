@@ -13,4 +13,5 @@ class AbstractScene: SKScene {
     var controls: AbstractControls?
     var party: Party?
     
+    
 }

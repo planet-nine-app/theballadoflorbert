@@ -10,7 +10,7 @@ import Foundation
 import SpriteKit
 
 class EquipmentConsole {
-    let playerCharacter: AbstractPlayerCharacter
+    var playerCharacter: AbstractPlayerCharacter
     let equipmentNodeSize = CGSize(width: 60, height: 90)
     let nineumNodeRadius = 30.0
     let backingNodeSize = CGSize(width: 327, height: 375)
@@ -18,6 +18,7 @@ class EquipmentConsole {
     var equippedInventory = Inventory()
     var currentSelection = "equipment0"
     var equipmentNodes = [String: SKShapeNode]()
+    var party: Party?
     
     init(character: AbstractPlayerCharacter) {
         playerCharacter = character
@@ -33,7 +34,7 @@ class EquipmentConsole {
         powerNode.fontName = "Orbitron-Bold"
         powerNode.fontSize = 17
         powerNode.fontColor = UIColor.PlanetNineColors.primary
-        powerNode.position = CGPoint(x: 0, y: 149)
+        powerNode.position = CGPoint(x: 80, y: 149)
         powerNode.zPosition = ZPositions.runeNode.rawValue
         
         let equipNode = SKLabelNode(text: "Equip")
@@ -78,35 +79,39 @@ class EquipmentConsole {
             equipmentNode.zPosition = ZPositions.runeNode.rawValue
             equipmentNode.name = "equipment\(i)"
             
-            let nineumNode = SKShapeNode(circleOfRadius: CGFloat(nineumNodeRadius))
-            nineumNode.fillColor = UIColor.PlanetNineColors.blankInventory
-            nineumNode.lineWidth = 0
-            nineumNode.position = CGPoint(x: 0, y: 30)
-            nineumNode.zPosition = ZPositions.rune.rawValue
-            
-            let firstLine = SKLabelNode(text: "Add from")
-            firstLine.fontName = "Ubuntu-Medium"
-            firstLine.fontSize = 8
-            firstLine.fontColor = UIColor.PlanetNineColors.blankInventory
-            firstLine.position = CGPoint(x: 0, y: -12)
-            firstLine.zPosition = ZPositions.rune.rawValue
-            
-            let secondLine = SKLabelNode(text: "Inventory")
-            secondLine.fontName = "Ubuntu-Medium"
-            secondLine.fontSize = 8
-            secondLine.fontColor = UIColor.PlanetNineColors.blankInventory
-            secondLine.position = CGPoint(x: 0, y: -26)
-            secondLine.zPosition = ZPositions.rune.rawValue
-            
-            equipmentNode.addChild(nineumNode)
-            equipmentNode.addChild(firstLine)
-            equipmentNode.addChild(secondLine)
+            addEmptyEquipmentNodesToEquipmentNode(equipmentNode: equipmentNode)
             
             print(equipmentNode.name!)
             equipmentNodes[equipmentNode.name!] = equipmentNode
             
             i = i + 1
         }
+    }
+    
+    func addEmptyEquipmentNodesToEquipmentNode(equipmentNode: SKShapeNode) {
+        let nineumNode = SKShapeNode(circleOfRadius: CGFloat(nineumNodeRadius))
+        nineumNode.fillColor = UIColor.PlanetNineColors.blankInventory
+        nineumNode.lineWidth = 0
+        nineumNode.position = CGPoint(x: 0, y: 30)
+        nineumNode.zPosition = ZPositions.rune.rawValue
+        
+        let firstLine = SKLabelNode(text: "Add from")
+        firstLine.fontName = "Ubuntu-Medium"
+        firstLine.fontSize = 8
+        firstLine.fontColor = UIColor.PlanetNineColors.blankInventory
+        firstLine.position = CGPoint(x: 0, y: -12)
+        firstLine.zPosition = ZPositions.rune.rawValue
+        
+        let secondLine = SKLabelNode(text: "Inventory")
+        secondLine.fontName = "Ubuntu-Medium"
+        secondLine.fontSize = 8
+        secondLine.fontColor = UIColor.PlanetNineColors.blankInventory
+        secondLine.position = CGPoint(x: 0, y: -26)
+        secondLine.zPosition = ZPositions.rune.rawValue
+        
+        equipmentNode.addChild(nineumNode)
+        equipmentNode.addChild(firstLine)
+        equipmentNode.addChild(secondLine)
     }
     
     func updateSelectedEquipementSlot(equipmentSlot: String) {
@@ -119,6 +124,7 @@ class EquipmentConsole {
     }
     
     func equipItem(inventoryItem: InventoryItem) {
+        print(playerCharacter.name.rawValue)
         switch inventoryItem.inventoryType {
         case .weapon:
             equippedInventory.weapons = []
@@ -146,6 +152,16 @@ class EquipmentConsole {
             equippedInventory.boots = []
             equippedInventory.boots.append(inventoryItem as! Boots)
         }
+        
+        print("before")
+        print(party!.sigurd.inventory)
+        print(party!.bryn.inventory)
+        
+        playerCharacter.inventory = equippedInventory
+        
+        print("after")
+        print(party!.sigurd.inventory)
+        print(party!.bryn.inventory)
         
         updateEquipmentSlots()
     }
@@ -202,34 +218,70 @@ class EquipmentConsole {
         if equippedInventory.weapons.count > 0 {
            equipmentNodes["equipment0"]?.removeAllChildren()
             addEquipmentToEquipmentNode(equipmentNode: equipmentNodes["equipment0"]!, equipment: equippedInventory.weapons[0])
+        } else {
+            equipmentNodes["equipment0"]?.removeAllChildren()
+            addEmptyEquipmentNodesToEquipmentNode(equipmentNode: equipmentNodes["equipment0"]!)
         }
         if equippedInventory.helms.count > 0 {
             equipmentNodes["equipment1"]?.removeAllChildren()
             addEquipmentToEquipmentNode(equipmentNode: equipmentNodes["equipment1"]!, equipment: equippedInventory.helms[0])
+        } else {
+            equipmentNodes["equipment1"]?.removeAllChildren()
+            addEmptyEquipmentNodesToEquipmentNode(equipmentNode: equipmentNodes["equipment1"]!)
         }
         if equippedInventory.bodyArmor.count > 0 {
             equipmentNodes["equipment2"]?.removeAllChildren()
             addEquipmentToEquipmentNode(equipmentNode: equipmentNodes["equipment2"]!, equipment: equippedInventory.bodyArmor[0])
+        } else {
+            equipmentNodes["equipment2"]?.removeAllChildren()
+            addEmptyEquipmentNodesToEquipmentNode(equipmentNode: equipmentNodes["equipment2"]!)
         }
         if equippedInventory.bracers.count > 0 {
             equipmentNodes["equipment3"]?.removeAllChildren()
             addEquipmentToEquipmentNode(equipmentNode: equipmentNodes["equipment3"]!, equipment: equippedInventory.bracers[0])
+        } else {
+            equipmentNodes["equipment3"]?.removeAllChildren()
+            addEmptyEquipmentNodesToEquipmentNode(equipmentNode: equipmentNodes["equipment3"]!)
         }
         if equippedInventory.shields.count > 0 {
             equipmentNodes["equipment4"]?.removeAllChildren()
             addEquipmentToEquipmentNode(equipmentNode: equipmentNodes["equipment4"]!, equipment: equippedInventory.shields[0])
+        } else {
+            equipmentNodes["equipment4"]?.removeAllChildren()
+            addEmptyEquipmentNodesToEquipmentNode(equipmentNode: equipmentNodes["equipment4"]!)
         }
         if equippedInventory.gloves.count > 0 {
             equipmentNodes["equipment5"]?.removeAllChildren()
             addEquipmentToEquipmentNode(equipmentNode: equipmentNodes["equipment5"]!, equipment: equippedInventory.gloves[0])
+        } else {
+            equipmentNodes["equipment5"]?.removeAllChildren()
+            addEmptyEquipmentNodesToEquipmentNode(equipmentNode: equipmentNodes["equipment5"]!)
         }
         if equippedInventory.necklaces.count > 0 {
             equipmentNodes["equipment6"]?.removeAllChildren()
             addEquipmentToEquipmentNode(equipmentNode: equipmentNodes["equipment6"]!, equipment: equippedInventory.necklaces[0])
+        } else {
+            equipmentNodes["equipment6"]?.removeAllChildren()
+            addEmptyEquipmentNodesToEquipmentNode(equipmentNode: equipmentNodes["equipment6"]!)
         }
         if equippedInventory.boots.count > 0 {
             equipmentNodes["equipment7"]?.removeAllChildren()
             addEquipmentToEquipmentNode(equipmentNode: equipmentNodes["equipment7"]!, equipment: equippedInventory.boots[0])
+        } else {
+            equipmentNodes["equipment7"]?.removeAllChildren()
+            addEmptyEquipmentNodesToEquipmentNode(equipmentNode: equipmentNodes["equipment7"]!)
         }
+        
+        print("after update equipment slots")
+        print(party!.sigurd.inventory)
+        print(party!.bryn.inventory)
+    }
+    
+    func updateCharacter(character: AbstractPlayerCharacter) {
+        playerCharacter = character
+        equippedInventory = character.inventory
+        print(character.name.rawValue)
+        print(character.inventory)
+        updateEquipmentSlots()
     }
 }
