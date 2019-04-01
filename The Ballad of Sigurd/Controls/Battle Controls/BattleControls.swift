@@ -141,6 +141,22 @@ class BattleControls: AbstractControls {
                             scene.usedRuneOnCharacter(character: .bryn)
                             scene.removeRuneFromScene()
                         }
+                    case CharacterNames.anders.rawValue:
+                        print("Do Anders stuff")
+                        if controlState == .none || controlState == .sigurd || controlState == .bryn {
+                            scene.characterTapped(character: .anders)
+                            controlState = .anders
+                        }
+                        if controlState == .drawing {
+                            drawingManager.reset()
+                            scene.removeEmitters()
+                            scene.characterTapped(character: .anders)
+                            controlState = .anders
+                        }
+                        if controlState == .runeDrawn {
+                            scene.usedRuneOnCharacter(character: .anders)
+                            scene.removeRuneFromScene()
+                        }
                     case EnemyNames.enemy1.rawValue, EnemyNames.enemy2.rawValue, EnemyNames.enemy3.rawValue, EnemyNames.enemy4.rawValue:
                         disambiguateTouchesEnded(nameOfNode: nameOfNode)
                     case runeNodeName:
@@ -203,6 +219,7 @@ class BattleControls: AbstractControls {
             scene.enemyTapped(enemy: enemy)
         case .anders:
             print("Anders")
+            scene.enemyZapped(enemy: enemy)
         case .drawing:
             print("Drawing")
             let runeCheck = drawingManager.checkTouches()

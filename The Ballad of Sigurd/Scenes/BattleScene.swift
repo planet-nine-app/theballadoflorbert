@@ -21,11 +21,15 @@ class BattleScene: AbstractScene {
     override func didMove(to view: SKView) {
         super.didMove(to: view)
         
-        let backgroundNode = SKSpriteNode(imageNamed: "grassy_lake.png")
+        let backgroundNode = SKSpriteNode(imageNamed: "Background@3x.png")
         backgroundNode.position = CGPoint(x: self.size.width / 2, y: self.size.height / 2)
         backgroundNode.zPosition = ZPositions.background.rawValue
         backgroundNode.name = "Background"
         
+        guard party != nil else {
+            print("No Party set cannot perform other operations")
+            return
+        }
         
         self.addChild(backgroundNode)
         
@@ -45,15 +49,19 @@ class BattleScene: AbstractScene {
     }
     
     func addCharacters() {
-        let sigurd = AbstractPlayerCharacter(named: .sigurd)
-        let bryn = AbstractPlayerCharacter(named: .bryn)
-        let battleSigurd = BattleSigurd(character: sigurd)
-        let battleBryn = BattleBryn(character: bryn)
+        let sigurd = party?.sigurd
+        let bryn = party?.bryn
+        let anders = party?.anders
+        let battleSigurd = BattleSigurd(character: sigurd!)
+        let battleBryn = BattleBryn(character: bryn!)
+        let battleAnders = BattleAnders(character: anders!)
         self.addChild(battleSigurd.spriteNode)
         self.addChild(battleBryn.spriteNode)
+        self.addChild(battleAnders.spriteNode)
         
         battleCharacters.append(battleSigurd)
         battleCharacters.append(battleBryn)
+        battleCharacters.append(battleAnders)
     }
     
     func addEnemies() {
@@ -81,12 +89,16 @@ class BattleScene: AbstractScene {
         switch character {
         case .sigurd:
             battleCharacters[1].relinquishPriority()
+            battleCharacters[2].relinquishPriority()
             battleCharacters[0].tapped()
         case .bryn:
             battleCharacters[0].relinquishPriority()
+            battleCharacters[2].relinquishPriority()
             battleCharacters[1].tapped()
         case .anders:
-            print("Anders case not handled yet")
+            battleCharacters[0].relinquishPriority()
+            battleCharacters[1].relinquishPriority()
+            battleCharacters[2].tapped()
         }
     }
     
@@ -94,8 +106,11 @@ class BattleScene: AbstractScene {
         print("Enemy tapped")
         switch enemy {
         case .enemy1:
-            battleEnemies[0].damage(battleMath.calculateBrynDamageToEnemy(enemy: battleEnemies[0], bryn: battleCharacters[1] as! BattleBryn), scene: self)
-            
+            print(battleCharacters[1].characterNode.position)
+            let brynAttack = BrynAttack(at: battleCharacters[1].spriteNode.position, to: battleEnemies[0].spriteNode.position)
+            brynAttack.addToSceneAndRunWithCompletion(scene: self) {
+                self.battleEnemies[0].damage(self.battleMath.calculateBrynDamageToEnemy(enemy: self.battleEnemies[0], bryn: self.battleCharacters[1] as! BattleBryn), scene: self)
+            }
         case .enemy2:
             battleEnemies[1].damage(battleMath.calculateBrynDamageToEnemy(enemy: battleEnemies[1], bryn: battleCharacters[1] as! BattleBryn), scene: self)
         case .enemy3:
@@ -111,7 +126,11 @@ class BattleScene: AbstractScene {
         print("Enemy tapped")
         switch enemy {
         case .enemy1:
-            battleEnemies[0].damage(battleMath.calculateSigurdDamageToEnemy(enemy: battleEnemies[0], sigurd: battleCharacters[0] as! BattleSigurd), scene: self)
+            let sigurdAttack = SigurdAttack(at: battleCharacters[0].spriteNode.position, to: battleEnemies[0].spriteNode.position)
+            sigurdAttack.addToSceneAndRunWithCompletion(scene: self) {
+                self.battleEnemies[0].damage(self.battleMath.calculateSigurdDamageToEnemy(enemy: self.battleEnemies[0], sigurd: self.battleCharacters[0] as! BattleSigurd), scene: self)
+            }
+            
             
         case .enemy2:
             battleEnemies[1].damage(battleMath.calculateSigurdDamageToEnemy(enemy: battleEnemies[1], sigurd: battleCharacters[0] as! BattleSigurd), scene: self)
@@ -121,6 +140,24 @@ class BattleScene: AbstractScene {
             battleEnemies[3].damage(battleMath.calculateSigurdDamageToEnemy(enemy: battleEnemies[3], sigurd: battleCharacters[0] as! BattleSigurd), scene: self)
         }
         battleCharacters[0].playerCharacter.currentStamina = battleCharacters[0].playerCharacter.currentStamina - 20
+    }
+    
+    func enemyZapped(enemy: EnemyNames) {
+        switch enemy {
+        case .enemy1:
+            let andersAttack = AndersAttack(at: battleCharacters[2].spriteNode.position, to: battleEnemies[0].spriteNode.position)
+            andersAttack.addToSceneAndRunWithCompletion(scene: self) {
+                self.battleEnemies[0].damage(self.battleMath.calculateAndersDamageToEnemy(enemy: self.battleEnemies[0], anders: self.battleCharacters[2] as! BattleAnders), scene: self)
+            }
+        case .enemy2:
+            print("Handle more enemies")
+        case .enemy3:
+            print("Handle more enemies")
+        case .enemy4:
+            print("Handle more enemies")
+            
+        }
+        battleCharacters[2].playerCharacter.currentStamina = battleCharacters[2].playerCharacter.currentStamina - 25
     }
     
     func addRuneDrawingEmitterNode(_ location: CGPoint) {

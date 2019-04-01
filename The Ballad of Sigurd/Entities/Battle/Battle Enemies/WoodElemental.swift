@@ -13,7 +13,7 @@ class WoodElemental: AbstractBattleEnemy {
     
     override init() {
         super.init()
-        self.spriteNode = SKSpriteNode(imageNamed: "wood_elemental_4x_game.png")
+        self.spriteNode = SKSpriteNode(imageNamed: "AlienBoss_Rest@3x.png")
         spriteNode.zPosition = ZPositions.entity.rawValue
     }
 }

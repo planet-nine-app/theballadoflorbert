@@ -11,8 +11,8 @@ import SpriteKit
 
 class BattleSigurd: AbstractBattleCharacter {
     
-    let readyTexture = SKTexture(imageNamed: "Baal_ready_pose_4x.png")
-    let actionTexture = SKTexture(imageNamed: "Baal_action_pose_10x.png")
+    let readyTexture = SKTexture(imageNamed: "Alien1_Rest@3x.png")
+    let actionTexture = SKTexture(imageNamed: "Alien1_Fight@3x.png")
     
     override func tapped() {
         hasPriority = true

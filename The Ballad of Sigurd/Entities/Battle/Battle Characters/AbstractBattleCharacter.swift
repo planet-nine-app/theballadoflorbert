@@ -33,17 +33,16 @@ class AbstractBattleCharacter {
         magicRegenerationRate = playerCharacter.maxMP / 3
         switch character.name {
         case .sigurd:
-            characterNode = SKSpriteNode(imageNamed: "Baal_ready_pose_4x.png")
+            characterNode = SKSpriteNode(imageNamed: "Alien1_Rest@3x.png")
             spriteNode = SKShapeNode(rectOf: CGSize(width: characterNode.frame.width, height: characterNode.frame.height + 120))
             spriteNode.position = BattlePositions().character1
         case .bryn:
-            characterNode = SKSpriteNode(imageNamed: "Bryn_4x_ready.png")
+            characterNode = SKSpriteNode(imageNamed: "Alien2_Rest@3x.png")
             spriteNode = SKShapeNode(rectOf: CGSize(width: characterNode.frame.width, height: characterNode.frame.height + 120))
             spriteNode.position = BattlePositions().character2
             //spriteNode.position = CGPoint(x: 180, y: 500)
         case .anders:
-            print("Anders not set up yet")
-            characterNode = SKSpriteNode(imageNamed: "Baal_ready_pose_4x.png")
+            characterNode = SKSpriteNode(imageNamed: "Alien3_Rest@3x.png")
             spriteNode = SKShapeNode(rectOf: CGSize(width: characterNode.frame.width, height: characterNode.frame.height + 120))
             spriteNode.position = BattlePositions().character3
         }
@@ -69,6 +68,7 @@ class AbstractBattleCharacter {
         statDictionary[.luck] = playerCharacter.luck
         
         let inventory = playerCharacter.inventory
+        print(inventory)
         if inventory.weapons.count > 0 {
             let stat = inventory.weapons[0].stat
             let boost = inventory.weapons[0].statBoost
@@ -109,6 +109,15 @@ class AbstractBattleCharacter {
             let boost = inventory.boots[0].statBoost
             statDictionary[stat] = statDictionary[stat]! + boost
         }
+        
+        strength = statDictionary[.strength]!
+        agility = statDictionary[.agility]!
+        dexterity = statDictionary[.dexterity]!
+        vitality = statDictionary[.vitality]!
+        wisdom = statDictionary[.wisdom]!
+        aura = statDictionary[.aura]!
+        perception = statDictionary[.perception]!
+        luck = statDictionary[.luck]!
     }
     
     func tapped() {
