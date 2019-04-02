@@ -226,7 +226,7 @@ class BattleScene: AbstractScene {
         runeUsed = nil
     }
     
-    func usedRuneOnEnemy(enemy: EnemyNames) {
+    func usedRuneOnEnemy(enemy: EnemyNames, usesMagic: Bool = true) {
         guard runeUsed != nil else {
             print("Can't use a nil rune")
             return
@@ -243,16 +243,19 @@ class BattleScene: AbstractScene {
             enemyToUseRuneOn = battleEnemies[3]
         }
         
-        let characterThatUsedRune = battleCharacters.filter { character in
+        let charactersWithPriority = battleCharacters.filter { character in
             return character.hasPriority
-        }[0]
+        }
+        let characterThatUsedRune = charactersWithPriority.count > 0 ? charactersWithPriority[0] : battleCharacters[0]
         
-        characterThatUsedRune.playerCharacter.currentMP = characterThatUsedRune.playerCharacter.currentMP - 10
-        
+        if usesMagic {
+            characterThatUsedRune.playerCharacter.currentMP = characterThatUsedRune.playerCharacter.currentMP - 10
+        }
+            
         runeUsed!.runAnimationOnEnemy(enemy: enemyToUseRuneOn, character: characterThatUsedRune, scene: self)
     }
     
-    func usedRuneOnCharacter(character: CharacterNames) {
+    func usedRuneOnCharacter(character: CharacterNames, usesMagic: Bool = true) {
         guard runeUsed != nil else {
             print("Can't use a nil rune")
             return
@@ -268,17 +271,30 @@ class BattleScene: AbstractScene {
             characterToUseRuneOn = battleCharacters[2]
         }
         
-        let characterThatUsedRune = battleCharacters.filter { character in
+        let charactersWithPriority = battleCharacters.filter { character in
             return character.hasPriority
-            }[0]
+        }
+        let characterThatUsedRune = charactersWithPriority.count > 0 ? charactersWithPriority[0] : battleCharacters[0]
         
-        characterThatUsedRune.playerCharacter.currentMP = characterThatUsedRune.playerCharacter.currentMP - 10
-        
+        if usesMagic {
+            characterThatUsedRune.playerCharacter.currentMP = characterThatUsedRune.playerCharacter.currentMP - 10
+        }
+            
         runeUsed!.runAnimationOnCharacter(character: characterToUseRuneOn, runeUsingCharacter: characterThatUsedRune, scene: self)
     }
     
     func specialPowerTapped() {
         specialPowerButton.tapped(scene: self)
+    }
+    
+    func useSpecialPower() {
+        runeUsed = BattleIsa()
+        usedRuneOnCharacter(character: .sigurd, usesMagic: false)
+        usedRuneOnCharacter(character: .bryn, usesMagic: false)
+        usedRuneOnCharacter(character: .anders, usesMagic: false)
+        usedRuneOnEnemy(enemy: .enemy1, usesMagic: false)
+        usedRuneOnEnemy(enemy: .enemy1, usesMagic: false)
+        usedRuneOnEnemy(enemy: .enemy1, usesMagic: false)
     }
     
     func inventoryTapped() {

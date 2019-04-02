@@ -65,6 +65,19 @@ class SpecialPowerButton {
         if user.currentPower < 300 {
             return
         }
+        //Add Gateway call here
+        let usePowerModel = UsePowerModel()
+        let usePowerAtOngoingGateway = UsePowerAtOngoingGateway(totalPower: 300, partnerName: "team-planet-nine", gatewayName: "The-Ballad-of-Sigurd-dev", userId: user.userId, publicKey: Crypto().getKeys()!.publicKey, ordinal: (user.powerOrdinal + 1), description: "Special Power usage in The Ballad of Sigurd")
+        let usePowerAtOngoingGatewayWithSignature = usePowerModel.addSignatureToUsePowerAtOngoingGatewayObject(object: usePowerAtOngoingGateway, signature: Crypto().signMessage(message: usePowerAtOngoingGateway.toString()))
+        usePowerModel.usePowerAtOngoingGateway(gatewayObjectWithSignature: usePowerAtOngoingGatewayWithSignature) { error, user in
+            if error != nil || user == nil {
+                print("There was an error in the call")
+                return
+            }
+            let userString = String(data: user!, encoding: .utf8)
+            print(userString)
+        }
         
+        scene.useSpecialPower()
     }
 }
