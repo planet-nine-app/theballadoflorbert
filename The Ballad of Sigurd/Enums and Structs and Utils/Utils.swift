@@ -61,4 +61,10 @@ extension UIColor {
         static var darkSecondary: UIColor { return UIColor(red: 137/255, green: 123/255, blue: 116/255, alpha: 1.0)}
         static var blankInventory: UIColor { return UIColor(red: 155/255, green: 199/255, blue: 196/255, alpha: 1.0)}
     }
+    
+    struct StatusBarColors {
+        static var health: UIColor { return UIColor(red: 70/255, green: 182/255, blue: 90/255, alpha: 1.0)}
+        static var stamina: UIColor { return UIColor(red: 245/255, green: 219/255, blue: 205/255, alpha: 1.0)}
+        static var magic: UIColor { return UIColor(red: 49/255, green: 82/255, blue: 144/255, alpha: 1.0)}
+    }
 }

@@ -33,22 +33,24 @@
 		CA1E76F0223C55CD00EA0FAF /* Nineum3_Small@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = CA1E76DB223C55CD00EA0FAF /* Nineum3_Small@3x.png */; };
 		CA1E76F1223C55CD00EA0FAF /* Nineum6_Small@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CA1E76DC223C55CD00EA0FAF /* Nineum6_Small@2x.png */; };
 		CA1E76F2223C55CD00EA0FAF /* Nineum4_Small@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CA1E76DD223C55CD00EA0FAF /* Nineum4_Small@2x.png */; };
-		CA46E3BD225296C6002E891C /* Alien1_Rest@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = CA46E3B1225296C5002E891C /* Alien1_Rest@3x.png */; };
+		CA46E3BD225296C6002E891C /* Alien2_Rest@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = CA46E3B1225296C5002E891C /* Alien2_Rest@3x.png */; };
 		CA46E3BE225296C6002E891C /* AlienBoss_Rest@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = CA46E3B2225296C5002E891C /* AlienBoss_Rest@3x.png */; };
-		CA46E3BF225296C6002E891C /* Alien2_Rest@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = CA46E3B3225296C6002E891C /* Alien2_Rest@3x.png */; };
-		CA46E3C0225296C6002E891C /* Alien1_Fight@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = CA46E3B4225296C6002E891C /* Alien1_Fight@3x.png */; };
-		CA46E3C1225296C6002E891C /* Alien2_Fight@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = CA46E3B5225296C6002E891C /* Alien2_Fight@3x.png */; };
-		CA46E3C2225296C6002E891C /* Alien3_Weapon@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = CA46E3B6225296C6002E891C /* Alien3_Weapon@3x.png */; };
-		CA46E3C3225296C6002E891C /* Alien1_Weapon@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = CA46E3B7225296C6002E891C /* Alien1_Weapon@3x.png */; };
-		CA46E3C4225296C6002E891C /* Alien3_Rest@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = CA46E3B8225296C6002E891C /* Alien3_Rest@3x.png */; };
+		CA46E3BF225296C6002E891C /* Alien3_Rest@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = CA46E3B3225296C6002E891C /* Alien3_Rest@3x.png */; };
+		CA46E3C0225296C6002E891C /* Alien2_Fight@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = CA46E3B4225296C6002E891C /* Alien2_Fight@3x.png */; };
+		CA46E3C1225296C6002E891C /* Alien3_Fight@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = CA46E3B5225296C6002E891C /* Alien3_Fight@3x.png */; };
+		CA46E3C2225296C6002E891C /* Alien1_Weapon@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = CA46E3B6225296C6002E891C /* Alien1_Weapon@3x.png */; };
+		CA46E3C3225296C6002E891C /* Alien2_Weapon@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = CA46E3B7225296C6002E891C /* Alien2_Weapon@3x.png */; };
+		CA46E3C4225296C6002E891C /* Alien1_Rest@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = CA46E3B8225296C6002E891C /* Alien1_Rest@3x.png */; };
 		CA46E3C5225296C6002E891C /* AlienBoss_Weapon@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = CA46E3B9225296C6002E891C /* AlienBoss_Weapon@3x.png */; };
 		CA46E3C6225296C6002E891C /* Background@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = CA46E3BA225296C6002E891C /* Background@3x.png */; };
-		CA46E3C7225296C6002E891C /* Alien2_Weapon@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = CA46E3BB225296C6002E891C /* Alien2_Weapon@3x.png */; };
+		CA46E3C7225296C6002E891C /* Alien3_Weapon@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = CA46E3BB225296C6002E891C /* Alien3_Weapon@3x.png */; };
 		CA46E3C8225296C6002E891C /* AlienBoss_Fight@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = CA46E3BC225296C6002E891C /* AlienBoss_Fight@3x.png */; };
 		CA46E3CA2252ACD3002E891C /* BrynAttack.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA46E3C92252ACD3002E891C /* BrynAttack.swift */; };
 		CA46E3CC2252B234002E891C /* SigurdAttack.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA46E3CB2252B234002E891C /* SigurdAttack.swift */; };
 		CA46E3CE2252B4A8002E891C /* BattleAnders.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA46E3CD2252B4A8002E891C /* BattleAnders.swift */; };
 		CA46E3D02252B72C002E891C /* AndersAttack.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA46E3CF2252B72C002E891C /* AndersAttack.swift */; };
+		CA46E3D42253E279002E891C /* SpecialPowerButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA46E3D32253E279002E891C /* SpecialPowerButton.swift */; };
+		CA46E3D62253EC91002E891C /* InventoryButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA46E3D52253EC91002E891C /* InventoryButton.swift */; };
 		CA640C2722209682004905E0 /* AbstractPlayerCharacter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA640C2622209682004905E0 /* AbstractPlayerCharacter.swift */; };
 		CA640C2B2220987D004905E0 /* Rune.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA640C2A2220987D004905E0 /* Rune.swift */; };
 		CA640C2D2220988F004905E0 /* Weapon.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA640C2C2220988F004905E0 /* Weapon.swift */; };
@@ -171,22 +173,24 @@
 		CA1E76DB223C55CD00EA0FAF /* Nineum3_Small@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Nineum3_Small@3x.png"; sourceTree = "<group>"; };
 		CA1E76DC223C55CD00EA0FAF /* Nineum6_Small@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Nineum6_Small@2x.png"; sourceTree = "<group>"; };
 		CA1E76DD223C55CD00EA0FAF /* Nineum4_Small@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Nineum4_Small@2x.png"; sourceTree = "<group>"; };
-		CA46E3B1225296C5002E891C /* Alien1_Rest@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Alien1_Rest@3x.png"; sourceTree = "<group>"; };
+		CA46E3B1225296C5002E891C /* Alien2_Rest@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Alien2_Rest@3x.png"; sourceTree = "<group>"; };
 		CA46E3B2225296C5002E891C /* AlienBoss_Rest@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "AlienBoss_Rest@3x.png"; sourceTree = "<group>"; };
-		CA46E3B3225296C6002E891C /* Alien2_Rest@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Alien2_Rest@3x.png"; sourceTree = "<group>"; };
-		CA46E3B4225296C6002E891C /* Alien1_Fight@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Alien1_Fight@3x.png"; sourceTree = "<group>"; };
-		CA46E3B5225296C6002E891C /* Alien2_Fight@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Alien2_Fight@3x.png"; sourceTree = "<group>"; };
-		CA46E3B6225296C6002E891C /* Alien3_Weapon@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Alien3_Weapon@3x.png"; sourceTree = "<group>"; };
-		CA46E3B7225296C6002E891C /* Alien1_Weapon@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Alien1_Weapon@3x.png"; sourceTree = "<group>"; };
-		CA46E3B8225296C6002E891C /* Alien3_Rest@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Alien3_Rest@3x.png"; sourceTree = "<group>"; };
+		CA46E3B3225296C6002E891C /* Alien3_Rest@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Alien3_Rest@3x.png"; sourceTree = "<group>"; };
+		CA46E3B4225296C6002E891C /* Alien2_Fight@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Alien2_Fight@3x.png"; sourceTree = "<group>"; };
+		CA46E3B5225296C6002E891C /* Alien3_Fight@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Alien3_Fight@3x.png"; sourceTree = "<group>"; };
+		CA46E3B6225296C6002E891C /* Alien1_Weapon@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Alien1_Weapon@3x.png"; sourceTree = "<group>"; };
+		CA46E3B7225296C6002E891C /* Alien2_Weapon@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Alien2_Weapon@3x.png"; sourceTree = "<group>"; };
+		CA46E3B8225296C6002E891C /* Alien1_Rest@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Alien1_Rest@3x.png"; sourceTree = "<group>"; };
 		CA46E3B9225296C6002E891C /* AlienBoss_Weapon@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "AlienBoss_Weapon@3x.png"; sourceTree = "<group>"; };
 		CA46E3BA225296C6002E891C /* Background@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Background@3x.png"; sourceTree = "<group>"; };
-		CA46E3BB225296C6002E891C /* Alien2_Weapon@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Alien2_Weapon@3x.png"; sourceTree = "<group>"; };
+		CA46E3BB225296C6002E891C /* Alien3_Weapon@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Alien3_Weapon@3x.png"; sourceTree = "<group>"; };
 		CA46E3BC225296C6002E891C /* AlienBoss_Fight@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "AlienBoss_Fight@3x.png"; sourceTree = "<group>"; };
 		CA46E3C92252ACD3002E891C /* BrynAttack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrynAttack.swift; sourceTree = "<group>"; };
 		CA46E3CB2252B234002E891C /* SigurdAttack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SigurdAttack.swift; sourceTree = "<group>"; };
 		CA46E3CD2252B4A8002E891C /* BattleAnders.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BattleAnders.swift; sourceTree = "<group>"; };
 		CA46E3CF2252B72C002E891C /* AndersAttack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AndersAttack.swift; sourceTree = "<group>"; };
+		CA46E3D32253E279002E891C /* SpecialPowerButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpecialPowerButton.swift; sourceTree = "<group>"; };
+		CA46E3D52253EC91002E891C /* InventoryButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InventoryButton.swift; sourceTree = "<group>"; };
 		CA640C2622209682004905E0 /* AbstractPlayerCharacter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbstractPlayerCharacter.swift; sourceTree = "<group>"; };
 		CA640C2A2220987D004905E0 /* Rune.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rune.swift; sourceTree = "<group>"; };
 		CA640C2C2220988F004905E0 /* Weapon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Weapon.swift; sourceTree = "<group>"; };
@@ -355,14 +359,14 @@
 		CA46E3B0225296AB002E891C /* Updated Images */ = {
 			isa = PBXGroup;
 			children = (
-				CA46E3B4225296C6002E891C /* Alien1_Fight@3x.png */,
-				CA46E3B1225296C5002E891C /* Alien1_Rest@3x.png */,
-				CA46E3B7225296C6002E891C /* Alien1_Weapon@3x.png */,
-				CA46E3B5225296C6002E891C /* Alien2_Fight@3x.png */,
-				CA46E3B3225296C6002E891C /* Alien2_Rest@3x.png */,
-				CA46E3BB225296C6002E891C /* Alien2_Weapon@3x.png */,
-				CA46E3B8225296C6002E891C /* Alien3_Rest@3x.png */,
-				CA46E3B6225296C6002E891C /* Alien3_Weapon@3x.png */,
+				CA46E3B4225296C6002E891C /* Alien2_Fight@3x.png */,
+				CA46E3B1225296C5002E891C /* Alien2_Rest@3x.png */,
+				CA46E3B7225296C6002E891C /* Alien2_Weapon@3x.png */,
+				CA46E3B5225296C6002E891C /* Alien3_Fight@3x.png */,
+				CA46E3B3225296C6002E891C /* Alien3_Rest@3x.png */,
+				CA46E3BB225296C6002E891C /* Alien3_Weapon@3x.png */,
+				CA46E3B8225296C6002E891C /* Alien1_Rest@3x.png */,
+				CA46E3B6225296C6002E891C /* Alien1_Weapon@3x.png */,
 				CA46E3BC225296C6002E891C /* AlienBoss_Fight@3x.png */,
 				CA46E3B2225296C5002E891C /* AlienBoss_Rest@3x.png */,
 				CA46E3B9225296C6002E891C /* AlienBoss_Weapon@3x.png */,
@@ -546,6 +550,8 @@
 				CA46E3C92252ACD3002E891C /* BrynAttack.swift */,
 				CA46E3CB2252B234002E891C /* SigurdAttack.swift */,
 				CA46E3CF2252B72C002E891C /* AndersAttack.swift */,
+				CA46E3D32253E279002E891C /* SpecialPowerButton.swift */,
+				CA46E3D52253EC91002E891C /* InventoryButton.swift */,
 			);
 			path = "Battle Effects";
 			sourceTree = "<group>";
@@ -771,8 +777,8 @@
 				CA46E3BE225296C6002E891C /* AlienBoss_Rest@3x.png in Resources */,
 				CAB4EADF221F693B0066EDC4 /* GameScene.sks in Resources */,
 				CA1E76E3223C55CD00EA0FAF /* Nineum7_Small@3x.png in Resources */,
-				CA46E3BF225296C6002E891C /* Alien2_Rest@3x.png in Resources */,
-				CA46E3C0225296C6002E891C /* Alien1_Fight@3x.png in Resources */,
+				CA46E3BF225296C6002E891C /* Alien3_Rest@3x.png in Resources */,
+				CA46E3C0225296C6002E891C /* Alien2_Fight@3x.png in Resources */,
 				CA640C742226071D004905E0 /* Baal_ready_pose_4x.png in Resources */,
 				CA1E76F1223C55CD00EA0FAF /* Nineum6_Small@2x.png in Resources */,
 				CA640C5B2220B46F004905E0 /* Ubuntu-Medium.ttf in Resources */,
@@ -786,21 +792,21 @@
 				CA1E76EA223C55CD00EA0FAF /* Nineum1_Small@2x.png in Resources */,
 				CA1E76E6223C55CD00EA0FAF /* Nineum2_Small@2x.png in Resources */,
 				CA640C8422273D37004905E0 /* wood_elemental_4x_game.png in Resources */,
-				CA46E3C7225296C6002E891C /* Alien2_Weapon@3x.png in Resources */,
+				CA46E3C7225296C6002E891C /* Alien3_Weapon@3x.png in Resources */,
 				CA1E76E0223C55CD00EA0FAF /* Nineum4_Small@3x.png in Resources */,
 				CA1E76DE223C55CD00EA0FAF /* Nineum5_Small@3x.png in Resources */,
-				CA46E3C2225296C6002E891C /* Alien3_Weapon@3x.png in Resources */,
+				CA46E3C2225296C6002E891C /* Alien1_Weapon@3x.png in Resources */,
 				CA640C9C222872F8004905E0 /* HealingRain.sks in Resources */,
-				CA46E3BD225296C6002E891C /* Alien1_Rest@3x.png in Resources */,
+				CA46E3BD225296C6002E891C /* Alien2_Rest@3x.png in Resources */,
 				CA640C7622260746004905E0 /* Bryn_4x_ready.png in Resources */,
 				CA640C972228690E004905E0 /* icecube.png in Resources */,
-				CA46E3C1225296C6002E891C /* Alien2_Fight@3x.png in Resources */,
+				CA46E3C1225296C6002E891C /* Alien3_Fight@3x.png in Resources */,
 				CA1E76E7223C55CD00EA0FAF /* Nineum5_Small@2x.png in Resources */,
 				CA1E76EB223C55CD00EA0FAF /* Nineum3_Small.png in Resources */,
 				CA1E76E5223C55CD00EA0FAF /* Nineum1_Small.png in Resources */,
 				CA640C6322249AE9004905E0 /* crypto.js in Resources */,
 				CA640C8D22275F9E004905E0 /* RuneDrawing.sks in Resources */,
-				CA46E3C3225296C6002E891C /* Alien1_Weapon@3x.png in Resources */,
+				CA46E3C3225296C6002E891C /* Alien2_Weapon@3x.png in Resources */,
 				CA640C9D222872F8004905E0 /* Assets.xcassets in Resources */,
 				CA640CA52228784D004905E0 /* cloud2.png in Resources */,
 				CA1E76EE223C55CD00EA0FAF /* Nineum2_Small@3x.png in Resources */,
@@ -811,7 +817,7 @@
 				CA1E76F0223C55CD00EA0FAF /* Nineum3_Small@3x.png in Resources */,
 				CA640C6E22260378004905E0 /* grassy_lake.png in Resources */,
 				CA1E76EF223C55CD00EA0FAF /* Nineum4_Small.png in Resources */,
-				CA46E3C4225296C6002E891C /* Alien3_Rest@3x.png in Resources */,
+				CA46E3C4225296C6002E891C /* Alien1_Rest@3x.png in Resources */,
 				CA46E3C6225296C6002E891C /* Background@3x.png in Resources */,
 				CAB4EAE1221F693B0066EDC4 /* Actions.sks in Resources */,
 				CA1E76ED223C55CD00EA0FAF /* Nineum5_Small.png in Resources */,
@@ -952,6 +958,7 @@
 				CA640CAD2229E6EE004905E0 /* TutorialControls.swift in Sources */,
 				CAB4EC1E221F6A570066EDC4 /* JSTileMap.m in Sources */,
 				CA1E76C5223C3BE500EA0FAF /* InventorySelector.swift in Sources */,
+				CA46E3D62253EC91002E891C /* InventoryButton.swift in Sources */,
 				CAB4EAE5221F693B0066EDC4 /* GameViewController.swift in Sources */,
 				CA1E76C8223C54FA00EA0FAF /* InventorySelectorTableViewCell.swift in Sources */,
 				CA640CAB2229E601004905E0 /* TutorialScene.swift in Sources */,
@@ -980,6 +987,7 @@
 				CA640C37222098FA004905E0 /* Necklace.swift in Sources */,
 				CA640CAF2229E8D3004905E0 /* AbstractControls.swift in Sources */,
 				CA46E3CE2252B4A8002E891C /* BattleAnders.swift in Sources */,
+				CA46E3D42253E279002E891C /* SpecialPowerButton.swift in Sources */,
 				CA640C31222098BD004905E0 /* BodyArmor.swift in Sources */,
 				CA640C2D2220988F004905E0 /* Weapon.swift in Sources */,
 				CA46E3CA2252ACD3002E891C /* BrynAttack.swift in Sources */,

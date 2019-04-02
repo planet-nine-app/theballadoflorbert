@@ -145,7 +145,10 @@ class InventoryScene: AbstractScene {
     func exit() {
         inventorySelector.tableView.removeFromSuperview()
         let battleScene = BattleScene(size: CGSize(width: 1920, height: 1280))
-        battleScene.scaleMode = .fill
+        //let battleScene = BattleScene(size: CGSize(width: 2100, height: 1280))
+        //battleScene.scaleMode = .fill
+        battleScene.scaleMode = .aspectFit
+        //battleScene.scaleMode = .aspectFill
         battleScene.party = party
         self.view?.presentScene(battleScene)
     }

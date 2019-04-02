@@ -31,22 +31,30 @@ class AbstractBattleCharacter {
         playerCharacter = character
         staminaRegenerationRate = playerCharacter.maxStamina / 3
         magicRegenerationRate = playerCharacter.maxMP / 3
+        var statusBarX: CGFloat = 0.0
+        var statusBarY: CGFloat = 0.0
         switch character.name {
         case .sigurd:
             characterNode = SKSpriteNode(imageNamed: "Alien1_Rest@3x.png")
             spriteNode = SKShapeNode(rectOf: CGSize(width: characterNode.frame.width, height: characterNode.frame.height + 120))
             spriteNode.position = BattlePositions().character1
+            statusBarX = 120
+            statusBarY = spriteNode.frame.height - 420
         case .bryn:
             characterNode = SKSpriteNode(imageNamed: "Alien2_Rest@3x.png")
             spriteNode = SKShapeNode(rectOf: CGSize(width: characterNode.frame.width, height: characterNode.frame.height + 120))
             spriteNode.position = BattlePositions().character2
             //spriteNode.position = CGPoint(x: 180, y: 500)
+            statusBarX = -100
+            statusBarY = spriteNode.frame.height - 350
         case .anders:
             characterNode = SKSpriteNode(imageNamed: "Alien3_Rest@3x.png")
             spriteNode = SKShapeNode(rectOf: CGSize(width: characterNode.frame.width, height: characterNode.frame.height + 120))
             spriteNode.position = BattlePositions().character3
+            statusBarX = -100
+            statusBarY = spriteNode.frame.height - 150
         }
-        statusBar = StatusBar(location: CGPoint(x: 0, y: spriteNode.frame.height - 300))
+        statusBar = StatusBar(location: CGPoint(x: statusBarX, y: statusBarY))
         spriteNode.addChild(characterNode)
         spriteNode.addChild(statusBar.backgroundNode)
         spriteNode.lineWidth = 0

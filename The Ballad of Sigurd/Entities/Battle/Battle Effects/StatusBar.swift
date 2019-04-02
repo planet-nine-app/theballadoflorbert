@@ -14,9 +14,9 @@ class StatusBar {
     var healthNode: SKShapeNode
     var staminaNode: SKShapeNode
     var magicNode: SKShapeNode
-    let nodeSize = CGSize(width: 300, height: 120)
-    let healthNodeSize = CGSize(width: 280, height: 50)
-    let otherNodeSize = CGSize(width: 280, height: 25)
+    let nodeSize = CGSize(width: 300, height: 36)
+    let healthNodeSize = CGSize(width: 180, height: 12)
+    let otherNodeSize = CGSize(width: 180, height: 12)
     
     init(location: CGPoint) {
         backgroundNode = SKShapeNode(rectOf: nodeSize)
@@ -25,17 +25,20 @@ class StatusBar {
         backgroundNode.lineWidth = 0
         
         healthNode = SKShapeNode(rectOf: healthNodeSize)
-        healthNode.position = CGPoint(x: 0, y: 65)
-        healthNode.fillColor = UIColor.green
-        healthNode.glowWidth = 2
+        healthNode.position = CGPoint(x: 0, y: 30)
+        healthNode.fillColor = UIColor.StatusBarColors.health
+        healthNode.glowWidth = 0
+        healthNode.lineWidth = 0
         
         staminaNode = SKShapeNode(rectOf: otherNodeSize)
-        staminaNode.position = CGPoint(x: 0, y: 35)
-        staminaNode.fillColor = UIColor.red
+        staminaNode.position = CGPoint(x: 0, y: 18)
+        staminaNode.fillColor = UIColor.StatusBarColors.stamina
+        staminaNode.lineWidth = 0
         
         magicNode = SKShapeNode(rectOf: otherNodeSize)
-        magicNode.position = CGPoint(x: 0, y: 5)
-        magicNode.fillColor = UIColor.blue
+        magicNode.position = CGPoint(x: 0, y: 6)
+        magicNode.fillColor = UIColor.StatusBarColors.magic
+        magicNode.lineWidth = 0
         
         backgroundNode.addChild(healthNode)
         backgroundNode.addChild(staminaNode)
@@ -47,14 +50,16 @@ class StatusBar {
         let magicWidth = magicRatio > 0 ? otherNodeSize.width * CGFloat(magicRatio) : 0
         staminaNode.removeFromParent()
         magicNode.removeFromParent()
-        staminaNode = SKShapeNode(rectOf: CGSize(width: staminaWidth, height: 25))
+        staminaNode = SKShapeNode(rectOf: CGSize(width: staminaWidth, height: 12))
         let staminaXDiff = (otherNodeSize.width - staminaNode.frame.width) / 2
-        staminaNode.position = CGPoint(x: 0 - staminaXDiff, y: 35)
-        staminaNode.fillColor = UIColor.red
-        magicNode = SKShapeNode(rectOf: CGSize(width: magicWidth, height: 25))
+        staminaNode.position = CGPoint(x: 0 - staminaXDiff, y: 18)
+        staminaNode.fillColor = UIColor.StatusBarColors.stamina
+        staminaNode.lineWidth = 0
+        magicNode = SKShapeNode(rectOf: CGSize(width: magicWidth, height: 12))
         let magicXDiff = (otherNodeSize.width - magicNode.frame.width) / 2
-        magicNode.position = CGPoint(x: 0 - magicXDiff, y: 5)
-        magicNode.fillColor = UIColor.blue
+        magicNode.position = CGPoint(x: 0 - magicXDiff, y: 6)
+        magicNode.fillColor = UIColor.StatusBarColors.magic
+        magicNode.lineWidth = 0
         backgroundNode.addChild(staminaNode)
         backgroundNode.addChild(magicNode)
     }

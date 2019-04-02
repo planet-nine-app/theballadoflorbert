@@ -172,6 +172,12 @@ class BattleControls: AbstractControls {
                                 scene.placeRuneAtPoint(rune: runeCheck, location: touch.location(in: scene))
                             }
                         }
+                    case "Special Power":
+                        if controlState != .drawing {
+                            scene.specialPowerTapped()
+                        }
+                    case "Inventory":
+                        scene.inventoryTapped()
                     default:
                         print("Do other stuff here")
                     }

@@ -17,6 +17,7 @@ class BattleScene: AbstractScene {
     var runeUsed: AbstractBattleRune?
     let battleMath = BattleMath()
     var lastTime: TimeInterval?
+    let specialPowerButton: SpecialPowerButton = SpecialPowerButton()
     
     override func didMove(to view: SKView) {
         super.didMove(to: view)
@@ -35,16 +36,19 @@ class BattleScene: AbstractScene {
         
         controls = BattleControls(scene: self)
         
-        addRuneNode()
+        //addRuneNode()
         addCharacters()
         addEnemies()
+        addSpecialPowerButton()
+        addInventoryButton()
     }
     
     func addRuneNode() {
-        let runeNode = SKShapeNode(rect: CGRect(x: 300, y: 0, width: 1000, height: 1280))
+        //let runeNode = SKShapeNode(rect: CGRect(x: 300, y: 0, width: 1000, height: 1280))
+        let runeNode = SKShapeNode(rect: CGRect(x: 300, y: 0, width: 1000, height: 1080))
         runeNode.zPosition = ZPositions.runeNode.rawValue
         runeNode.name = "RuneNode"
-        runeNode.lineWidth = 0
+        runeNode.lineWidth = 4
         self.addChild(runeNode)
     }
     
@@ -71,6 +75,17 @@ class BattleScene: AbstractScene {
         self.addChild(woodElemental.spriteNode)
         
         battleEnemies.append(woodElemental)
+    }
+    
+    func addSpecialPowerButton() {
+        specialPowerButton.backingNode.position = CGPoint(x: (1920 / 2) - (specialPowerButton.backingNode.frame.width / 2), y: (1280 - 160))
+        self.addChild(specialPowerButton.backingNode)
+    }
+    
+    func addInventoryButton() {
+        let inventoryButton = InventoryButton()
+        inventoryButton.backingNode.position = CGPoint(x: 100, y: 1280 - 160)
+        self.addChild(inventoryButton.backingNode)
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
@@ -260,6 +275,18 @@ class BattleScene: AbstractScene {
         characterThatUsedRune.playerCharacter.currentMP = characterThatUsedRune.playerCharacter.currentMP - 10
         
         runeUsed!.runAnimationOnCharacter(character: characterToUseRuneOn, runeUsingCharacter: characterThatUsedRune, scene: self)
+    }
+    
+    func specialPowerTapped() {
+        specialPowerButton.tapped(scene: self)
+    }
+    
+    func inventoryTapped() {
+        let inventoryScene = InventoryScene(size: CGSize(width: 667, height: 375))
+        inventoryScene.scaleMode = .aspectFit
+        inventoryScene.party = party
+        //inventoryScene.scaleMode = .aspectFill
+        self.view?.presentScene(inventoryScene)
     }
     
     func whoHasPriority() -> CharacterNames {
