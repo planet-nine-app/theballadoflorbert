@@ -17,7 +17,7 @@
 	<key>CFBundleShortVersionString</key>
 	<string>1.0</string>
 	<key>CFBundleVersion</key>
-	<string>1</string>
+	<string>2</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
 	<key>UILaunchStoryboardName</key>
@@ -58,9 +58,11 @@
 			</array>
 		</dict>
 	</array>
-    <key>LSApplicationQueriesSchemes</key>
-    <array>
-        <string>planetnine</string>
-    </array>
+	<key>LSApplicationQueriesSchemes</key>
+	<array>
+		<string>planetnine</string>
+	</array>
+	<key>NSBluetoothPeripheralUsageDescription</key>
+	<string>This connects to other Planet Nine experiences using bluetooth low energy</string>
 </dict>
 </plist>

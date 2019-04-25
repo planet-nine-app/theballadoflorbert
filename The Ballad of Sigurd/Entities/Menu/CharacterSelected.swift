@@ -15,6 +15,7 @@ class CharacterSelected {
     var character: AbstractPlayerCharacter
     var nameNode: SKLabelNode
     var levelNode: SKLabelNode
+    var circleNode: SKSpriteNode
     
     init(character: AbstractPlayerCharacter) {
         self.character = character
@@ -24,9 +25,11 @@ class CharacterSelected {
         backingNode.zPosition = 105.0
         backingNode.name = "characterSelected"
         
-        let circleNode = SKShapeNode(circleOfRadius: 11)
-        circleNode.fillColor = UIColor.PlanetNineColors.secondary
-        circleNode.lineWidth = 0
+        //let circleNode = SKShapeNode(circleOfRadius: 11)
+        //circleNode.fillColor = UIColor.PlanetNineColors.secondary
+        //circleNode.lineWidth = 0
+        circleNode = SKSpriteNode(imageNamed: "Lorbert_Small@3x.png")
+        circleNode.scale(to: CGSize(width: 22.0, height: 22.0))
         circleNode.zPosition = 106.0
         circleNode.position = CGPoint(x: 15, y: 15)
         
@@ -62,10 +65,28 @@ class CharacterSelected {
     func updateCharacter(character: AbstractPlayerCharacter) {
         self.character = character
         
+        var imageName = ""
+        
+        switch character.name {
+        case .sigurd:
+            imageName = "Lorbert_Small@3x.png"
+        case .bryn:
+            imageName = "Artro_Small@3x.png"
+        case .anders:
+            imageName = "IO_Small@3x.png"
+        }
+        
         let characterName = character.name.rawValue
         nameNode.text = characterName
         
         let level = character.level
         levelNode.text = "Level \(level)"
+        
+        circleNode.removeFromParent()
+        circleNode = SKSpriteNode(imageNamed: imageName)
+        circleNode.scale(to: CGSize(width: 22.0, height: 22.0))
+        circleNode.zPosition = 106.0
+        circleNode.position = CGPoint(x: 15, y: 15)
+        backingNode.addChild(circleNode)
     }
 }

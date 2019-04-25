@@ -41,13 +41,17 @@ class CharacterSelector {
     func createCharacterNode(yPosition: Int) -> SKShapeNode {
         let backingNode = SKShapeNode(rectOf: CGSize(width: 243, height: 52))
         var characterName = ""
+        var imageName = ""
         switch yPosition {
         case 0:
             characterName = CharacterNames.sigurd.rawValue
+            imageName = "Lorbert_Large@3x.png"
         case 1:
             characterName = CharacterNames.bryn.rawValue
+            imageName = "Artro_Large@3x.png"
         case 2:
             characterName = CharacterNames.anders.rawValue
+            imageName = "IO_Large@3x.png"
         default:
             backingNode.fillColor = UIColor.purple
         }
@@ -57,8 +61,10 @@ class CharacterSelector {
         backingNode.lineWidth = 0
         backingNode.name = "character\(characterName)"
         
-        let circleNode = SKShapeNode(circleOfRadius: 20)
-        circleNode.fillColor = UIColor.PlanetNineColors.secondary
+        //let circleNode = SKShapeNode(circleOfRadius: 20)
+        //circleNode.fillColor = UIColor.PlanetNineColors.secondary
+        let circleNode = SKSpriteNode(imageNamed: imageName)
+        circleNode.scale(to: CGSize(width: 40.0, height: 40.0))
         circleNode.position = CGPoint(x: -82.5, y: 0)
         circleNode.zPosition = 102.0
         

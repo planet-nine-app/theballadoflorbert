@@ -17,6 +17,8 @@ class BattleScene: AbstractScene {
     var runeUsed: AbstractBattleRune?
     let battleMath = BattleMath()
     var lastTime: TimeInterval?
+    var bossTimer: Double = 0.0
+    var bossTimerTrigger: Double = 4.0
     let specialPowerButton: SpecialPowerButton = SpecialPowerButton()
     
     override func didMove(to view: SKView) {
@@ -175,6 +177,18 @@ class BattleScene: AbstractScene {
         battleCharacters[2].playerCharacter.currentStamina = battleCharacters[2].playerCharacter.currentStamina - 25
     }
     
+    func bossAttack() {
+        let boss = battleEnemies[0] as! WoodElemental
+        let roll = Int.random(in: 0...2)
+        let character = battleCharacters[roll]
+        boss.startAttack()
+        let bossAtk = BossAttack(at: boss.spriteNode.position, to: character.spriteNode.position)
+        bossAtk.addToSceneAndRunWithCompletion(scene: self) {
+            character.damage(15, scene: self)
+            boss.endAttack()
+        }
+    }
+    
     func addRuneDrawingEmitterNode(_ location: CGPoint) {
         guard let particle = SKEmitterNode(fileNamed: "RuneDrawing.sks") else {
             return
@@ -325,5 +339,10 @@ class BattleScene: AbstractScene {
             battleCharacter.updateStatusBar(timeDiff)
         }
         lastTime = currentTime
+        bossTimer = bossTimer + timeDiff
+        if bossTimer > bossTimerTrigger {
+            bossAttack()
+            bossTimer = 0.0
+        }
     }
 }

@@ -1,5 +1,5 @@
 PODS:
-  - PlanetNineGateway (0.0.14)
+  - PlanetNineGateway (0.0.16)
   - Valet (3.2.3)
 
 DEPENDENCIES:
@@ -12,9 +12,9 @@ SPEC REPOS:
     - Valet
 
 SPEC CHECKSUMS:
-  PlanetNineGateway: 2164bff8cf6ce252a5c4c69af3cd92ae47e60dbe
+  PlanetNineGateway: 605bf3c54e7d052842b24591cb4a50dd455498db
   Valet: 4af0382d4a94db5c7861504f751884f653437d24
 
-PODFILE CHECKSUM: b27b33f94c10fedc8b74fe393b3c7acb39d233eb
+PODFILE CHECKSUM: f0e59fe3c0efa008c70ac775e6e104c6ab7b8751
 
 COCOAPODS: 1.6.0

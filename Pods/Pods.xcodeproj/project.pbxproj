@@ -7,180 +7,187 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		01A110B37C225F83B452E42FCFDEC9F3 /* Valet.h in Headers */ = {isa = PBXBuildFile; fileRef = A5D72986F3895DB3E52E5FD6D110036E /* Valet.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		026C1E8F67C94C8FD9F0932CB9305E48 /* Accessibility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CC4981213C265D82D8DE5934C7A5E29 /* Accessibility.swift */; };
 		02FD9B5D2A247F12432342553F83BE2C /* GatewayModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 411702161D8DD4E45A1ED0133F770FDA /* GatewayModel.swift */; };
-		061EF80B14BB8FDD4BB031B65FB7945B /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 647431E9011233E9DE33F1FD9FA93C82 /* Configuration.swift */; };
-		13D5DFB3A711B5156724C036499C6522 /* Pods-The Ballad of SigurdUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 03A9B17E608F9ECB4B902A3164AE1CFF /* Pods-The Ballad of SigurdUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		167ABEFCAB926B5AABA7C81047C58F14 /* Accessibility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CC4981213C265D82D8DE5934C7A5E29 /* Accessibility.swift */; };
+		04A294D909A40641EF38660F82670809 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1097409647121B59B1C4562DF2ABC919 /* Security.framework */; };
+		106DB4FF2EBC2DD83B77EFDEC2C6F060 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 701A0DC6A6A0F9DA590CC0D517AABE50 /* Foundation.framework */; };
+		123A2C87BFCF005245E20B085E055DC3 /* Pods-The Ballad of SigurdUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1804AC9CF4B67B2489FB30C62F5B6E47 /* Pods-The Ballad of SigurdUITests-dummy.m */; };
+		136AA2D15827124014DDAFFF1158CA5F /* Valet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94A61D7E254572592951868E6D440389 /* Valet.swift */; };
+		15EA1389F28BADC2C79462EFA83AD237 /* Valet-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 9306052A9F1F284B7652E713A32820C6 /* Valet-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		1B9580EEAD74F1A5FA4EE03AE79B2E31 /* PlanetNineGateway.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F4D5104E33817FE58179FF6A5DEF317 /* PlanetNineGateway.swift */; };
 		20E09D19731C6BC9F96C6D879F952B69 /* UsePowerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9352A9EC40E90E59D382CCA4809402CA /* UsePowerModel.swift */; };
+		237265C6C50D8E625EE376BB0F8A28F8 /* Pods-The Ballad of SigurdUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 48169542B63A037BDB9C7FDB6E3FA2DB /* Pods-The Ballad of SigurdUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		288F6F0B570EB334F8E0991F6CD40278 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 701A0DC6A6A0F9DA590CC0D517AABE50 /* Foundation.framework */; };
 		2954081B0EAC3EBD3F49C2F2918AE2E1 /* PlanetNineGateway.h in Headers */ = {isa = PBXBuildFile; fileRef = 741CC9113A0E10A78576A63E085971DA /* PlanetNineGateway.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		2E2EC1BD13DCD74CEC7371959AA4EEF9 /* SecureEnclaveValet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 946FC73C69E8744716B20C7289D29838 /* SecureEnclaveValet.swift */; };
 		2FDC67DE2A68443B61A06D2BBA3BEB35 /* PlanetNineGateway-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D0D9575AD8E6A454AABF466E92F94BF /* PlanetNineGateway-dummy.m */; };
 		329040128CC0663EC5C2936CEEDA9072 /* OneTimeBLEGateway.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46F232266C466FA7504EF7BA117A8BA8 /* OneTimeBLEGateway.swift */; };
-		3AF78D95403883BBE7F8353A90177F15 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 701A0DC6A6A0F9DA590CC0D517AABE50 /* Foundation.framework */; };
+		37B84F6D48BE7D69C8BCF6C012812585 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 701A0DC6A6A0F9DA590CC0D517AABE50 /* Foundation.framework */; };
 		3B981FEF53301DBE15EAE2737AF45815 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = D417CFB6CA54285D7A12005EFD2FB40A /* Utils.swift */; };
-		3D703F76D3507F7DA769326E5BB3C34C /* SecItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40F57B36E966FA23283A2AB3F86D2C6F /* SecItem.swift */; };
-		442E11AEBAA2C64BE007E427108C4BBF /* Pods-The Ballad of Sigurd-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = EC634AC7162455F6D2ABECB860A160A0 /* Pods-The Ballad of Sigurd-dummy.m */; };
+		40A2B887FED81F76F0B5640A8A7665FD /* Pods-The Ballad of Lorbert-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B0BDEA59F65C76E8FBDDB358922AF9E2 /* Pods-The Ballad of Lorbert-dummy.m */; };
+		4699ADED7B72DD893E5C538A4CD69ACE /* ErrorHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0E1B1361B0FBCD770740F90EBFF410B /* ErrorHandler.swift */; };
 		4B14EBC1171CC07AF0121C42AE51D758 /* NineumModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F98F2742F4C75450C43835951A01839 /* NineumModel.swift */; };
-		4BDA59D64A7398C5203DD69E79CFF212 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1097409647121B59B1C4562DF2ABC919 /* Security.framework */; };
 		5058EA4F0AE7F6879CF48B9E65D8787B /* BLEUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE570E4C00415BCCDB886EE04932F3E9 /* BLEUtils.swift */; };
-		552F2F69E4D8DEFD91AC2E451D0137BA /* Valet-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 9306052A9F1F284B7652E713A32820C6 /* Valet-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		5F5759E6DDC508C42C3509D542A22EF9 /* Pods-The Ballad of Sigurd-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = FC1B9BFC1C066165031152A03EF66BF5 /* Pods-The Ballad of Sigurd-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		624422ED07542D0BA48281DB11572C38 /* Keychain.swift in Sources */ = {isa = PBXBuildFile; fileRef = D17477ADDFCBF9B02D58514BA6771A51 /* Keychain.swift */; };
-		6359B951CD9D934C09B84313D6F247C9 /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16A7963303CFFE7BD4448BF259C3A214 /* Service.swift */; };
+		575046814DFB5B8581B6D15D0CCE76AD /* Keychain.swift in Sources */ = {isa = PBXBuildFile; fileRef = D17477ADDFCBF9B02D58514BA6771A51 /* Keychain.swift */; };
+		682266263DC240B1D36903AEB7372215 /* MigrationResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C97FADA00CAAE3E387C7D9A4171197D /* MigrationResult.swift */; };
+		68400D4D8C76735647CA2619A0819085 /* SwiftCompatibility.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2C8E94A9462E7F1CA7FE2295D1BE693 /* SwiftCompatibility.swift */; };
 		6E002144DA0DCA90E7FDACB4B6F0DDCE /* PlanetNineGateway-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7D50E4CD876AE697E47D1BC3553ACEB8 /* PlanetNineGateway-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		71CA7086C9353F9FDC43E36B751126B1 /* Pods-The Ballad of SigurdTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B3C7D32D9FD9F9DD2D2685EC842B9362 /* Pods-The Ballad of SigurdTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		75C98121C92653D0CB0A1CE03DF45CB5 /* MigrationResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C97FADA00CAAE3E387C7D9A4171197D /* MigrationResult.swift */; };
-		76565041447A17F5F99ED4D35EB68F2C /* ErrorHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0E1B1361B0FBCD770740F90EBFF410B /* ErrorHandler.swift */; };
-		7E7DBBBB139E3D85BCF07394397A0916 /* CloudAccessibility.swift in Sources */ = {isa = PBXBuildFile; fileRef = E01E053B90021C573EED942F9CA44202 /* CloudAccessibility.swift */; };
-		828EBC8450EA2CB35DDA4123B2292E35 /* Valet.h in Headers */ = {isa = PBXBuildFile; fileRef = A5D72986F3895DB3E52E5FD6D110036E /* Valet.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		8F9EE6758E32AF49A877F4AEF4B87384 /* Valet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94A61D7E254572592951868E6D440389 /* Valet.swift */; };
+		7D0DF1E912EF6C6369433464E06F3F69 /* SecureEnclaveAccessControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BA2CA3053340DBDCA481F897FA3A520 /* SecureEnclaveAccessControl.swift */; };
+		8267C17C89474BF10E682DCB01E5BD47 /* SecureEnclaveValet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 946FC73C69E8744716B20C7289D29838 /* SecureEnclaveValet.swift */; };
+		93571BAEDC480F84AE250404AC733459 /* Pods-The Ballad of SigurdTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 16351E003D2DA2DEE1FE60C2019D7F3E /* Pods-The Ballad of SigurdTests-dummy.m */; };
+		942552E75AC7E3AEDEB87D1C0B6DC946 /* Pods-The Ballad of Lorbert-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7CE56DD745F5A7DB1D6FDA4D75FA935E /* Pods-The Ballad of Lorbert-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9F066858C684C119D8BD444CE10B109B /* OngoingGateway.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0EEE528F79A310CF99F628EDB5AC0AD /* OngoingGateway.swift */; };
-		AE5D2F5788A5C0D42FC7211272895648 /* Pods-The Ballad of SigurdTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A3C8E7BEC19628EEAA9B6192888B015F /* Pods-The Ballad of SigurdTests-dummy.m */; };
+		AA444C8253907C10EEAA4878204955DB /* CloudAccessibility.swift in Sources */ = {isa = PBXBuildFile; fileRef = E01E053B90021C573EED942F9CA44202 /* CloudAccessibility.swift */; };
 		AEA7F30DA07624F1B66A48B56A8D69C2 /* PlanetNineUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = F245C58B874A575CD376F59C5361CFE3 /* PlanetNineUser.swift */; };
-		B5022B3CEC4653A8AFFA8D4BC819CE44 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 701A0DC6A6A0F9DA590CC0D517AABE50 /* Foundation.framework */; };
 		B5C1707486E4AA0B4E545A4AA283ABD3 /* BLETwoWayPeripheral.swift in Sources */ = {isa = PBXBuildFile; fileRef = 919DEBDC03C7B4D5F2887DECAAE6535A /* BLETwoWayPeripheral.swift */; };
 		BE5D23362EAC4B12BC0E2333935C01EF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 701A0DC6A6A0F9DA590CC0D517AABE50 /* Foundation.framework */; };
-		C3AB5AD83C1A8F2621904BC29B8A4CED /* SinglePromptSecureEnclaveValet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 869E3628BBEBE307D27BB995973E5FFD /* SinglePromptSecureEnclaveValet.swift */; };
-		D6A7A2F31FFE15B7CC7518349724E236 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 701A0DC6A6A0F9DA590CC0D517AABE50 /* Foundation.framework */; };
-		D95A790FE644AE37191432078068E1C3 /* Valet-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B832BC6CBE29C0547EEEB06A8027B19 /* Valet-dummy.m */; };
+		BED56756F377A2DC0461B18FBDBF3563 /* KeychainQueryConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E7ADEB83EBBE33BD8B4A039C5A05175 /* KeychainQueryConvertible.swift */; };
+		C133C0B5631ADEEE14F9518BAA6E566A /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 647431E9011233E9DE33F1FD9FA93C82 /* Configuration.swift */; };
+		C3C603B5D6F577609A20B5036E9BA191 /* Valet-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B832BC6CBE29C0547EEEB06A8027B19 /* Valet-dummy.m */; };
+		C513EBF4DFAEA3B7FD9195F9ADF64097 /* Identifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91C39060B20ABC50F22C8D0A907B447D /* Identifier.swift */; };
+		D485661C3047F096AE1A6313D7D13115 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 701A0DC6A6A0F9DA590CC0D517AABE50 /* Foundation.framework */; };
+		DABCE67B59D4A480CB00E4E2A5A72FEA /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16A7963303CFFE7BD4448BF259C3A214 /* Service.swift */; };
+		DE2063AB533DCC430AA00F67396D5EFA /* SecureEnclave.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33DE935695B807A3F7BA4DFFEB419DD2 /* SecureEnclave.swift */; };
 		DFF234AA3A76099B949E64BD21CD9A7E /* OneTimeGateway.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BECF4209ECD5DC3F3B87181B5EC7CD4 /* OneTimeGateway.swift */; };
-		E08FECBBA6C23AB8FE28A34EFCE47337 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 701A0DC6A6A0F9DA590CC0D517AABE50 /* Foundation.framework */; };
-		E3CDE1DAEE44071F84F42039DCA3A881 /* Pods-The Ballad of SigurdUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 488DCF50FFB10FA704E3EC2C98D476C7 /* Pods-The Ballad of SigurdUITests-dummy.m */; };
-		E4576D23D329C57F443AED371CD76F2A /* KeychainQueryConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E7ADEB83EBBE33BD8B4A039C5A05175 /* KeychainQueryConvertible.swift */; };
+		E7D1BD1A9DD5A2AF747D364B36C503D2 /* SecItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40F57B36E966FA23283A2AB3F86D2C6F /* SecItem.swift */; };
 		EE2A6D04EF858EE4724DB93FE98C1902 /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35F08B48B8CBF63159E24FB97B3B442E /* Network.swift */; };
-		F296D180DF21A7D11F6238405AABC95E /* Identifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91C39060B20ABC50F22C8D0A907B447D /* Identifier.swift */; };
-		F2D1E72FF806871C68D3E717B083E382 /* SwiftCompatibility.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2C8E94A9462E7F1CA7FE2295D1BE693 /* SwiftCompatibility.swift */; };
-		F3AC815DA2720A9351050EA8A15767BC /* SecureEnclaveAccessControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BA2CA3053340DBDCA481F897FA3A520 /* SecureEnclaveAccessControl.swift */; };
 		F4B0C74B921F8E2FA7A6D3AC9F330E61 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AC0D5A58B712D17CE9DF3A0FF93A987 /* UserModel.swift */; };
-		FC13948F8E4FC9A0DBBAB6A7C13F4983 /* SecureEnclave.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33DE935695B807A3F7BA4DFFEB419DD2 /* SecureEnclave.swift */; };
+		F503720BE490B5FD443E3CF60AA56590 /* Pods-The Ballad of SigurdTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 0121E6F5C43DA7BBFBC6DE440F64EB30 /* Pods-The Ballad of SigurdTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F6B1FD76AE558EB8D0E9CAA6396E9FF4 /* SinglePromptSecureEnclaveValet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 869E3628BBEBE307D27BB995973E5FFD /* SinglePromptSecureEnclaveValet.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		5C68D75AE8D7F7F458268130BAA94CEE /* PBXContainerItemProxy */ = {
+		27165A8301862796568744A5D11072FE /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 83C351299F202E7F8779C5177DC10903;
+			remoteGlobalIDString = 15F6FE0175C63CF16049E70CFC748DDC;
 			remoteInfo = Valet;
 		};
-		C584E021C614E8454A2751552F83FB3A /* PBXContainerItemProxy */ = {
+		404B6C42EB6C38574359419FFED77876 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0501D866C211C1EFFD8199A84DF3D861;
+			remoteInfo = "Pods-The Ballad of Lorbert";
+		};
+		4D9F2E7B4F824A94D2E44D1E4E2FCB3C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0501D866C211C1EFFD8199A84DF3D861;
+			remoteInfo = "Pods-The Ballad of Lorbert";
+		};
+		72F6AEA8C02E62FB06C87162C7550668 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 123B96C87DD03C48A65509D9B2F00BC1;
 			remoteInfo = PlanetNineGateway;
 		};
-		CDA191A22965EA16460535F0CC65AF14 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = FCE0F3869F4FC9E674284B73602E5F67;
-			remoteInfo = "Pods-The Ballad of Sigurd";
-		};
-		E0D27A0C4BF06F8F187CF5BB233CBF65 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = FCE0F3869F4FC9E674284B73602E5F67;
-			remoteInfo = "Pods-The Ballad of Sigurd";
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		03A9B17E608F9ECB4B902A3164AE1CFF /* Pods-The Ballad of SigurdUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-The Ballad of SigurdUITests-umbrella.h"; sourceTree = "<group>"; };
+		0121E6F5C43DA7BBFBC6DE440F64EB30 /* Pods-The Ballad of SigurdTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-The Ballad of SigurdTests-umbrella.h"; sourceTree = "<group>"; };
+		013E848B2972851AA4BC6CCF97D277CE /* Pods-The Ballad of SigurdUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-The Ballad of SigurdUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		0895B13F9714CF7DAF811D7ACF037919 /* Valet.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Valet.xcconfig; sourceTree = "<group>"; };
+		08BC5A03EABA5BD07DD49949666882AA /* Pods-The Ballad of SigurdUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-The Ballad of SigurdUITests-acknowledgements.plist"; sourceTree = "<group>"; };
 		0C97FADA00CAAE3E387C7D9A4171197D /* MigrationResult.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MigrationResult.swift; path = Sources/MigrationResult.swift; sourceTree = "<group>"; };
 		0CC4981213C265D82D8DE5934C7A5E29 /* Accessibility.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Accessibility.swift; path = Sources/Accessibility.swift; sourceTree = "<group>"; };
 		1097409647121B59B1C4562DF2ABC919 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/Security.framework; sourceTree = DEVELOPER_DIR; };
-		15FBAF8D5774AC0AF566B7186E7CF4F5 /* Pods_The_Ballad_of_SigurdUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_The_Ballad_of_SigurdUITests.framework; path = "Pods-The Ballad of SigurdUITests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		16351E003D2DA2DEE1FE60C2019D7F3E /* Pods-The Ballad of SigurdTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-The Ballad of SigurdTests-dummy.m"; sourceTree = "<group>"; };
 		16A7963303CFFE7BD4448BF259C3A214 /* Service.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Service.swift; path = Sources/Internal/Service.swift; sourceTree = "<group>"; };
+		1804AC9CF4B67B2489FB30C62F5B6E47 /* Pods-The Ballad of SigurdUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-The Ballad of SigurdUITests-dummy.m"; sourceTree = "<group>"; };
 		2070ECCC650F4ED8A05620DE03229593 /* PlanetNineGateway.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = PlanetNineGateway.xcconfig; sourceTree = "<group>"; };
-		25C57E1545420BF0A28E8F2FC953EA79 /* Valet.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Valet.framework; path = Valet.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		295CF1BB06C862502DC7EB028275435C /* Pods-The Ballad of Sigurd.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-The Ballad of Sigurd.debug.xcconfig"; sourceTree = "<group>"; };
+		25375DBC70DAE524D875C7FF4B2DAAB5 /* Pods-The Ballad of Lorbert-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-The Ballad of Lorbert-frameworks.sh"; sourceTree = "<group>"; };
 		2EA03015B2F39D749CD5188448E1A1EF /* Valet-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Valet-Info.plist"; sourceTree = "<group>"; };
 		2F4BD0D4E6CA96B855438E3E50BAEA85 /* PlanetNineGateway-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "PlanetNineGateway-Info.plist"; sourceTree = "<group>"; };
-		307CE2E8D15A533D4BC327C815E88035 /* Pods-The Ballad of SigurdTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-The Ballad of SigurdTests.debug.xcconfig"; sourceTree = "<group>"; };
+		2F6A933F49939DD3E18DA10F7C0BE249 /* Pods_The_Ballad_of_Lorbert.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_The_Ballad_of_Lorbert.framework; path = "Pods-The Ballad of Lorbert.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		33DE935695B807A3F7BA4DFFEB419DD2 /* SecureEnclave.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SecureEnclave.swift; path = Sources/SecureEnclave.swift; sourceTree = "<group>"; };
-		3464A1AEF01E09DC74113637985457A6 /* Pods-The Ballad of SigurdUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-The Ballad of SigurdUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		35F08B48B8CBF63159E24FB97B3B442E /* Network.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Network.swift; path = PlanetNineGateway/Utilities/Network.swift; sourceTree = "<group>"; };
 		3AC0D5A58B712D17CE9DF3A0FF93A987 /* UserModel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UserModel.swift; path = PlanetNineGateway/Models/UserModel.swift; sourceTree = "<group>"; };
+		3F4FFDE3A4E92ED459AD984B13F6AEA1 /* Pods-The Ballad of SigurdUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-The Ballad of SigurdUITests.release.xcconfig"; sourceTree = "<group>"; };
 		40F57B36E966FA23283A2AB3F86D2C6F /* SecItem.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SecItem.swift; path = Sources/Internal/SecItem.swift; sourceTree = "<group>"; };
 		411702161D8DD4E45A1ED0133F770FDA /* GatewayModel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GatewayModel.swift; path = PlanetNineGateway/Models/GatewayModel.swift; sourceTree = "<group>"; };
+		45480FB05B047F41E593BBF2595FBB52 /* Pods-The Ballad of SigurdTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-The Ballad of SigurdTests.release.xcconfig"; sourceTree = "<group>"; };
 		46F232266C466FA7504EF7BA117A8BA8 /* OneTimeBLEGateway.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = OneTimeBLEGateway.swift; path = "PlanetNineGateway/One Time Gateway/OneTimeBLEGateway.swift"; sourceTree = "<group>"; };
-		488DCF50FFB10FA704E3EC2C98D476C7 /* Pods-The Ballad of SigurdUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-The Ballad of SigurdUITests-dummy.m"; sourceTree = "<group>"; };
+		48169542B63A037BDB9C7FDB6E3FA2DB /* Pods-The Ballad of SigurdUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-The Ballad of SigurdUITests-umbrella.h"; sourceTree = "<group>"; };
 		4E3B67552179625350B9424CB15CD3DC /* Valet-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Valet-prefix.pch"; sourceTree = "<group>"; };
-		4E642D452A1432E863609A878DBEA832 /* Pods-The Ballad of SigurdUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-The Ballad of SigurdUITests.modulemap"; sourceTree = "<group>"; };
 		4FF4642EC2C1D27817542E8F141E8AA4 /* Valet.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Valet.modulemap; sourceTree = "<group>"; };
-		540EF61C6F808687478346ACD104D08D /* Pods-The Ballad of SigurdTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-The Ballad of SigurdTests.modulemap"; sourceTree = "<group>"; };
 		5BECF4209ECD5DC3F3B87181B5EC7CD4 /* OneTimeGateway.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = OneTimeGateway.swift; path = "PlanetNineGateway/One Time Gateway/OneTimeGateway.swift"; sourceTree = "<group>"; };
 		5F98F2742F4C75450C43835951A01839 /* NineumModel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NineumModel.swift; path = PlanetNineGateway/Models/NineumModel.swift; sourceTree = "<group>"; };
-		63EE1BCEA0906A61F28BC4F7411A3B96 /* Pods-The Ballad of Sigurd.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-The Ballad of Sigurd.modulemap"; sourceTree = "<group>"; };
+		618F9134ED9BE017F8BA9FB9C3DD66DA /* Pods-The Ballad of Lorbert.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-The Ballad of Lorbert.modulemap"; sourceTree = "<group>"; };
 		647431E9011233E9DE33F1FD9FA93C82 /* Configuration.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Configuration.swift; path = Sources/Internal/Configuration.swift; sourceTree = "<group>"; };
-		655E363E8755948CAC247A8C0D6FEAA1 /* Pods-The Ballad of Sigurd-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-The Ballad of Sigurd-acknowledgements.markdown"; sourceTree = "<group>"; };
+		65B4469747E5F80CA6B595507CCEC7EC /* Pods-The Ballad of Lorbert-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-The Ballad of Lorbert-acknowledgements.markdown"; sourceTree = "<group>"; };
 		701A0DC6A6A0F9DA590CC0D517AABE50 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		741CC9113A0E10A78576A63E085971DA /* PlanetNineGateway.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PlanetNineGateway.h; path = PlanetNineGateway/PlanetNineGateway.h; sourceTree = "<group>"; };
-		7CCD905E3525B7CABE1FF4566FA81514 /* Pods-The Ballad of Sigurd.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-The Ballad of Sigurd.release.xcconfig"; sourceTree = "<group>"; };
+		7CE56DD745F5A7DB1D6FDA4D75FA935E /* Pods-The Ballad of Lorbert-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-The Ballad of Lorbert-umbrella.h"; sourceTree = "<group>"; };
 		7D0D9575AD8E6A454AABF466E92F94BF /* PlanetNineGateway-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "PlanetNineGateway-dummy.m"; sourceTree = "<group>"; };
 		7D50E4CD876AE697E47D1BC3553ACEB8 /* PlanetNineGateway-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PlanetNineGateway-umbrella.h"; sourceTree = "<group>"; };
 		7F4D5104E33817FE58179FF6A5DEF317 /* PlanetNineGateway.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PlanetNineGateway.swift; path = PlanetNineGateway/PlanetNineGateway.swift; sourceTree = "<group>"; };
 		869E3628BBEBE307D27BB995973E5FFD /* SinglePromptSecureEnclaveValet.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SinglePromptSecureEnclaveValet.swift; path = Sources/SinglePromptSecureEnclaveValet.swift; sourceTree = "<group>"; };
-		90D02106092D7AB2D1ADFFAEDB60A7DD /* Pods-The Ballad of SigurdTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-The Ballad of SigurdTests.release.xcconfig"; sourceTree = "<group>"; };
+		8ADDE2CA398B34AF9357DB1E8AECE454 /* Pods-The Ballad of Lorbert.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-The Ballad of Lorbert.release.xcconfig"; sourceTree = "<group>"; };
 		919DEBDC03C7B4D5F2887DECAAE6535A /* BLETwoWayPeripheral.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BLETwoWayPeripheral.swift; path = PlanetNineGateway/BLE/BLETwoWayPeripheral.swift; sourceTree = "<group>"; };
 		91C39060B20ABC50F22C8D0A907B447D /* Identifier.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Identifier.swift; path = Sources/Identifier.swift; sourceTree = "<group>"; };
 		9306052A9F1F284B7652E713A32820C6 /* Valet-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Valet-umbrella.h"; sourceTree = "<group>"; };
+		930711983692C1D459B9B508403A4074 /* Pods-The Ballad of Lorbert-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-The Ballad of Lorbert-Info.plist"; sourceTree = "<group>"; };
 		9352A9EC40E90E59D382CCA4809402CA /* UsePowerModel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UsePowerModel.swift; path = PlanetNineGateway/Models/UsePowerModel.swift; sourceTree = "<group>"; };
 		946FC73C69E8744716B20C7289D29838 /* SecureEnclaveValet.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SecureEnclaveValet.swift; path = Sources/SecureEnclaveValet.swift; sourceTree = "<group>"; };
 		94A61D7E254572592951868E6D440389 /* Valet.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Valet.swift; path = Sources/Valet.swift; sourceTree = "<group>"; };
+		97BA6B6ECC3389BD477D71580AD9DBB1 /* Pods-The Ballad of SigurdUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-The Ballad of SigurdUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		9B832BC6CBE29C0547EEEB06A8027B19 /* Valet-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Valet-dummy.m"; sourceTree = "<group>"; };
 		9BA2CA3053340DBDCA481F897FA3A520 /* SecureEnclaveAccessControl.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SecureEnclaveAccessControl.swift; path = Sources/SecureEnclaveAccessControl.swift; sourceTree = "<group>"; };
+		9BD3ABA3798182664A239E353DA8C655 /* Pods-The Ballad of SigurdTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-The Ballad of SigurdTests.modulemap"; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9DB6AF39E10AB1C893A0878D6D55C9FA /* Pods-The Ballad of SigurdTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-The Ballad of SigurdTests.debug.xcconfig"; sourceTree = "<group>"; };
 		9E7ADEB83EBBE33BD8B4A039C5A05175 /* KeychainQueryConvertible.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KeychainQueryConvertible.swift; path = Sources/KeychainQueryConvertible.swift; sourceTree = "<group>"; };
-		A3673001D391C601D2EF23D19D986DEE /* Pods-The Ballad of Sigurd-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-The Ballad of Sigurd-frameworks.sh"; sourceTree = "<group>"; };
-		A3C8E7BEC19628EEAA9B6192888B015F /* Pods-The Ballad of SigurdTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-The Ballad of SigurdTests-dummy.m"; sourceTree = "<group>"; };
-		A4B746F1FCD70BAF0605CFD2E63B8CE2 /* Pods-The Ballad of SigurdTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-The Ballad of SigurdTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		9EFD99817C1105878AEC086980D105CC /* Pods-The Ballad of Lorbert.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-The Ballad of Lorbert.debug.xcconfig"; sourceTree = "<group>"; };
+		9F7E5A651108A7242C0C70066972DA86 /* Pods-The Ballad of SigurdTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-The Ballad of SigurdTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		A3F08D17D9034CFA6CAE64F4E8312642 /* Pods_The_Ballad_of_SigurdUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_The_Ballad_of_SigurdUITests.framework; path = "Pods-The Ballad of SigurdUITests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A5818458D25BB9E4FDB15CB1B152BC27 /* PlanetNineGateway-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PlanetNineGateway-prefix.pch"; sourceTree = "<group>"; };
 		A5D72986F3895DB3E52E5FD6D110036E /* Valet.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Valet.h; path = Sources/Valet.h; sourceTree = "<group>"; };
-		AA7CC1D613973E157C6D2785A5A8B4FE /* Pods-The Ballad of SigurdUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-The Ballad of SigurdUITests.release.xcconfig"; sourceTree = "<group>"; };
 		AE570E4C00415BCCDB886EE04932F3E9 /* BLEUtils.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BLEUtils.swift; path = PlanetNineGateway/BLE/BLEUtils.swift; sourceTree = "<group>"; };
+		B0BDEA59F65C76E8FBDDB358922AF9E2 /* Pods-The Ballad of Lorbert-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-The Ballad of Lorbert-dummy.m"; sourceTree = "<group>"; };
 		B0E1B1361B0FBCD770740F90EBFF410B /* ErrorHandler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ErrorHandler.swift; path = Sources/ErrorHandler.swift; sourceTree = "<group>"; };
-		B3C7D32D9FD9F9DD2D2685EC842B9362 /* Pods-The Ballad of SigurdTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-The Ballad of SigurdTests-umbrella.h"; sourceTree = "<group>"; };
-		C2C7C0EF02061600B86CEE8DDAF1F503 /* PlanetNineGateway.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = PlanetNineGateway.framework; path = PlanetNineGateway.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		C45E79A67E6BD9D3FC6C9F4C8EEF9125 /* Pods-The Ballad of SigurdUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-The Ballad of SigurdUITests-acknowledgements.plist"; sourceTree = "<group>"; };
+		B4875A422F750E9BB0C88BC81CDE442D /* PlanetNineGateway.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = PlanetNineGateway.framework; path = PlanetNineGateway.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C123B9837214F429AF2E1A1DE5C48058 /* Pods-The Ballad of SigurdUITests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-The Ballad of SigurdUITests-Info.plist"; sourceTree = "<group>"; };
 		C60D40D3BB733181577889E9027D8B15 /* PlanetNineGateway.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = PlanetNineGateway.modulemap; sourceTree = "<group>"; };
-		C9CF955F92466802F3AF3026E07882B6 /* Pods-The Ballad of SigurdUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-The Ballad of SigurdUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		CBA353F506FA6629448D35CE0B902A36 /* Pods-The Ballad of SigurdUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-The Ballad of SigurdUITests.modulemap"; sourceTree = "<group>"; };
+		CC24D415D94AE785D48469B6167C59A3 /* Valet.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Valet.framework; path = Valet.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0EEE528F79A310CF99F628EDB5AC0AD /* OngoingGateway.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = OngoingGateway.swift; path = "PlanetNineGateway/Ongoing Gateway/OngoingGateway.swift"; sourceTree = "<group>"; };
 		D17477ADDFCBF9B02D58514BA6771A51 /* Keychain.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Keychain.swift; path = Sources/Internal/Keychain.swift; sourceTree = "<group>"; };
-		D19BA85737ED33C2239FAD0E76083A03 /* Pods-The Ballad of SigurdUITests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-The Ballad of SigurdUITests-Info.plist"; sourceTree = "<group>"; };
 		D2C8E94A9462E7F1CA7FE2295D1BE693 /* SwiftCompatibility.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwiftCompatibility.swift; path = Sources/SwiftCompatibility.swift; sourceTree = "<group>"; };
 		D417CFB6CA54285D7A12005EFD2FB40A /* Utils.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Utils.swift; path = PlanetNineGateway/Utilities/Utils.swift; sourceTree = "<group>"; };
+		DC9F238C3DC5E6CC5CA5393F456706F2 /* Pods-The Ballad of SigurdTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-The Ballad of SigurdTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		DD57E1A2EDD5C2311B629D7E30CB8374 /* Pods-The Ballad of Lorbert-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-The Ballad of Lorbert-acknowledgements.plist"; sourceTree = "<group>"; };
 		E01E053B90021C573EED942F9CA44202 /* CloudAccessibility.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CloudAccessibility.swift; path = Sources/CloudAccessibility.swift; sourceTree = "<group>"; };
-		E56757B6F52CA26A1DE5D10505242F8D /* Pods-The Ballad of Sigurd-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-The Ballad of Sigurd-acknowledgements.plist"; sourceTree = "<group>"; };
-		EBA9157E59BC9AEB49520A5B7D16B05E /* Pods_The_Ballad_of_SigurdTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_The_Ballad_of_SigurdTests.framework; path = "Pods-The Ballad of SigurdTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		EC634AC7162455F6D2ABECB860A160A0 /* Pods-The Ballad of Sigurd-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-The Ballad of Sigurd-dummy.m"; sourceTree = "<group>"; };
-		F07BD1BE7D87124AD55DBDB23B9A5354 /* Pods_The_Ballad_of_Sigurd.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_The_Ballad_of_Sigurd.framework; path = "Pods-The Ballad of Sigurd.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		F17E9233A25A7CB9345154A6914F525F /* Pods-The Ballad of SigurdTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-The Ballad of SigurdTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		E44FF73BE00255881CF3F2FEEA6D5919 /* Pods-The Ballad of SigurdTests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-The Ballad of SigurdTests-Info.plist"; sourceTree = "<group>"; };
+		E7DA7822EB1E50F80458F5C7DE4521FA /* Pods_The_Ballad_of_SigurdTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_The_Ballad_of_SigurdTests.framework; path = "Pods-The Ballad of SigurdTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F245C58B874A575CD376F59C5361CFE3 /* PlanetNineUser.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PlanetNineUser.swift; path = "PlanetNineGateway/Ongoing Gateway/PlanetNineUser.swift"; sourceTree = "<group>"; };
-		F7A98ED1B54C7DC2FB5962284EAED426 /* Pods-The Ballad of SigurdTests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-The Ballad of SigurdTests-Info.plist"; sourceTree = "<group>"; };
-		F9B40E346D17F1A53F180DADCF6DBB7E /* Pods-The Ballad of Sigurd-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-The Ballad of Sigurd-Info.plist"; sourceTree = "<group>"; };
-		FC1B9BFC1C066165031152A03EF66BF5 /* Pods-The Ballad of Sigurd-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-The Ballad of Sigurd-umbrella.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		5116DC87C5286C23A5ED166BE072560E /* Frameworks */ = {
+		34AFE693BFD29420293B9AB92A032A21 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3AF78D95403883BBE7F8353A90177F15 /* Foundation.framework in Frameworks */,
+				106DB4FF2EBC2DD83B77EFDEC2C6F060 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		78EB1E52477B96A9D42B9722B49E5573 /* Frameworks */ = {
+		546ED622A32E7C069156DD82203AE3BA /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B5022B3CEC4653A8AFFA8D4BC819CE44 /* Foundation.framework in Frameworks */,
-				4BDA59D64A7398C5203DD69E79CFF212 /* Security.framework in Frameworks */,
+				288F6F0B570EB334F8E0991F6CD40278 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7D33AA8EBE433F33B2436B920545363F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D485661C3047F096AE1A6313D7D13115 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -192,19 +199,12 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A92EBEB4930EBD9DBA0EF780BBF1042E /* Frameworks */ = {
+		9CF0A83A59BEFC985C2D4EFFA843EF41 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D6A7A2F31FFE15B7CC7518349724E236 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		F34F6B73A4021310CCF2D4F1058A4BAA /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				E08FECBBA6C23AB8FE28A34EFCE47337 /* Foundation.framework in Frameworks */,
+				37B84F6D48BE7D69C8BCF6C012812585 /* Foundation.framework in Frameworks */,
+				04A294D909A40641EF38660F82670809 /* Security.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -233,16 +233,6 @@
 			path = "../Target Support Files/PlanetNineGateway";
 			sourceTree = "<group>";
 		};
-		2AFEA206E74DADD50C1381C7692B5E28 /* Targets Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				AC99BB1D3112F25209F6314595D99A46 /* Pods-The Ballad of Sigurd */,
-				AA1B287E13414E965C6E958BA1FF3D53 /* Pods-The Ballad of SigurdTests */,
-				A3DB61B97794BCCD458E39C27AFFC0E5 /* Pods-The Ballad of SigurdUITests */,
-			);
-			name = "Targets Support Files";
-			sourceTree = "<group>";
-		};
 		3E28D6E2DCA7B5413C672CDF7CE6D2C8 /* PlanetNineGateway */ = {
 			isa = PBXGroup;
 			children = (
@@ -266,6 +256,67 @@
 			path = PlanetNineGateway;
 			sourceTree = "<group>";
 		};
+		4371F8CA72950783CF9C5BE6BDB3C9F6 /* Pods-The Ballad of Lorbert */ = {
+			isa = PBXGroup;
+			children = (
+				618F9134ED9BE017F8BA9FB9C3DD66DA /* Pods-The Ballad of Lorbert.modulemap */,
+				65B4469747E5F80CA6B595507CCEC7EC /* Pods-The Ballad of Lorbert-acknowledgements.markdown */,
+				DD57E1A2EDD5C2311B629D7E30CB8374 /* Pods-The Ballad of Lorbert-acknowledgements.plist */,
+				B0BDEA59F65C76E8FBDDB358922AF9E2 /* Pods-The Ballad of Lorbert-dummy.m */,
+				25375DBC70DAE524D875C7FF4B2DAAB5 /* Pods-The Ballad of Lorbert-frameworks.sh */,
+				930711983692C1D459B9B508403A4074 /* Pods-The Ballad of Lorbert-Info.plist */,
+				7CE56DD745F5A7DB1D6FDA4D75FA935E /* Pods-The Ballad of Lorbert-umbrella.h */,
+				9EFD99817C1105878AEC086980D105CC /* Pods-The Ballad of Lorbert.debug.xcconfig */,
+				8ADDE2CA398B34AF9357DB1E8AECE454 /* Pods-The Ballad of Lorbert.release.xcconfig */,
+			);
+			name = "Pods-The Ballad of Lorbert";
+			path = "Target Support Files/Pods-The Ballad of Lorbert";
+			sourceTree = "<group>";
+		};
+		74B94516171040E46742DBBA09610501 /* Pods-The Ballad of SigurdUITests */ = {
+			isa = PBXGroup;
+			children = (
+				CBA353F506FA6629448D35CE0B902A36 /* Pods-The Ballad of SigurdUITests.modulemap */,
+				013E848B2972851AA4BC6CCF97D277CE /* Pods-The Ballad of SigurdUITests-acknowledgements.markdown */,
+				08BC5A03EABA5BD07DD49949666882AA /* Pods-The Ballad of SigurdUITests-acknowledgements.plist */,
+				1804AC9CF4B67B2489FB30C62F5B6E47 /* Pods-The Ballad of SigurdUITests-dummy.m */,
+				C123B9837214F429AF2E1A1DE5C48058 /* Pods-The Ballad of SigurdUITests-Info.plist */,
+				48169542B63A037BDB9C7FDB6E3FA2DB /* Pods-The Ballad of SigurdUITests-umbrella.h */,
+				97BA6B6ECC3389BD477D71580AD9DBB1 /* Pods-The Ballad of SigurdUITests.debug.xcconfig */,
+				3F4FFDE3A4E92ED459AD984B13F6AEA1 /* Pods-The Ballad of SigurdUITests.release.xcconfig */,
+			);
+			name = "Pods-The Ballad of SigurdUITests";
+			path = "Target Support Files/Pods-The Ballad of SigurdUITests";
+			sourceTree = "<group>";
+		};
+		83F932452B00B36F92DA3699C9669EAF /* Pods-The Ballad of SigurdTests */ = {
+			isa = PBXGroup;
+			children = (
+				9BD3ABA3798182664A239E353DA8C655 /* Pods-The Ballad of SigurdTests.modulemap */,
+				DC9F238C3DC5E6CC5CA5393F456706F2 /* Pods-The Ballad of SigurdTests-acknowledgements.markdown */,
+				9F7E5A651108A7242C0C70066972DA86 /* Pods-The Ballad of SigurdTests-acknowledgements.plist */,
+				16351E003D2DA2DEE1FE60C2019D7F3E /* Pods-The Ballad of SigurdTests-dummy.m */,
+				E44FF73BE00255881CF3F2FEEA6D5919 /* Pods-The Ballad of SigurdTests-Info.plist */,
+				0121E6F5C43DA7BBFBC6DE440F64EB30 /* Pods-The Ballad of SigurdTests-umbrella.h */,
+				9DB6AF39E10AB1C893A0878D6D55C9FA /* Pods-The Ballad of SigurdTests.debug.xcconfig */,
+				45480FB05B047F41E593BBF2595FBB52 /* Pods-The Ballad of SigurdTests.release.xcconfig */,
+			);
+			name = "Pods-The Ballad of SigurdTests";
+			path = "Target Support Files/Pods-The Ballad of SigurdTests";
+			sourceTree = "<group>";
+		};
+		9A4369F5A528E9CB37321E425F40A217 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B4875A422F750E9BB0C88BC81CDE442D /* PlanetNineGateway.framework */,
+				2F6A933F49939DD3E18DA10F7C0BE249 /* Pods_The_Ballad_of_Lorbert.framework */,
+				E7DA7822EB1E50F80458F5C7DE4521FA /* Pods_The_Ballad_of_SigurdTests.framework */,
+				A3F08D17D9034CFA6CAE64F4E8312642 /* Pods_The_Ballad_of_SigurdUITests.framework */,
+				CC24D415D94AE785D48469B6167C59A3 /* Valet.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		9F8BF27D4DE2662DBD9B3EC87B18039F /* iOS */ = {
 			isa = PBXGroup;
 			children = (
@@ -275,75 +326,14 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
-		A3DB61B97794BCCD458E39C27AFFC0E5 /* Pods-The Ballad of SigurdUITests */ = {
-			isa = PBXGroup;
-			children = (
-				4E642D452A1432E863609A878DBEA832 /* Pods-The Ballad of SigurdUITests.modulemap */,
-				C9CF955F92466802F3AF3026E07882B6 /* Pods-The Ballad of SigurdUITests-acknowledgements.markdown */,
-				C45E79A67E6BD9D3FC6C9F4C8EEF9125 /* Pods-The Ballad of SigurdUITests-acknowledgements.plist */,
-				488DCF50FFB10FA704E3EC2C98D476C7 /* Pods-The Ballad of SigurdUITests-dummy.m */,
-				D19BA85737ED33C2239FAD0E76083A03 /* Pods-The Ballad of SigurdUITests-Info.plist */,
-				03A9B17E608F9ECB4B902A3164AE1CFF /* Pods-The Ballad of SigurdUITests-umbrella.h */,
-				3464A1AEF01E09DC74113637985457A6 /* Pods-The Ballad of SigurdUITests.debug.xcconfig */,
-				AA7CC1D613973E157C6D2785A5A8B4FE /* Pods-The Ballad of SigurdUITests.release.xcconfig */,
-			);
-			name = "Pods-The Ballad of SigurdUITests";
-			path = "Target Support Files/Pods-The Ballad of SigurdUITests";
-			sourceTree = "<group>";
-		};
-		AA1B287E13414E965C6E958BA1FF3D53 /* Pods-The Ballad of SigurdTests */ = {
-			isa = PBXGroup;
-			children = (
-				540EF61C6F808687478346ACD104D08D /* Pods-The Ballad of SigurdTests.modulemap */,
-				F17E9233A25A7CB9345154A6914F525F /* Pods-The Ballad of SigurdTests-acknowledgements.markdown */,
-				A4B746F1FCD70BAF0605CFD2E63B8CE2 /* Pods-The Ballad of SigurdTests-acknowledgements.plist */,
-				A3C8E7BEC19628EEAA9B6192888B015F /* Pods-The Ballad of SigurdTests-dummy.m */,
-				F7A98ED1B54C7DC2FB5962284EAED426 /* Pods-The Ballad of SigurdTests-Info.plist */,
-				B3C7D32D9FD9F9DD2D2685EC842B9362 /* Pods-The Ballad of SigurdTests-umbrella.h */,
-				307CE2E8D15A533D4BC327C815E88035 /* Pods-The Ballad of SigurdTests.debug.xcconfig */,
-				90D02106092D7AB2D1ADFFAEDB60A7DD /* Pods-The Ballad of SigurdTests.release.xcconfig */,
-			);
-			name = "Pods-The Ballad of SigurdTests";
-			path = "Target Support Files/Pods-The Ballad of SigurdTests";
-			sourceTree = "<group>";
-		};
-		AC99BB1D3112F25209F6314595D99A46 /* Pods-The Ballad of Sigurd */ = {
-			isa = PBXGroup;
-			children = (
-				63EE1BCEA0906A61F28BC4F7411A3B96 /* Pods-The Ballad of Sigurd.modulemap */,
-				655E363E8755948CAC247A8C0D6FEAA1 /* Pods-The Ballad of Sigurd-acknowledgements.markdown */,
-				E56757B6F52CA26A1DE5D10505242F8D /* Pods-The Ballad of Sigurd-acknowledgements.plist */,
-				EC634AC7162455F6D2ABECB860A160A0 /* Pods-The Ballad of Sigurd-dummy.m */,
-				A3673001D391C601D2EF23D19D986DEE /* Pods-The Ballad of Sigurd-frameworks.sh */,
-				F9B40E346D17F1A53F180DADCF6DBB7E /* Pods-The Ballad of Sigurd-Info.plist */,
-				FC1B9BFC1C066165031152A03EF66BF5 /* Pods-The Ballad of Sigurd-umbrella.h */,
-				295CF1BB06C862502DC7EB028275435C /* Pods-The Ballad of Sigurd.debug.xcconfig */,
-				7CCD905E3525B7CABE1FF4566FA81514 /* Pods-The Ballad of Sigurd.release.xcconfig */,
-			);
-			name = "Pods-The Ballad of Sigurd";
-			path = "Target Support Files/Pods-The Ballad of Sigurd";
-			sourceTree = "<group>";
-		};
-		C3ADF1BF7731E53320BF13D8B458F63E /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				C2C7C0EF02061600B86CEE8DDAF1F503 /* PlanetNineGateway.framework */,
-				F07BD1BE7D87124AD55DBDB23B9A5354 /* Pods_The_Ballad_of_Sigurd.framework */,
-				EBA9157E59BC9AEB49520A5B7D16B05E /* Pods_The_Ballad_of_SigurdTests.framework */,
-				15FBAF8D5774AC0AF566B7186E7CF4F5 /* Pods_The_Ballad_of_SigurdUITests.framework */,
-				25C57E1545420BF0A28E8F2FC953EA79 /* Valet.framework */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
 		CF1408CF629C7361332E53B88F7BD30C = {
 			isa = PBXGroup;
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
 				1628BF05B4CAFDCC3549A101F5A10A17 /* Frameworks */,
 				D0BAD6A9BE21941DA71FFCDCC9704D73 /* Pods */,
-				C3ADF1BF7731E53320BF13D8B458F63E /* Products */,
-				2AFEA206E74DADD50C1381C7692B5E28 /* Targets Support Files */,
+				9A4369F5A528E9CB37321E425F40A217 /* Products */,
+				DBD6E6298DC843D918A17B936EF1A682 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
@@ -382,6 +372,16 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		DBD6E6298DC843D918A17B936EF1A682 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				4371F8CA72950783CF9C5BE6BDB3C9F6 /* Pods-The Ballad of Lorbert */,
+				83F932452B00B36F92DA3699C9669EAF /* Pods-The Ballad of SigurdTests */,
+				74B94516171040E46742DBBA09610501 /* Pods-The Ballad of SigurdUITests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
 		E6B44F7869773645B746447F8EFE0D15 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -408,59 +408,79 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		66AC769E90713CBEE2E534F724F097E9 /* Headers */ = {
+		63D22A2816FE069F74FF8AA4E05BE7C2 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				71CA7086C9353F9FDC43E36B751126B1 /* Pods-The Ballad of SigurdTests-umbrella.h in Headers */,
+				15EA1389F28BADC2C79462EFA83AD237 /* Valet-umbrella.h in Headers */,
+				01A110B37C225F83B452E42FCFDEC9F3 /* Valet.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		89241B573A404ACFDDE71C42B2FD4EFD /* Headers */ = {
+		D300C97373786E718009751D3FE3CA64 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				13D5DFB3A711B5156724C036499C6522 /* Pods-The Ballad of SigurdUITests-umbrella.h in Headers */,
+				942552E75AC7E3AEDEB87D1C0B6DC946 /* Pods-The Ballad of Lorbert-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B0832D7B3C5EFA1BD92A26270475AEFD /* Headers */ = {
+		DE51F328348A8197C48C081EA0751FF8 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				552F2F69E4D8DEFD91AC2E451D0137BA /* Valet-umbrella.h in Headers */,
-				828EBC8450EA2CB35DDA4123B2292E35 /* Valet.h in Headers */,
+				F503720BE490B5FD443E3CF60AA56590 /* Pods-The Ballad of SigurdTests-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		BCD7B97CA13440FA2C4203E3D0A86E1F /* Headers */ = {
+		F711E8BFCC9F07A61F9D3BE184276B5C /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5F5759E6DDC508C42C3509D542A22EF9 /* Pods-The Ballad of Sigurd-umbrella.h in Headers */,
+				237265C6C50D8E625EE376BB0F8A28F8 /* Pods-The Ballad of SigurdUITests-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		0C00EA9EAB315B33C1650E567A84DB9F /* Pods-The Ballad of SigurdUITests */ = {
+		01B872C6578C40F2160155616BC9F18D /* Pods-The Ballad of SigurdTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 27AC78EA07F9DD2006C957C03A9BFB81 /* Build configuration list for PBXNativeTarget "Pods-The Ballad of SigurdUITests" */;
+			buildConfigurationList = 1175CCD75BA9C70759CFDF0BBEC2F2DC /* Build configuration list for PBXNativeTarget "Pods-The Ballad of SigurdTests" */;
 			buildPhases = (
-				89241B573A404ACFDDE71C42B2FD4EFD /* Headers */,
-				591215D80BEDB76DF6401B1DE7457FF5 /* Sources */,
-				5116DC87C5286C23A5ED166BE072560E /* Frameworks */,
-				64FDDBC048DF7E6D46B7349D01AB95C1 /* Resources */,
+				DE51F328348A8197C48C081EA0751FF8 /* Headers */,
+				C2CE550FA288E162CEA93DE3A6BD9424 /* Sources */,
+				34AFE693BFD29420293B9AB92A032A21 /* Frameworks */,
+				00E4CE0A9F4C8DD114DBF95912FB0254 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				0013E599EE6677CAF9EBA7CAFEB3AF2B /* PBXTargetDependency */,
+				50D54875B9CEB4D1EC45427F5B3F0664 /* PBXTargetDependency */,
 			);
-			name = "Pods-The Ballad of SigurdUITests";
-			productName = "Pods-The Ballad of SigurdUITests";
-			productReference = 15FBAF8D5774AC0AF566B7186E7CF4F5 /* Pods_The_Ballad_of_SigurdUITests.framework */;
+			name = "Pods-The Ballad of SigurdTests";
+			productName = "Pods-The Ballad of SigurdTests";
+			productReference = E7DA7822EB1E50F80458F5C7DE4521FA /* Pods_The_Ballad_of_SigurdTests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		0501D866C211C1EFFD8199A84DF3D861 /* Pods-The Ballad of Lorbert */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B8991BAAFDDEBF54E260B36F3C3A7C8D /* Build configuration list for PBXNativeTarget "Pods-The Ballad of Lorbert" */;
+			buildPhases = (
+				D300C97373786E718009751D3FE3CA64 /* Headers */,
+				ED4F5DF0B5E463FDC8C7AEC400E2E0A5 /* Sources */,
+				7D33AA8EBE433F33B2436B920545363F /* Frameworks */,
+				986AE6FCF189BE9699CC09BBF737DDB6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E316F732A353AB26E076CEE4B815C676 /* PBXTargetDependency */,
+				5E8E906B5E9DAF50531AF25A56147C4E /* PBXTargetDependency */,
+			);
+			name = "Pods-The Ballad of Lorbert";
+			productName = "Pods-The Ballad of Lorbert";
+			productReference = 2F6A933F49939DD3E18DA10F7C0BE249 /* Pods_The_Ballad_of_Lorbert.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		123B96C87DD03C48A65509D9B2F00BC1 /* PlanetNineGateway */ = {
@@ -478,36 +498,17 @@
 			);
 			name = PlanetNineGateway;
 			productName = PlanetNineGateway;
-			productReference = C2C7C0EF02061600B86CEE8DDAF1F503 /* PlanetNineGateway.framework */;
+			productReference = B4875A422F750E9BB0C88BC81CDE442D /* PlanetNineGateway.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		6101E782DACD5B6CE7D2957BDDC98234 /* Pods-The Ballad of SigurdTests */ = {
+		15F6FE0175C63CF16049E70CFC748DDC /* Valet */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 538DEEEB98DAB6AFEE8AEEA2BAC01624 /* Build configuration list for PBXNativeTarget "Pods-The Ballad of SigurdTests" */;
+			buildConfigurationList = B4CD8D97629DCED650F51A23C74102C5 /* Build configuration list for PBXNativeTarget "Valet" */;
 			buildPhases = (
-				66AC769E90713CBEE2E534F724F097E9 /* Headers */,
-				73FB29F94C80140F7BDF2F3A8053F6C8 /* Sources */,
-				F34F6B73A4021310CCF2D4F1058A4BAA /* Frameworks */,
-				336CDA8D2AF8FBB3D33282BBD7B50859 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				C5420DD5EC1EEC1CFDC43F5D09614B57 /* PBXTargetDependency */,
-			);
-			name = "Pods-The Ballad of SigurdTests";
-			productName = "Pods-The Ballad of SigurdTests";
-			productReference = EBA9157E59BC9AEB49520A5B7D16B05E /* Pods_The_Ballad_of_SigurdTests.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		83C351299F202E7F8779C5177DC10903 /* Valet */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 0502B6A2514E80E059555013401C369F /* Build configuration list for PBXNativeTarget "Valet" */;
-			buildPhases = (
-				B0832D7B3C5EFA1BD92A26270475AEFD /* Headers */,
-				FAEAFA03DA5026734744A5EF390A8530 /* Sources */,
-				78EB1E52477B96A9D42B9722B49E5573 /* Frameworks */,
-				4898EE506BE10E17FA9DE6A2B2F462A5 /* Resources */,
+				63D22A2816FE069F74FF8AA4E05BE7C2 /* Headers */,
+				7187E8C17D7D8439C40BADD88A5767D1 /* Sources */,
+				9CF0A83A59BEFC985C2D4EFFA843EF41 /* Frameworks */,
+				AE1F0E86FF978E8D7AAFA6D7A7A24C17 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -515,27 +516,26 @@
 			);
 			name = Valet;
 			productName = Valet;
-			productReference = 25C57E1545420BF0A28E8F2FC953EA79 /* Valet.framework */;
+			productReference = CC24D415D94AE785D48469B6167C59A3 /* Valet.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		FCE0F3869F4FC9E674284B73602E5F67 /* Pods-The Ballad of Sigurd */ = {
+		2FB0C1A3C53BFFF83ED39D2FCEB3DA49 /* Pods-The Ballad of SigurdUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 9ED7FBFA896023D7EBC53A545D79A435 /* Build configuration list for PBXNativeTarget "Pods-The Ballad of Sigurd" */;
+			buildConfigurationList = C8D12CAE44810A0CD18162F065E7C3AF /* Build configuration list for PBXNativeTarget "Pods-The Ballad of SigurdUITests" */;
 			buildPhases = (
-				BCD7B97CA13440FA2C4203E3D0A86E1F /* Headers */,
-				BA67E4F3F6D780B9CDB5F4BC84CE950D /* Sources */,
-				A92EBEB4930EBD9DBA0EF780BBF1042E /* Frameworks */,
-				538731AFE2B59BEFC7BAAD22E93F2AB3 /* Resources */,
+				F711E8BFCC9F07A61F9D3BE184276B5C /* Headers */,
+				187141E96F35145DD3CA5ED5DEDF8571 /* Sources */,
+				546ED622A32E7C069156DD82203AE3BA /* Frameworks */,
+				ADD9BBC971DE07E46601F09C45622DD6 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				F1B4C8FADD648A14C77AE961AE9628B4 /* PBXTargetDependency */,
-				F269B9D2654A3E580EFAFFBF08AECB6F /* PBXTargetDependency */,
+				9D8D5C204453164AC7B8E808BF0CE32C /* PBXTargetDependency */,
 			);
-			name = "Pods-The Ballad of Sigurd";
-			productName = "Pods-The Ballad of Sigurd";
-			productReference = F07BD1BE7D87124AD55DBDB23B9A5354 /* Pods_The_Ballad_of_Sigurd.framework */;
+			name = "Pods-The Ballad of SigurdUITests";
+			productName = "Pods-The Ballad of SigurdUITests";
+			productReference = A3F08D17D9034CFA6CAE64F4E8312642 /* Pods_The_Ballad_of_SigurdUITests.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -555,42 +555,42 @@
 				en,
 			);
 			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
-			productRefGroup = C3ADF1BF7731E53320BF13D8B458F63E /* Products */;
+			productRefGroup = 9A4369F5A528E9CB37321E425F40A217 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				123B96C87DD03C48A65509D9B2F00BC1 /* PlanetNineGateway */,
-				FCE0F3869F4FC9E674284B73602E5F67 /* Pods-The Ballad of Sigurd */,
-				6101E782DACD5B6CE7D2957BDDC98234 /* Pods-The Ballad of SigurdTests */,
-				0C00EA9EAB315B33C1650E567A84DB9F /* Pods-The Ballad of SigurdUITests */,
-				83C351299F202E7F8779C5177DC10903 /* Valet */,
+				0501D866C211C1EFFD8199A84DF3D861 /* Pods-The Ballad of Lorbert */,
+				01B872C6578C40F2160155616BC9F18D /* Pods-The Ballad of SigurdTests */,
+				2FB0C1A3C53BFFF83ED39D2FCEB3DA49 /* Pods-The Ballad of SigurdUITests */,
+				15F6FE0175C63CF16049E70CFC748DDC /* Valet */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		336CDA8D2AF8FBB3D33282BBD7B50859 /* Resources */ = {
+		00E4CE0A9F4C8DD114DBF95912FB0254 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		4898EE506BE10E17FA9DE6A2B2F462A5 /* Resources */ = {
+		986AE6FCF189BE9699CC09BBF737DDB6 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		538731AFE2B59BEFC7BAAD22E93F2AB3 /* Resources */ = {
+		ADD9BBC971DE07E46601F09C45622DD6 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		64FDDBC048DF7E6D46B7349D01AB95C1 /* Resources */ = {
+		AE1F0E86FF978E8D7AAFA6D7A7A24C17 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -607,27 +607,43 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		591215D80BEDB76DF6401B1DE7457FF5 /* Sources */ = {
+		187141E96F35145DD3CA5ED5DEDF8571 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E3CDE1DAEE44071F84F42039DCA3A881 /* Pods-The Ballad of SigurdUITests-dummy.m in Sources */,
+				123A2C87BFCF005245E20B085E055DC3 /* Pods-The Ballad of SigurdUITests-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		73FB29F94C80140F7BDF2F3A8053F6C8 /* Sources */ = {
+		7187E8C17D7D8439C40BADD88A5767D1 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AE5D2F5788A5C0D42FC7211272895648 /* Pods-The Ballad of SigurdTests-dummy.m in Sources */,
+				026C1E8F67C94C8FD9F0932CB9305E48 /* Accessibility.swift in Sources */,
+				AA444C8253907C10EEAA4878204955DB /* CloudAccessibility.swift in Sources */,
+				C133C0B5631ADEEE14F9518BAA6E566A /* Configuration.swift in Sources */,
+				4699ADED7B72DD893E5C538A4CD69ACE /* ErrorHandler.swift in Sources */,
+				C513EBF4DFAEA3B7FD9195F9ADF64097 /* Identifier.swift in Sources */,
+				575046814DFB5B8581B6D15D0CCE76AD /* Keychain.swift in Sources */,
+				BED56756F377A2DC0461B18FBDBF3563 /* KeychainQueryConvertible.swift in Sources */,
+				682266263DC240B1D36903AEB7372215 /* MigrationResult.swift in Sources */,
+				E7D1BD1A9DD5A2AF747D364B36C503D2 /* SecItem.swift in Sources */,
+				DE2063AB533DCC430AA00F67396D5EFA /* SecureEnclave.swift in Sources */,
+				7D0DF1E912EF6C6369433464E06F3F69 /* SecureEnclaveAccessControl.swift in Sources */,
+				8267C17C89474BF10E682DCB01E5BD47 /* SecureEnclaveValet.swift in Sources */,
+				DABCE67B59D4A480CB00E4E2A5A72FEA /* Service.swift in Sources */,
+				F6B1FD76AE558EB8D0E9CAA6396E9FF4 /* SinglePromptSecureEnclaveValet.swift in Sources */,
+				68400D4D8C76735647CA2619A0819085 /* SwiftCompatibility.swift in Sources */,
+				C3C603B5D6F577609A20B5036E9BA191 /* Valet-dummy.m in Sources */,
+				136AA2D15827124014DDAFFF1158CA5F /* Valet.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		BA67E4F3F6D780B9CDB5F4BC84CE950D /* Sources */ = {
+		C2CE550FA288E162CEA93DE3A6BD9424 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				442E11AEBAA2C64BE007E427108C4BBF /* Pods-The Ballad of Sigurd-dummy.m in Sources */,
+				93571BAEDC480F84AE250404AC733459 /* Pods-The Ballad of SigurdTests-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -652,137 +668,44 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		FAEAFA03DA5026734744A5EF390A8530 /* Sources */ = {
+		ED4F5DF0B5E463FDC8C7AEC400E2E0A5 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				167ABEFCAB926B5AABA7C81047C58F14 /* Accessibility.swift in Sources */,
-				7E7DBBBB139E3D85BCF07394397A0916 /* CloudAccessibility.swift in Sources */,
-				061EF80B14BB8FDD4BB031B65FB7945B /* Configuration.swift in Sources */,
-				76565041447A17F5F99ED4D35EB68F2C /* ErrorHandler.swift in Sources */,
-				F296D180DF21A7D11F6238405AABC95E /* Identifier.swift in Sources */,
-				624422ED07542D0BA48281DB11572C38 /* Keychain.swift in Sources */,
-				E4576D23D329C57F443AED371CD76F2A /* KeychainQueryConvertible.swift in Sources */,
-				75C98121C92653D0CB0A1CE03DF45CB5 /* MigrationResult.swift in Sources */,
-				3D703F76D3507F7DA769326E5BB3C34C /* SecItem.swift in Sources */,
-				FC13948F8E4FC9A0DBBAB6A7C13F4983 /* SecureEnclave.swift in Sources */,
-				F3AC815DA2720A9351050EA8A15767BC /* SecureEnclaveAccessControl.swift in Sources */,
-				2E2EC1BD13DCD74CEC7371959AA4EEF9 /* SecureEnclaveValet.swift in Sources */,
-				6359B951CD9D934C09B84313D6F247C9 /* Service.swift in Sources */,
-				C3AB5AD83C1A8F2621904BC29B8A4CED /* SinglePromptSecureEnclaveValet.swift in Sources */,
-				F2D1E72FF806871C68D3E717B083E382 /* SwiftCompatibility.swift in Sources */,
-				D95A790FE644AE37191432078068E1C3 /* Valet-dummy.m in Sources */,
-				8F9EE6758E32AF49A877F4AEF4B87384 /* Valet.swift in Sources */,
+				40A2B887FED81F76F0B5640A8A7665FD /* Pods-The Ballad of Lorbert-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		0013E599EE6677CAF9EBA7CAFEB3AF2B /* PBXTargetDependency */ = {
+		50D54875B9CEB4D1EC45427F5B3F0664 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = "Pods-The Ballad of Sigurd";
-			target = FCE0F3869F4FC9E674284B73602E5F67 /* Pods-The Ballad of Sigurd */;
-			targetProxy = CDA191A22965EA16460535F0CC65AF14 /* PBXContainerItemProxy */;
+			name = "Pods-The Ballad of Lorbert";
+			target = 0501D866C211C1EFFD8199A84DF3D861 /* Pods-The Ballad of Lorbert */;
+			targetProxy = 404B6C42EB6C38574359419FFED77876 /* PBXContainerItemProxy */;
 		};
-		C5420DD5EC1EEC1CFDC43F5D09614B57 /* PBXTargetDependency */ = {
+		5E8E906B5E9DAF50531AF25A56147C4E /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = "Pods-The Ballad of Sigurd";
-			target = FCE0F3869F4FC9E674284B73602E5F67 /* Pods-The Ballad of Sigurd */;
-			targetProxy = E0D27A0C4BF06F8F187CF5BB233CBF65 /* PBXContainerItemProxy */;
+			name = Valet;
+			target = 15F6FE0175C63CF16049E70CFC748DDC /* Valet */;
+			targetProxy = 27165A8301862796568744A5D11072FE /* PBXContainerItemProxy */;
 		};
-		F1B4C8FADD648A14C77AE961AE9628B4 /* PBXTargetDependency */ = {
+		9D8D5C204453164AC7B8E808BF0CE32C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-The Ballad of Lorbert";
+			target = 0501D866C211C1EFFD8199A84DF3D861 /* Pods-The Ballad of Lorbert */;
+			targetProxy = 4D9F2E7B4F824A94D2E44D1E4E2FCB3C /* PBXContainerItemProxy */;
+		};
+		E316F732A353AB26E076CEE4B815C676 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = PlanetNineGateway;
 			target = 123B96C87DD03C48A65509D9B2F00BC1 /* PlanetNineGateway */;
-			targetProxy = C584E021C614E8454A2751552F83FB3A /* PBXContainerItemProxy */;
-		};
-		F269B9D2654A3E580EFAFFBF08AECB6F /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = Valet;
-			target = 83C351299F202E7F8779C5177DC10903 /* Valet */;
-			targetProxy = 5C68D75AE8D7F7F458268130BAA94CEE /* PBXContainerItemProxy */;
+			targetProxy = 72F6AEA8C02E62FB06C87162C7550668 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		2044D8C9F97D539FF43C090D8E87BD6F /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3464A1AEF01E09DC74113637985457A6 /* Pods-The Ballad of SigurdUITests.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-The Ballad of SigurdUITests/Pods-The Ballad of SigurdUITests-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-The Ballad of SigurdUITests/Pods-The Ballad of SigurdUITests.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		25F4E7540AFA2359A6972D43E1E57953 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7CCD905E3525B7CABE1FF4566FA81514 /* Pods-The Ballad of Sigurd.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-The Ballad of Sigurd/Pods-The Ballad of Sigurd-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-The Ballad of Sigurd/Pods-The Ballad of Sigurd.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
 		264C036B4D8A4822F0F53645BCB15CF4 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 2070ECCC650F4ED8A05620DE03229593 /* PlanetNineGateway.xcconfig */;
@@ -820,122 +743,7 @@
 			};
 			name = Release;
 		};
-		2F5A34EE15BEFDAFBC0EEB2C10EDB8C2 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 295CF1BB06C862502DC7EB028275435C /* Pods-The Ballad of Sigurd.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-The Ballad of Sigurd/Pods-The Ballad of Sigurd-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-The Ballad of Sigurd/Pods-The Ballad of Sigurd.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		4C2181A8249DBC16575AF40CF4AD5769 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 307CE2E8D15A533D4BC327C815E88035 /* Pods-The Ballad of SigurdTests.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-The Ballad of SigurdTests/Pods-The Ballad of SigurdTests-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-The Ballad of SigurdTests/Pods-The Ballad of SigurdTests.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		6537DF6B76EDD6B0012451C438505806 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = AA7CC1D613973E157C6D2785A5A8B4FE /* Pods-The Ballad of SigurdUITests.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-The Ballad of SigurdUITests/Pods-The Ballad of SigurdUITests-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-The Ballad of SigurdUITests/Pods-The Ballad of SigurdUITests.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		6D5DD08069F2139718AF7E3C1B192E50 /* Release */ = {
+		3D4EE557CC55C0B81D74136112A8FBBB /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 0895B13F9714CF7DAF811D7ACF037919 /* Valet.xcconfig */;
 			buildSettings = {
@@ -970,6 +778,157 @@
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
+		};
+		552350E529CD146C85CCEDA76030E278 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0895B13F9714CF7DAF811D7ACF037919 /* Valet.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Valet/Valet-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Valet/Valet-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/Valet/Valet.modulemap";
+				PRODUCT_MODULE_NAME = Valet;
+				PRODUCT_NAME = Valet;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		641B63CF3479762493F8703D06FB56FE /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8ADDE2CA398B34AF9357DB1E8AECE454 /* Pods-The Ballad of Lorbert.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-The Ballad of Lorbert/Pods-The Ballad of Lorbert-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-The Ballad of Lorbert/Pods-The Ballad of Lorbert.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		6A85117F6349B4252780ECA7EDA5BFCB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 45480FB05B047F41E593BBF2595FBB52 /* Pods-The Ballad of SigurdTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-The Ballad of SigurdTests/Pods-The Ballad of SigurdTests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-The Ballad of SigurdTests/Pods-The Ballad of SigurdTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		8697FC4C055DF6BB23FF64500DE30820 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 97BA6B6ECC3389BD477D71580AD9DBB1 /* Pods-The Ballad of SigurdUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-The Ballad of SigurdUITests/Pods-The Ballad of SigurdUITests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-The Ballad of SigurdUITests/Pods-The Ballad of SigurdUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
 		};
 		95048DED27745717A55234EB1794C981 /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -1067,10 +1026,12 @@
 			};
 			name = Release;
 		};
-		B1016F79E9D4D96F6CDC5135C8A514CB /* Debug */ = {
+		B2843E55D47378F5BBE358D50C05201A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0895B13F9714CF7DAF811D7ACF037919 /* Valet.xcconfig */;
+			baseConfigurationReference = 3F4FFDE3A4E92ED459AD984B13F6AEA1 /* Pods-The Ballad of SigurdUITests.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -1080,27 +1041,29 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/Valet/Valet-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Valet/Valet-Info.plist";
+				INFOPLIST_FILE = "Target Support Files/Pods-The Ballad of SigurdUITests/Pods-The Ballad of SigurdUITests-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MODULEMAP_FILE = "Target Support Files/Valet/Valet.modulemap";
-				PRODUCT_MODULE_NAME = Valet;
-				PRODUCT_NAME = Valet;
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-The Ballad of SigurdUITests/Pods-The Ballad of SigurdUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Debug;
+			name = Release;
 		};
 		C1391485F05B41BD35738A433056B7FA /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -1166,9 +1129,47 @@
 			};
 			name = Debug;
 		};
-		CA9590B14D52B3F585FB38CE5CFB2A08 /* Release */ = {
+		C1698D248BA1D902956865EA5DF92A3D /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 90D02106092D7AB2D1ADFFAEDB60A7DD /* Pods-The Ballad of SigurdTests.release.xcconfig */;
+			baseConfigurationReference = 9EFD99817C1105878AEC086980D105CC /* Pods-The Ballad of Lorbert.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-The Ballad of Lorbert/Pods-The Ballad of Lorbert-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-The Ballad of Lorbert/Pods-The Ballad of Lorbert.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		E159459ED3F7641B36D9B402A74BE4D5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9DB6AF39E10AB1C893A0878D6D55C9FA /* Pods-The Ballad of SigurdTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -1199,29 +1200,19 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Release;
+			name = Debug;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		0502B6A2514E80E059555013401C369F /* Build configuration list for PBXNativeTarget "Valet" */ = {
+		1175CCD75BA9C70759CFDF0BBEC2F2DC /* Build configuration list for PBXNativeTarget "Pods-The Ballad of SigurdTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				B1016F79E9D4D96F6CDC5135C8A514CB /* Debug */,
-				6D5DD08069F2139718AF7E3C1B192E50 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		27AC78EA07F9DD2006C957C03A9BFB81 /* Build configuration list for PBXNativeTarget "Pods-The Ballad of SigurdUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				2044D8C9F97D539FF43C090D8E87BD6F /* Debug */,
-				6537DF6B76EDD6B0012451C438505806 /* Release */,
+				E159459ED3F7641B36D9B402A74BE4D5 /* Debug */,
+				6A85117F6349B4252780ECA7EDA5BFCB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -1235,20 +1226,29 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		538DEEEB98DAB6AFEE8AEEA2BAC01624 /* Build configuration list for PBXNativeTarget "Pods-The Ballad of SigurdTests" */ = {
+		B4CD8D97629DCED650F51A23C74102C5 /* Build configuration list for PBXNativeTarget "Valet" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				4C2181A8249DBC16575AF40CF4AD5769 /* Debug */,
-				CA9590B14D52B3F585FB38CE5CFB2A08 /* Release */,
+				552350E529CD146C85CCEDA76030E278 /* Debug */,
+				3D4EE557CC55C0B81D74136112A8FBBB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		9ED7FBFA896023D7EBC53A545D79A435 /* Build configuration list for PBXNativeTarget "Pods-The Ballad of Sigurd" */ = {
+		B8991BAAFDDEBF54E260B36F3C3A7C8D /* Build configuration list for PBXNativeTarget "Pods-The Ballad of Lorbert" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				2F5A34EE15BEFDAFBC0EEB2C10EDB8C2 /* Debug */,
-				25F4E7540AFA2359A6972D43E1E57953 /* Release */,
+				C1698D248BA1D902956865EA5DF92A3D /* Debug */,
+				641B63CF3479762493F8703D06FB56FE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C8D12CAE44810A0CD18162F065E7C3AF /* Build configuration list for PBXNativeTarget "Pods-The Ballad of SigurdUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8697FC4C055DF6BB23FF64500DE30820 /* Debug */,
+				B2843E55D47378F5BBE358D50C05201A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

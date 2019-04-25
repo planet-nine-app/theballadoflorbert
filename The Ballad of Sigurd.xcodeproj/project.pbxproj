@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		60707F5A1FBBF586D51E8776 /* Pods_The_Ballad_of_SigurdUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D7D236FADCA30916E631D8C /* Pods_The_Ballad_of_SigurdUITests.framework */; };
+		9C5C4FC038452A3C713A2843 /* Pods_The_Ballad_of_Lorbert.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43E7256FB185FE04CC54A25C /* Pods_The_Ballad_of_Lorbert.framework */; };
 		9D4A62EC3D3C4C740C7C1FCF /* Pods_The_Ballad_of_SigurdTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53F3519C373C20127125D289 /* Pods_The_Ballad_of_SigurdTests.framework */; };
 		CA1E76C3223C28A200EA0FAF /* EquipmentConsole.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA1E76C2223C28A200EA0FAF /* EquipmentConsole.swift */; };
 		CA1E76C5223C3BE500EA0FAF /* InventorySelector.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA1E76C4223C3BE500EA0FAF /* InventorySelector.swift */; };
@@ -34,17 +35,13 @@
 		CA1E76F1223C55CD00EA0FAF /* Nineum6_Small@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CA1E76DC223C55CD00EA0FAF /* Nineum6_Small@2x.png */; };
 		CA1E76F2223C55CD00EA0FAF /* Nineum4_Small@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CA1E76DD223C55CD00EA0FAF /* Nineum4_Small@2x.png */; };
 		CA46E3BD225296C6002E891C /* Alien2_Rest@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = CA46E3B1225296C5002E891C /* Alien2_Rest@3x.png */; };
-		CA46E3BE225296C6002E891C /* AlienBoss_Rest@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = CA46E3B2225296C5002E891C /* AlienBoss_Rest@3x.png */; };
 		CA46E3BF225296C6002E891C /* Alien3_Rest@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = CA46E3B3225296C6002E891C /* Alien3_Rest@3x.png */; };
-		CA46E3C0225296C6002E891C /* Alien2_Fight@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = CA46E3B4225296C6002E891C /* Alien2_Fight@3x.png */; };
 		CA46E3C1225296C6002E891C /* Alien3_Fight@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = CA46E3B5225296C6002E891C /* Alien3_Fight@3x.png */; };
 		CA46E3C2225296C6002E891C /* Alien1_Weapon@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = CA46E3B6225296C6002E891C /* Alien1_Weapon@3x.png */; };
 		CA46E3C3225296C6002E891C /* Alien2_Weapon@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = CA46E3B7225296C6002E891C /* Alien2_Weapon@3x.png */; };
 		CA46E3C4225296C6002E891C /* Alien1_Rest@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = CA46E3B8225296C6002E891C /* Alien1_Rest@3x.png */; };
-		CA46E3C5225296C6002E891C /* AlienBoss_Weapon@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = CA46E3B9225296C6002E891C /* AlienBoss_Weapon@3x.png */; };
 		CA46E3C6225296C6002E891C /* Background@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = CA46E3BA225296C6002E891C /* Background@3x.png */; };
 		CA46E3C7225296C6002E891C /* Alien3_Weapon@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = CA46E3BB225296C6002E891C /* Alien3_Weapon@3x.png */; };
-		CA46E3C8225296C6002E891C /* AlienBoss_Fight@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = CA46E3BC225296C6002E891C /* AlienBoss_Fight@3x.png */; };
 		CA46E3CA2252ACD3002E891C /* BrynAttack.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA46E3C92252ACD3002E891C /* BrynAttack.swift */; };
 		CA46E3CC2252B234002E891C /* SigurdAttack.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA46E3CB2252B234002E891C /* SigurdAttack.swift */; };
 		CA46E3CE2252B4A8002E891C /* BattleAnders.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA46E3CD2252B4A8002E891C /* BattleAnders.swift */; };
@@ -121,7 +118,18 @@
 		CAB4EC1D221F6A570066EDC4 /* LFCGzipUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = CAB4EC1A221F6A560066EDC4 /* LFCGzipUtility.m */; };
 		CAB4EC1E221F6A570066EDC4 /* JSTileMap.m in Sources */ = {isa = PBXBuildFile; fileRef = CAB4EC1C221F6A570066EDC4 /* JSTileMap.m */; };
 		CAB4EC23221F6AB90066EDC4 /* AbstractScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAB4EC22221F6AB90066EDC4 /* AbstractScene.swift */; };
-		EB7FDCC16600EE77DEF99F5F /* Pods_The_Ballad_of_Sigurd.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6059DB171FC9D443A925B423 /* Pods_The_Ballad_of_Sigurd.framework */; };
+		CAC2C6DE2257D26000C5A78D /* Alien2_Fight@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = CAC2C6DD2257D26000C5A78D /* Alien2_Fight@3x.png */; };
+		CAC2C6E02257D28100C5A78D /* Alien1_Fight@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = CAC2C6DF2257D28100C5A78D /* Alien1_Fight@3x.png */; };
+		CAC2C6EA225800FE00C5A78D /* AlienBoss_Weapon@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = CAC2C6E1225800FD00C5A78D /* AlienBoss_Weapon@3x.png */; };
+		CAC2C6EB225800FE00C5A78D /* AlienBoss_Fight@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = CAC2C6E2225800FE00C5A78D /* AlienBoss_Fight@3x.png */; };
+		CAC2C6EC225800FE00C5A78D /* Lorbert_Small@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = CAC2C6E3225800FE00C5A78D /* Lorbert_Small@3x.png */; };
+		CAC2C6ED225800FE00C5A78D /* IO_Large@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = CAC2C6E4225800FE00C5A78D /* IO_Large@3x.png */; };
+		CAC2C6EE225800FE00C5A78D /* AlienBoss_Rest@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = CAC2C6E5225800FE00C5A78D /* AlienBoss_Rest@3x.png */; };
+		CAC2C6EF225800FE00C5A78D /* IO_Small@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = CAC2C6E6225800FE00C5A78D /* IO_Small@3x.png */; };
+		CAC2C6F0225800FE00C5A78D /* Artro_Large@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = CAC2C6E7225800FE00C5A78D /* Artro_Large@3x.png */; };
+		CAC2C6F1225800FE00C5A78D /* Lorbert_Large@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = CAC2C6E8225800FE00C5A78D /* Lorbert_Large@3x.png */; };
+		CAC2C6F2225800FE00C5A78D /* Artro_Small@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = CAC2C6E9225800FE00C5A78D /* Artro_Small@3x.png */; };
+		CAC2C6F4225805FB00C5A78D /* BossAttack.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAC2C6F3225805FB00C5A78D /* BossAttack.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -142,6 +150,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		24D633CB94050B79DD329C7B /* Pods-The Ballad of Lorbert.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-The Ballad of Lorbert.release.xcconfig"; path = "Target Support Files/Pods-The Ballad of Lorbert/Pods-The Ballad of Lorbert.release.xcconfig"; sourceTree = "<group>"; };
+		43E7256FB185FE04CC54A25C /* Pods_The_Ballad_of_Lorbert.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_The_Ballad_of_Lorbert.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4B6C69EF00AF47D5B0D6E6E2 /* Pods-The Ballad of SigurdUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-The Ballad of SigurdUITests.release.xcconfig"; path = "Target Support Files/Pods-The Ballad of SigurdUITests/Pods-The Ballad of SigurdUITests.release.xcconfig"; sourceTree = "<group>"; };
 		510F921F2FBEA32777BD9CB4 /* Pods-The Ballad of SigurdTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-The Ballad of SigurdTests.release.xcconfig"; path = "Target Support Files/Pods-The Ballad of SigurdTests/Pods-The Ballad of SigurdTests.release.xcconfig"; sourceTree = "<group>"; };
 		53F3519C373C20127125D289 /* Pods_The_Ballad_of_SigurdTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_The_Ballad_of_SigurdTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -174,17 +184,13 @@
 		CA1E76DC223C55CD00EA0FAF /* Nineum6_Small@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Nineum6_Small@2x.png"; sourceTree = "<group>"; };
 		CA1E76DD223C55CD00EA0FAF /* Nineum4_Small@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Nineum4_Small@2x.png"; sourceTree = "<group>"; };
 		CA46E3B1225296C5002E891C /* Alien2_Rest@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Alien2_Rest@3x.png"; sourceTree = "<group>"; };
-		CA46E3B2225296C5002E891C /* AlienBoss_Rest@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "AlienBoss_Rest@3x.png"; sourceTree = "<group>"; };
 		CA46E3B3225296C6002E891C /* Alien3_Rest@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Alien3_Rest@3x.png"; sourceTree = "<group>"; };
-		CA46E3B4225296C6002E891C /* Alien2_Fight@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Alien2_Fight@3x.png"; sourceTree = "<group>"; };
 		CA46E3B5225296C6002E891C /* Alien3_Fight@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Alien3_Fight@3x.png"; sourceTree = "<group>"; };
 		CA46E3B6225296C6002E891C /* Alien1_Weapon@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Alien1_Weapon@3x.png"; sourceTree = "<group>"; };
 		CA46E3B7225296C6002E891C /* Alien2_Weapon@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Alien2_Weapon@3x.png"; sourceTree = "<group>"; };
 		CA46E3B8225296C6002E891C /* Alien1_Rest@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Alien1_Rest@3x.png"; sourceTree = "<group>"; };
-		CA46E3B9225296C6002E891C /* AlienBoss_Weapon@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "AlienBoss_Weapon@3x.png"; sourceTree = "<group>"; };
 		CA46E3BA225296C6002E891C /* Background@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Background@3x.png"; sourceTree = "<group>"; };
 		CA46E3BB225296C6002E891C /* Alien3_Weapon@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Alien3_Weapon@3x.png"; sourceTree = "<group>"; };
-		CA46E3BC225296C6002E891C /* AlienBoss_Fight@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "AlienBoss_Fight@3x.png"; sourceTree = "<group>"; };
 		CA46E3C92252ACD3002E891C /* BrynAttack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrynAttack.swift; sourceTree = "<group>"; };
 		CA46E3CB2252B234002E891C /* SigurdAttack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SigurdAttack.swift; sourceTree = "<group>"; };
 		CA46E3CD2252B4A8002E891C /* BattleAnders.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BattleAnders.swift; sourceTree = "<group>"; };
@@ -248,7 +254,7 @@
 		CAB009B622458DCD00900F3E /* CharacterSelector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterSelector.swift; sourceTree = "<group>"; };
 		CAB009B8224964B700900F3E /* CharacterSelected.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterSelected.swift; sourceTree = "<group>"; };
 		CAB009BA224964C500900F3E /* ExitButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExitButton.swift; sourceTree = "<group>"; };
-		CAB4EAD9221F693B0066EDC4 /* The Ballad of Sigurd.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "The Ballad of Sigurd.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CAB4EAD9221F693B0066EDC4 /* The Ballad of Lorbert.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "The Ballad of Lorbert.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CAB4EADC221F693B0066EDC4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CAB4EADE221F693B0066EDC4 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
 		CAB4EAE0221F693B0066EDC4 /* Actions.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Actions.sks; sourceTree = "<group>"; };
@@ -273,8 +279,21 @@
 		CAB4EC1C221F6A570066EDC4 /* JSTileMap.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSTileMap.m; sourceTree = "<group>"; };
 		CAB4EC20221F6A660066EDC4 /* The Ballad of Sigurd-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "The Ballad of Sigurd-Bridging-Header.h"; sourceTree = "<group>"; };
 		CAB4EC22221F6AB90066EDC4 /* AbstractScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbstractScene.swift; sourceTree = "<group>"; };
+		CAC2C6DD2257D26000C5A78D /* Alien2_Fight@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Alien2_Fight@3x.png"; sourceTree = "<group>"; };
+		CAC2C6DF2257D28100C5A78D /* Alien1_Fight@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Alien1_Fight@3x.png"; sourceTree = "<group>"; };
+		CAC2C6E1225800FD00C5A78D /* AlienBoss_Weapon@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "AlienBoss_Weapon@3x.png"; sourceTree = "<group>"; };
+		CAC2C6E2225800FE00C5A78D /* AlienBoss_Fight@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "AlienBoss_Fight@3x.png"; sourceTree = "<group>"; };
+		CAC2C6E3225800FE00C5A78D /* Lorbert_Small@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Lorbert_Small@3x.png"; sourceTree = "<group>"; };
+		CAC2C6E4225800FE00C5A78D /* IO_Large@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "IO_Large@3x.png"; sourceTree = "<group>"; };
+		CAC2C6E5225800FE00C5A78D /* AlienBoss_Rest@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "AlienBoss_Rest@3x.png"; sourceTree = "<group>"; };
+		CAC2C6E6225800FE00C5A78D /* IO_Small@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "IO_Small@3x.png"; sourceTree = "<group>"; };
+		CAC2C6E7225800FE00C5A78D /* Artro_Large@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Artro_Large@3x.png"; sourceTree = "<group>"; };
+		CAC2C6E8225800FE00C5A78D /* Lorbert_Large@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Lorbert_Large@3x.png"; sourceTree = "<group>"; };
+		CAC2C6E9225800FE00C5A78D /* Artro_Small@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Artro_Small@3x.png"; sourceTree = "<group>"; };
+		CAC2C6F3225805FB00C5A78D /* BossAttack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BossAttack.swift; sourceTree = "<group>"; };
 		E5E2CD9154DEFA4645E0B7B4 /* Pods-The Ballad of Sigurd.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-The Ballad of Sigurd.debug.xcconfig"; path = "Target Support Files/Pods-The Ballad of Sigurd/Pods-The Ballad of Sigurd.debug.xcconfig"; sourceTree = "<group>"; };
 		EF9FC4E34C3984F6686151D6 /* Pods-The Ballad of SigurdTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-The Ballad of SigurdTests.debug.xcconfig"; path = "Target Support Files/Pods-The Ballad of SigurdTests/Pods-The Ballad of SigurdTests.debug.xcconfig"; sourceTree = "<group>"; };
+		F0C9CAB01E76AF73A73A2C90 /* Pods-The Ballad of Lorbert.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-The Ballad of Lorbert.debug.xcconfig"; path = "Target Support Files/Pods-The Ballad of Lorbert/Pods-The Ballad of Lorbert.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -282,7 +301,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EB7FDCC16600EE77DEF99F5F /* Pods_The_Ballad_of_Sigurd.framework in Frameworks */,
+				9C5C4FC038452A3C713A2843 /* Pods_The_Ballad_of_Lorbert.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -314,6 +333,8 @@
 				510F921F2FBEA32777BD9CB4 /* Pods-The Ballad of SigurdTests.release.xcconfig */,
 				AE82BB8F9771EABDB5D8FCF8 /* Pods-The Ballad of SigurdUITests.debug.xcconfig */,
 				4B6C69EF00AF47D5B0D6E6E2 /* Pods-The Ballad of SigurdUITests.release.xcconfig */,
+				F0C9CAB01E76AF73A73A2C90 /* Pods-The Ballad of Lorbert.debug.xcconfig */,
+				24D633CB94050B79DD329C7B /* Pods-The Ballad of Lorbert.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -324,6 +345,7 @@
 				6059DB171FC9D443A925B423 /* Pods_The_Ballad_of_Sigurd.framework */,
 				53F3519C373C20127125D289 /* Pods_The_Ballad_of_SigurdTests.framework */,
 				9D7D236FADCA30916E631D8C /* Pods_The_Ballad_of_SigurdUITests.framework */,
+				43E7256FB185FE04CC54A25C /* Pods_The_Ballad_of_Lorbert.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -359,17 +381,24 @@
 		CA46E3B0225296AB002E891C /* Updated Images */ = {
 			isa = PBXGroup;
 			children = (
-				CA46E3B4225296C6002E891C /* Alien2_Fight@3x.png */,
 				CA46E3B1225296C5002E891C /* Alien2_Rest@3x.png */,
+				CAC2C6DD2257D26000C5A78D /* Alien2_Fight@3x.png */,
 				CA46E3B7225296C6002E891C /* Alien2_Weapon@3x.png */,
 				CA46E3B5225296C6002E891C /* Alien3_Fight@3x.png */,
 				CA46E3B3225296C6002E891C /* Alien3_Rest@3x.png */,
 				CA46E3BB225296C6002E891C /* Alien3_Weapon@3x.png */,
+				CAC2C6DF2257D28100C5A78D /* Alien1_Fight@3x.png */,
 				CA46E3B8225296C6002E891C /* Alien1_Rest@3x.png */,
 				CA46E3B6225296C6002E891C /* Alien1_Weapon@3x.png */,
-				CA46E3BC225296C6002E891C /* AlienBoss_Fight@3x.png */,
-				CA46E3B2225296C5002E891C /* AlienBoss_Rest@3x.png */,
-				CA46E3B9225296C6002E891C /* AlienBoss_Weapon@3x.png */,
+				CAC2C6E2225800FE00C5A78D /* AlienBoss_Fight@3x.png */,
+				CAC2C6E5225800FE00C5A78D /* AlienBoss_Rest@3x.png */,
+				CAC2C6E1225800FD00C5A78D /* AlienBoss_Weapon@3x.png */,
+				CAC2C6E7225800FE00C5A78D /* Artro_Large@3x.png */,
+				CAC2C6E9225800FE00C5A78D /* Artro_Small@3x.png */,
+				CAC2C6E4225800FE00C5A78D /* IO_Large@3x.png */,
+				CAC2C6E6225800FE00C5A78D /* IO_Small@3x.png */,
+				CAC2C6E8225800FE00C5A78D /* Lorbert_Large@3x.png */,
+				CAC2C6E3225800FE00C5A78D /* Lorbert_Small@3x.png */,
 				CA46E3BA225296C6002E891C /* Background@3x.png */,
 			);
 			path = "Updated Images";
@@ -552,6 +581,7 @@
 				CA46E3CF2252B72C002E891C /* AndersAttack.swift */,
 				CA46E3D32253E279002E891C /* SpecialPowerButton.swift */,
 				CA46E3D52253EC91002E891C /* InventoryButton.swift */,
+				CAC2C6F3225805FB00C5A78D /* BossAttack.swift */,
 			);
 			path = "Battle Effects";
 			sourceTree = "<group>";
@@ -587,7 +617,7 @@
 		CAB4EADA221F693B0066EDC4 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				CAB4EAD9221F693B0066EDC4 /* The Ballad of Sigurd.app */,
+				CAB4EAD9221F693B0066EDC4 /* The Ballad of Lorbert.app */,
 				CAB4EAF3221F693D0066EDC4 /* The Ballad of SigurdTests.xctest */,
 				CAB4EAFE221F693D0066EDC4 /* The Ballad of SigurdUITests.xctest */,
 			);
@@ -663,9 +693,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		CAB4EAD8221F693B0066EDC4 /* The Ballad of Sigurd */ = {
+		CAB4EAD8221F693B0066EDC4 /* The Ballad of Lorbert */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = CAB4EB07221F693D0066EDC4 /* Build configuration list for PBXNativeTarget "The Ballad of Sigurd" */;
+			buildConfigurationList = CAB4EB07221F693D0066EDC4 /* Build configuration list for PBXNativeTarget "The Ballad of Lorbert" */;
 			buildPhases = (
 				1B301303F2017219A4EBDD78 /* [CP] Check Pods Manifest.lock */,
 				CAB4EAD5221F693B0066EDC4 /* Sources */,
@@ -677,9 +707,9 @@
 			);
 			dependencies = (
 			);
-			name = "The Ballad of Sigurd";
+			name = "The Ballad of Lorbert";
 			productName = "The Ballad of Sigurd";
-			productReference = CAB4EAD9221F693B0066EDC4 /* The Ballad of Sigurd.app */;
+			productReference = CAB4EAD9221F693B0066EDC4 /* The Ballad of Lorbert.app */;
 			productType = "com.apple.product-type.application";
 		};
 		CAB4EAF2221F693D0066EDC4 /* The Ballad of SigurdTests */ = {
@@ -757,7 +787,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				CAB4EAD8221F693B0066EDC4 /* The Ballad of Sigurd */,
+				CAB4EAD8221F693B0066EDC4 /* The Ballad of Lorbert */,
 				CAB4EAF2221F693D0066EDC4 /* The Ballad of SigurdTests */,
 				CAB4EAFD221F693D0066EDC4 /* The Ballad of SigurdUITests */,
 			);
@@ -772,20 +802,17 @@
 				CA1E76EC223C55CD00EA0FAF /* Nineum3_Small@2x.png in Resources */,
 				CA1E76F2223C55CD00EA0FAF /* Nineum4_Small@2x.png in Resources */,
 				CA1E76E9223C55CD00EA0FAF /* Nineum6_Small.png in Resources */,
-				CA46E3C5225296C6002E891C /* AlienBoss_Weapon@3x.png in Resources */,
 				CAB4EAE8221F693B0066EDC4 /* Main.storyboard in Resources */,
-				CA46E3BE225296C6002E891C /* AlienBoss_Rest@3x.png in Resources */,
 				CAB4EADF221F693B0066EDC4 /* GameScene.sks in Resources */,
 				CA1E76E3223C55CD00EA0FAF /* Nineum7_Small@3x.png in Resources */,
 				CA46E3BF225296C6002E891C /* Alien3_Rest@3x.png in Resources */,
-				CA46E3C0225296C6002E891C /* Alien2_Fight@3x.png in Resources */,
 				CA640C742226071D004905E0 /* Baal_ready_pose_4x.png in Resources */,
 				CA1E76F1223C55CD00EA0FAF /* Nineum6_Small@2x.png in Resources */,
 				CA640C5B2220B46F004905E0 /* Ubuntu-Medium.ttf in Resources */,
-				CA46E3C8225296C6002E891C /* AlienBoss_Fight@3x.png in Resources */,
 				CA640C80222739A2004905E0 /* Bryn_4x_attack.png in Resources */,
 				CA640C5A2220B46F004905E0 /* Orbitron-Bold.ttf in Resources */,
 				CAB4EAEA221F693D0066EDC4 /* Assets.xcassets in Resources */,
+				CAC2C6EB225800FE00C5A78D /* AlienBoss_Fight@3x.png in Resources */,
 				CA1E76DF223C55CD00EA0FAF /* Nineum6_Small@3x.png in Resources */,
 				CA1E76E1223C55CD00EA0FAF /* Nineum1_Small@3x.png in Resources */,
 				CA640C7E2227399A004905E0 /* Baal_action_pose_10x.png in Resources */,
@@ -795,11 +822,16 @@
 				CA46E3C7225296C6002E891C /* Alien3_Weapon@3x.png in Resources */,
 				CA1E76E0223C55CD00EA0FAF /* Nineum4_Small@3x.png in Resources */,
 				CA1E76DE223C55CD00EA0FAF /* Nineum5_Small@3x.png in Resources */,
+				CAC2C6ED225800FE00C5A78D /* IO_Large@3x.png in Resources */,
 				CA46E3C2225296C6002E891C /* Alien1_Weapon@3x.png in Resources */,
+				CAC2C6EC225800FE00C5A78D /* Lorbert_Small@3x.png in Resources */,
 				CA640C9C222872F8004905E0 /* HealingRain.sks in Resources */,
+				CAC2C6E02257D28100C5A78D /* Alien1_Fight@3x.png in Resources */,
 				CA46E3BD225296C6002E891C /* Alien2_Rest@3x.png in Resources */,
 				CA640C7622260746004905E0 /* Bryn_4x_ready.png in Resources */,
+				CAC2C6F1225800FE00C5A78D /* Lorbert_Large@3x.png in Resources */,
 				CA640C972228690E004905E0 /* icecube.png in Resources */,
+				CAC2C6EA225800FE00C5A78D /* AlienBoss_Weapon@3x.png in Resources */,
 				CA46E3C1225296C6002E891C /* Alien3_Fight@3x.png in Resources */,
 				CA1E76E7223C55CD00EA0FAF /* Nineum5_Small@2x.png in Resources */,
 				CA1E76EB223C55CD00EA0FAF /* Nineum3_Small.png in Resources */,
@@ -808,6 +840,7 @@
 				CA640C8D22275F9E004905E0 /* RuneDrawing.sks in Resources */,
 				CA46E3C3225296C6002E891C /* Alien2_Weapon@3x.png in Resources */,
 				CA640C9D222872F8004905E0 /* Assets.xcassets in Resources */,
+				CAC2C6F2225800FE00C5A78D /* Artro_Small@3x.png in Resources */,
 				CA640CA52228784D004905E0 /* cloud2.png in Resources */,
 				CA1E76EE223C55CD00EA0FAF /* Nineum2_Small@3x.png in Resources */,
 				CAB4EAED221F693D0066EDC4 /* LaunchScreen.storyboard in Resources */,
@@ -815,14 +848,18 @@
 				CA1E76E8223C55CD00EA0FAF /* Nineum2_Small.png in Resources */,
 				CA1E76E2223C55CD00EA0FAF /* Nineum7_Small@2x.png in Resources */,
 				CA1E76F0223C55CD00EA0FAF /* Nineum3_Small@3x.png in Resources */,
+				CAC2C6DE2257D26000C5A78D /* Alien2_Fight@3x.png in Resources */,
 				CA640C6E22260378004905E0 /* grassy_lake.png in Resources */,
 				CA1E76EF223C55CD00EA0FAF /* Nineum4_Small.png in Resources */,
 				CA46E3C4225296C6002E891C /* Alien1_Rest@3x.png in Resources */,
 				CA46E3C6225296C6002E891C /* Background@3x.png in Resources */,
 				CAB4EAE1221F693B0066EDC4 /* Actions.sks in Resources */,
+				CAC2C6EF225800FE00C5A78D /* IO_Small@3x.png in Resources */,
 				CA1E76ED223C55CD00EA0FAF /* Nineum5_Small.png in Resources */,
+				CAC2C6F0225800FE00C5A78D /* Artro_Large@3x.png in Resources */,
 				CA640C9522285A81004905E0 /* runeIsa.png in Resources */,
 				CA1E76E4223C55CD00EA0FAF /* Nineum7_Small.png in Resources */,
+				CAC2C6EE225800FE00C5A78D /* AlienBoss_Rest@3x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -858,7 +895,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-The Ballad of Sigurd-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-The Ballad of Lorbert-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -895,7 +932,7 @@
 			inputFileListPaths = (
 			);
 			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-The Ballad of Sigurd/Pods-The Ballad of Sigurd-frameworks.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-The Ballad of Lorbert/Pods-The Ballad of Lorbert-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/PlanetNineGateway/PlanetNineGateway.framework",
 				"${BUILT_PRODUCTS_DIR}/Valet/Valet.framework",
 			);
@@ -908,7 +945,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-The Ballad of Sigurd/Pods-The Ballad of Sigurd-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-The Ballad of Lorbert/Pods-The Ballad of Lorbert-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		95F83BD59EBBF01D42FE803D /* [CP] Check Pods Manifest.lock */ = {
@@ -957,6 +994,7 @@
 				CA640C33222098CE004905E0 /* Bracers.swift in Sources */,
 				CA640CAD2229E6EE004905E0 /* TutorialControls.swift in Sources */,
 				CAB4EC1E221F6A570066EDC4 /* JSTileMap.m in Sources */,
+				CAC2C6F4225805FB00C5A78D /* BossAttack.swift in Sources */,
 				CA1E76C5223C3BE500EA0FAF /* InventorySelector.swift in Sources */,
 				CA46E3D62253EC91002E891C /* InventoryButton.swift in Sources */,
 				CAB4EAE5221F693B0066EDC4 /* GameViewController.swift in Sources */,
@@ -1020,12 +1058,12 @@
 /* Begin PBXTargetDependency section */
 		CAB4EAF5221F693D0066EDC4 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = CAB4EAD8221F693B0066EDC4 /* The Ballad of Sigurd */;
+			target = CAB4EAD8221F693B0066EDC4 /* The Ballad of Lorbert */;
 			targetProxy = CAB4EAF4221F693D0066EDC4 /* PBXContainerItemProxy */;
 		};
 		CAB4EB00221F693D0066EDC4 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = CAB4EAD8221F693B0066EDC4 /* The Ballad of Sigurd */;
+			target = CAB4EAD8221F693B0066EDC4 /* The Ballad of Lorbert */;
 			targetProxy = CAB4EAFF221F693D0066EDC4 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -1168,7 +1206,7 @@
 		};
 		CAB4EB08221F693D0066EDC4 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E5E2CD9154DEFA4645E0B7B4 /* Pods-The Ballad of Sigurd.debug.xcconfig */;
+			baseConfigurationReference = F0C9CAB01E76AF73A73A2C90 /* Pods-The Ballad of Lorbert.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -1190,7 +1228,7 @@
 		};
 		CAB4EB09221F693D0066EDC4 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A0E70B37BE82543C425A1373 /* Pods-The Ballad of Sigurd.release.xcconfig */;
+			baseConfigurationReference = 24D633CB94050B79DD329C7B /* Pods-The Ballad of Lorbert.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -1303,7 +1341,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		CAB4EB07221F693D0066EDC4 /* Build configuration list for PBXNativeTarget "The Ballad of Sigurd" */ = {
+		CAB4EB07221F693D0066EDC4 /* Build configuration list for PBXNativeTarget "The Ballad of Lorbert" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				CAB4EB08221F693D0066EDC4 /* Debug */,

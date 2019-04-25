@@ -11,6 +11,6 @@
 #endif
 
 
-FOUNDATION_EXPORT double Pods_The_Ballad_of_SigurdVersionNumber;
-FOUNDATION_EXPORT const unsigned char Pods_The_Ballad_of_SigurdVersionString[];
+FOUNDATION_EXPORT double Pods_The_Ballad_of_LorbertVersionNumber;
+FOUNDATION_EXPORT const unsigned char Pods_The_Ballad_of_LorbertVersionString[];
 

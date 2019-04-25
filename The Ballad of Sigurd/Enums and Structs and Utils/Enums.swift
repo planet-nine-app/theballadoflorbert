@@ -44,9 +44,9 @@ enum Stats: String {
 }
 
 enum CharacterNames: String {
-    case sigurd = "Sigurd"
-    case bryn = "Bryn"
-    case anders = "Anders"
+    case sigurd = "Lorbert"
+    case bryn = "Artro"
+    case anders = "I-O"
 }
 
 enum EnemyNames: String {

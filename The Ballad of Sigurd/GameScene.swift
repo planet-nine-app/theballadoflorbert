@@ -21,6 +21,14 @@ struct GatewayKey: Codable {
 
 class GameScene: SKScene {
     
+    struct GatewayTimestampTuple {
+        let gatewayName: String
+        let timestamp = "".getTime()
+        func toString() -> String {
+            return "{\"gatewayName\":\"\(gatewayName)\",\"timestamp\":\"\(timestamp)\"}"
+        }
+    }
+    
     private var connectButton = SKLabelNode()
     private var playButton = SKLabelNode()
     var user: PNUser?
@@ -39,8 +47,9 @@ class GameScene: SKScene {
         user = UserModel().getUser()
         
         if user != nil {
-            let signature = Crypto().signMessage(message: "The-Ballad-of-Sigurd-dev")
-            let _ = PlanetNineUser(userId: user!.userId, gatewayName: "The-Ballad-of-Sigurd-dev", signature: signature) { pnUser in
+            let gatewayTimestampTuple = GatewayTimestampTuple(gatewayName: "The-Ballad-of-Sigurd-dev")
+            let signature = Crypto().signMessage(message: gatewayTimestampTuple.toString())
+            let _ = PlanetNineUser(userId: user!.userId, gatewayName: "The-Ballad-of-Sigurd-dev", timestamp: gatewayTimestampTuple.timestamp, signature: signature) { pnUser in
                 print(pnUser)
                 UserModel().saveUser(user: pnUser)
                 self.user = UserModel().getUser()
@@ -49,7 +58,7 @@ class GameScene: SKScene {
     }
     
     func addTitle() {
-        let labelNode = SKLabelNode(text: "The Ballad of Sigurd")
+        let labelNode = SKLabelNode(text: "The Ballad of Lorbert")
         labelNode.fontColor = UIColor.PlanetNineColors.secondary
         labelNode.fontName = "Orbitron-Bold"
         labelNode.position = CGPoint(x: 0, y: 100)
@@ -146,15 +155,16 @@ class GameScene: SKScene {
         let party = Party()
         
         //let inventoryScene = InventoryScene(size: CGSize(width: 1920, height: 1280))
+        
+        if UserModel().getUser() == nil {
+            print("Please connect a user account first")
+            return
+        }
         let inventoryScene = InventoryScene(size: CGSize(width: 667, height: 375))
         inventoryScene.scaleMode = .aspectFit
         inventoryScene.party = party
         //inventoryScene.scaleMode = .aspectFill
         self.view?.presentScene(inventoryScene)
-        if UserModel().getUser() == nil {
-            print("Please connect a user account first")
-            return
-        }
         /*let battleScene = BattleScene(size: CGSize(width: 1920, height: 1280))
         battleScene.scaleMode = .fill
         self.view?.presentScene(battleScene)*/

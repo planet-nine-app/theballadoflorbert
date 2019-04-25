@@ -13,6 +13,14 @@ import PlanetNineGateway
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
+    
+    struct GatewayTimestampTuple {
+        let gatewayName: String
+        let timestamp = "".getTime()
+        func toString() -> String {
+            return "{\"gatewayName\":\"\(gatewayName)\",\"timestamp\":\"\(timestamp)\"}"
+        }
+    }
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
@@ -57,8 +65,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             return true
         }
         if success == "true" && userId != "0" {
-            let signature = Crypto().signMessage(message: "The-Ballad-of-Sigurd-dev")
-            _ = PlanetNineUser(userId: Int(userId)!, gatewayName: "The-Ballad-of-Sigurd-dev", signature: signature) { pnUser in
+            let gatewayTimestampTuple = GatewayTimestampTuple(gatewayName: "The-Ballad-of-Sigurd-dev")
+            let signature = Crypto().signMessage(message: gatewayTimestampTuple.toString())
+            _ = PlanetNineUser(userId: Int(userId)!, gatewayName: "The-Ballad-of-Sigurd-dev", timestamp: gatewayTimestampTuple.timestamp, signature: signature) { pnUser in
                 print(pnUser)
                 UserModel().saveUser(user: pnUser)
             }

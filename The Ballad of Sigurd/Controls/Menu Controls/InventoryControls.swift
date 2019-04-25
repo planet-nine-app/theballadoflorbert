@@ -44,15 +44,15 @@ class InventoryControls: AbstractControls {
                 if node.name != nil {
                     if beginningControlState == .characterSelection {
                         switch node.name {
-                        case "characterSigurd":
+                        case "characterLorbert":
                             print("Sigurd")
                             scene.characterSelected(character: .sigurd)
                             controlState = .equipmentSelection
-                        case "characterBryn":
+                        case "characterArtro":
                             print("Bryn")
                             scene.characterSelected(character: .bryn)
                             controlState = .equipmentSelection
-                        case "characterAnders":
+                        case "characterI-O":
                             print("Anders")
                             scene.characterSelected(character: .anders)
                             controlState = .equipmentSelection

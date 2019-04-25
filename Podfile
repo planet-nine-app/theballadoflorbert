@@ -1,7 +1,7 @@
 # Uncomment the next line to define a global platform for your project
 # platform :ios, '9.0'
 
-target 'The Ballad of Sigurd' do
+target 'The Ballad of Lorbert' do
   # Comment the next line if you're not using Swift and don't want to use dynamic frameworks
   use_frameworks!
 
@@ -21,3 +21,5 @@ target 'The Ballad of Sigurd' do
   end
 
 end
+
+
