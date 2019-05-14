@@ -14,8 +14,9 @@ import PlanetNineGateway
 struct GatewayKey: Codable {
     var gatewayName: String
     var publicKey: String
+    let timestamp = "".getTime()
     func toString() -> String {
-        return "{\"gatewayName\":\"\(gatewayName)\",\"publicKey\":\"\(publicKey)\"}"
+        return "{\"gatewayName\":\"\(gatewayName)\",\"publicKey\":\"\(publicKey)\",\"timestamp\":\"\(timestamp)\"}"
     }
 }
 
@@ -37,6 +38,8 @@ class GameScene: SKScene {
         
         addTitle()
         addMenuButtons()
+        
+        NotificationCenter.default.addObserver(self, selector: #selector(connectAccountSuccessful), name: NSNotification.Name("connectAccountSuccessful"), object: UIApplication.shared)
         
         let inventoryManager = InventoryManager()
         let abstractPlayerCharacter = AbstractPlayerCharacter(named: .bryn)
@@ -146,7 +149,7 @@ class GameScene: SKScene {
         let signature = Crypto().signMessage(message: gatewayKey.toString())
         
         let planetNineGateway = PlanetNineGateway()
-        planetNineGateway.ongoingGateway(gatewayName: "The-Ballad-of-Sigurd-dev", publicKey: keys!.publicKey, gatewayURL: "theballadofsigurd://ongoing", signature: signature)
+        planetNineGateway.ongoingGateway(gatewayName: "The-Ballad-of-Sigurd-dev", publicKey: keys!.publicKey, gatewayURL: "theballadofsigurd://ongoing", timestamp: gatewayKey.timestamp, signature: signature)
         planetNineGateway.askForOngoingGatewayUsage()
     }
     
@@ -179,6 +182,10 @@ class GameScene: SKScene {
         if user != nil {
             playButton.alpha = 1.0
         }
+    }
+    
+    @objc func connectAccountSuccessful() {
+        playButton.alpha = 1.0
     }
 }
 

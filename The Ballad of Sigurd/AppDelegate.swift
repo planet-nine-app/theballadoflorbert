@@ -70,6 +70,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             _ = PlanetNineUser(userId: Int(userId)!, gatewayName: "The-Ballad-of-Sigurd-dev", timestamp: gatewayTimestampTuple.timestamp, signature: signature) { pnUser in
                 print(pnUser)
                 UserModel().saveUser(user: pnUser)
+                DispatchQueue.main.async {
+                    NotificationCenter.default.post(name: NSNotification.Name("connectAccountSuccessful"), object: UIApplication.shared)
+                }
             }
         }
         return true
