@@ -12,6 +12,7 @@ import SystemConfiguration
 
 public enum NetworkErrors: Error {
     case couldNotReachNetwork
+    case pageNotFound
     case authenticationError
     case noData
     case unknownError
@@ -71,6 +72,10 @@ class Network: NSObject {
                     callback(NetworkErrors.authenticationError, data)
                     return
                 }
+                if httpResponse.statusCode == 404 {
+                    callback(NetworkErrors.pageNotFound, data)
+                    return
+                }
                 callback(NetworkErrors.couldNotReachNetwork, data)
                 return
             }
@@ -97,6 +102,10 @@ class Network: NSObject {
             if httpResponse.statusCode != 200 {
                 if httpResponse.statusCode == 401 {
                     callback(NetworkErrors.authenticationError, data)
+                    return
+                }
+                if httpResponse.statusCode == 404 {
+                    callback(NetworkErrors.pageNotFound, data)
                     return
                 }
                 callback(NetworkErrors.couldNotReachNetwork, data)
