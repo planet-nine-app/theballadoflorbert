@@ -25,6 +25,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        PlanetNineGateway.initialize()
         return true
     }
 
@@ -60,14 +61,22 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             print("Unsuccessful")
             return true
         }
-        guard let userId = components.queryItems![1].value else {
-            print("No userId")
+        guard let userUUID = components.queryItems![1].value else {
+            print("No userUUID")
             return true
         }
-        if success == "true" && userId != "0" {
-            let gatewayTimestampTuple = GatewayTimestampTuple(gatewayName: "The-Ballad-of-Sigurd-dev")
+        if success == "true" && userUUID != "0" {
+            /*let gatewayTimestampTuple = GatewayTimestampTuple(gatewayName: "The-Ballad-of-Sigurd-dev")
             let signature = Crypto().signMessage(message: gatewayTimestampTuple.toString())
-            _ = PlanetNineUser(userId: Int(userId)!, gatewayName: "The-Ballad-of-Sigurd-dev", timestamp: gatewayTimestampTuple.timestamp, signature: signature) { pnUser in
+            _ = PlanetNineUser(userUUID: userUUID, gatewayName: "The-Ballad-of-Sigurd-dev", timestamp: gatewayTimestampTuple.timestamp, signature: signature) { pnUser in
+                print(pnUser)
+                UserModel().saveUser(user: pnUser)
+                DispatchQueue.main.async {
+                    NotificationCenter.default.post(name: NSNotification.Name("connectAccountSuccessful"), object: UIApplication.shared)
+                }
+            }*/
+            let planetNineGateway = PlanetNineGateway()
+            planetNineGateway.getUser(userUUID: userUUID, gatewayName: "The-Ballad-of-Sigurd-dev") { pnUser in
                 print(pnUser)
                 UserModel().saveUser(user: pnUser)
                 DispatchQueue.main.async {

@@ -20,6 +20,26 @@ struct GatewayKey: Codable {
     }
 }
 
+public struct UserGatewayTimestampTriple {
+    public let userUUID: String
+    public let gatewayName: String
+    public let timestamp = "".getTime()
+    public init(userUUID: String, gatewayName: String) {
+        self.userUUID = userUUID
+        self.gatewayName = gatewayName
+    }
+    public func toString() -> String {
+        return "{\"userUUID\":\(userUUID),\"gatewayName\":\"\(gatewayName)\",\"timestamp\":\"\(timestamp)\"}"
+    }
+}
+
+public struct UserGatewayTimestampTripleWithSignature {
+    public let userUUID: String
+    public let gatewayName: String
+    public let timestamp: String
+    public let signature: String
+}
+
 class GameScene: SKScene {
     
     struct GatewayTimestampTuple {
@@ -33,6 +53,7 @@ class GameScene: SKScene {
     private var connectButton = SKLabelNode()
     private var playButton = SKLabelNode()
     var user: PNUser?
+    var viewController: GameViewController?
     
     override func didMove(to view: SKView) {
         
@@ -49,13 +70,10 @@ class GameScene: SKScene {
         
         user = UserModel().getUser()
         
-        if user != nil {
-            let gatewayTimestampTuple = GatewayTimestampTuple(gatewayName: "The-Ballad-of-Sigurd-dev")
-            let signature = Crypto().signMessage(message: gatewayTimestampTuple.toString())
-            let _ = PlanetNineUser(userId: user!.userId, gatewayName: "The-Ballad-of-Sigurd-dev", timestamp: gatewayTimestampTuple.timestamp, signature: signature) { pnUser in
+        if let user = user {
+            planetNineGateway.getUser(userUUID: user.userUUID, gatewayName: "The-Ballad-of-Sigurd-dev") { pnUser in
                 print(pnUser)
                 UserModel().saveUser(user: pnUser)
-                self.user = UserModel().getUser()
             }
         }
     }
@@ -140,17 +158,14 @@ class GameScene: SKScene {
         // Called before each frame is rendered
     }
     
+    var planetNineGateway: PlanetNineGateway!
+    
     func connectAccount() {
-        var keys = Crypto().getKeys()
-        if keys == nil {
-            keys = Crypto().generateKeys(seed: "The Ballad of Sigurd dev")
-        }
-        let gatewayKey = GatewayKey(gatewayName: "The-Ballad-of-Sigurd-dev", publicKey: keys!.publicKey)
-        let signature = Crypto().signMessage(message: gatewayKey.toString())
+        planetNineGateway = PlanetNineGateway()
+        planetNineGateway.ongoingGateway(gatewayName: "The-Ballad-of-Sigurd-dev", gatewayURL: "theballadofsigurd://ongoing")
         
-        let planetNineGateway = PlanetNineGateway()
-        planetNineGateway.ongoingGateway(gatewayName: "The-Ballad-of-Sigurd-dev", publicKey: keys!.publicKey, gatewayURL: "theballadofsigurd://ongoing", timestamp: gatewayKey.timestamp, signature: signature)
-        planetNineGateway.askForOngoingGatewayUsage()
+        guard let viewController = viewController else { return }
+        planetNineGateway.askForOngoingGatewayUsage(presentingViewController: viewController)
     }
     
     func play() {

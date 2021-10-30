@@ -281,7 +281,6 @@ class BattleScene: AbstractScene {
         case .bryn:
             characterToUseRuneOn = battleCharacters[1]
         case .anders:
-            print("Anders case not handled yet")
             characterToUseRuneOn = battleCharacters[2]
         }
         

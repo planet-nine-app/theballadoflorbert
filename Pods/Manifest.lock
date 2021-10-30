@@ -1,20 +1,24 @@
 PODS:
-  - PlanetNineGateway (0.0.22)
-  - Valet (3.2.3)
+  - PlanetNineGateway (0.0.40):
+    - secp256k1.swift (~> 0.1.4)
+    - Valet (~> 3.2.8)
+  - secp256k1.swift (0.1.4)
+  - Valet (3.2.8)
 
 DEPENDENCIES:
-  - PlanetNineGateway
-  - Valet
+  - PlanetNineGateway (= 0.0.40)
 
 SPEC REPOS:
-  https://github.com/cocoapods/specs.git:
+  trunk:
     - PlanetNineGateway
+    - secp256k1.swift
     - Valet
 
 SPEC CHECKSUMS:
-  PlanetNineGateway: 3a23ebddd959f6e7a1422ba607638e5064e094b7
-  Valet: 4af0382d4a94db5c7861504f751884f653437d24
+  PlanetNineGateway: 47517d4b0910fb2a9a34008c8260693055a2bd89
+  secp256k1.swift: a7e7a214f6db6ce5db32cc6b2b45e5c4dd633634
+  Valet: 16d0537d70db79d9ba953b9060b5da4fb8004e51
 
-PODFILE CHECKSUM: e2b70a79f8cda58297529b4f2c2948481fd99c6e
+PODFILE CHECKSUM: bfafc48bc5dc799e63d362412cf42a37cb460590
 
-COCOAPODS: 1.6.0
+COCOAPODS: 1.11.2
