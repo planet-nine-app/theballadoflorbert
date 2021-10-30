@@ -7,8 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		08B28DADED501108FCDC480C /* Pods_The_Ballad_of_SigurdUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08588C1B2CB1DCA0D5FB3295 /* Pods_The_Ballad_of_SigurdUITests.framework */; };
-		351D0F45FC6F73A7CFB41E66 /* Pods_The_Ballad_of_SigurdTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E32897C7123C77CFBA505B2 /* Pods_The_Ballad_of_SigurdTests.framework */; };
+		0CE1DA2C2CD3C14F9DD70DF8 /* Pods_The_Ballad_of_SigurdTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28020F3D7D0E42E7872602DF /* Pods_The_Ballad_of_SigurdTests.framework */; };
+		1C77D6C682921391F2A3C112 /* Pods_The_Ballad_of_SigurdUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75AF8C11774DD16CD487C4AD /* Pods_The_Ballad_of_SigurdUITests.framework */; };
+		BBA4096AC1AB581FEB9A3A0B /* Pods_The_Ballad_of_Lorbert.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4287F9058D503E6E757C538A /* Pods_The_Ballad_of_Lorbert.framework */; };
 		CA1E76C3223C28A200EA0FAF /* EquipmentConsole.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA1E76C2223C28A200EA0FAF /* EquipmentConsole.swift */; };
 		CA1E76C5223C3BE500EA0FAF /* InventorySelector.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA1E76C4223C3BE500EA0FAF /* InventorySelector.swift */; };
 		CA1E76C8223C54FA00EA0FAF /* InventorySelectorTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA1E76C7223C54FA00EA0FAF /* InventorySelectorTableViewCell.swift */; };
@@ -129,7 +130,6 @@
 		CAC2C6F1225800FE00C5A78D /* Lorbert_Large@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = CAC2C6E8225800FE00C5A78D /* Lorbert_Large@3x.png */; };
 		CAC2C6F2225800FE00C5A78D /* Artro_Small@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = CAC2C6E9225800FE00C5A78D /* Artro_Small@3x.png */; };
 		CAC2C6F4225805FB00C5A78D /* BossAttack.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAC2C6F3225805FB00C5A78D /* BossAttack.swift */; };
-		D81F2B93CBE2BC59F810B343 /* Pods_The_Ballad_of_Lorbert.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7EC226EEF7B67013708C28F5 /* Pods_The_Ballad_of_Lorbert.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -150,15 +150,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		077910C001F6163C14FD80C5 /* Pods-The Ballad of Lorbert.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-The Ballad of Lorbert.debug.xcconfig"; path = "Target Support Files/Pods-The Ballad of Lorbert/Pods-The Ballad of Lorbert.debug.xcconfig"; sourceTree = "<group>"; };
-		08588C1B2CB1DCA0D5FB3295 /* Pods_The_Ballad_of_SigurdUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_The_Ballad_of_SigurdUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		0A9F9882B021021F9FE730E1 /* Pods-The Ballad of SigurdTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-The Ballad of SigurdTests.release.xcconfig"; path = "Target Support Files/Pods-The Ballad of SigurdTests/Pods-The Ballad of SigurdTests.release.xcconfig"; sourceTree = "<group>"; };
-		1E32897C7123C77CFBA505B2 /* Pods_The_Ballad_of_SigurdTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_The_Ballad_of_SigurdTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		4339A09D88DB012410609DF8 /* Pods-The Ballad of SigurdUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-The Ballad of SigurdUITests.release.xcconfig"; path = "Target Support Files/Pods-The Ballad of SigurdUITests/Pods-The Ballad of SigurdUITests.release.xcconfig"; sourceTree = "<group>"; };
-		7162BD8F80522DD9A0AAF80B /* Pods-The Ballad of SigurdUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-The Ballad of SigurdUITests.debug.xcconfig"; path = "Target Support Files/Pods-The Ballad of SigurdUITests/Pods-The Ballad of SigurdUITests.debug.xcconfig"; sourceTree = "<group>"; };
-		76CF08D569B1CAD8FA971991 /* Pods-The Ballad of Lorbert.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-The Ballad of Lorbert.release.xcconfig"; path = "Target Support Files/Pods-The Ballad of Lorbert/Pods-The Ballad of Lorbert.release.xcconfig"; sourceTree = "<group>"; };
-		7EC226EEF7B67013708C28F5 /* Pods_The_Ballad_of_Lorbert.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_The_Ballad_of_Lorbert.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		935F6FEB8C3A109C5BAE3433 /* Pods-The Ballad of SigurdTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-The Ballad of SigurdTests.debug.xcconfig"; path = "Target Support Files/Pods-The Ballad of SigurdTests/Pods-The Ballad of SigurdTests.debug.xcconfig"; sourceTree = "<group>"; };
+		28020F3D7D0E42E7872602DF /* Pods_The_Ballad_of_SigurdTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_The_Ballad_of_SigurdTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		37E4ACAD5CCDD9F893DD06F7 /* Pods-The Ballad of SigurdTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-The Ballad of SigurdTests.debug.xcconfig"; path = "Target Support Files/Pods-The Ballad of SigurdTests/Pods-The Ballad of SigurdTests.debug.xcconfig"; sourceTree = "<group>"; };
+		3D7D5DF2930AA24DC80B2623 /* Pods-The Ballad of Lorbert.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-The Ballad of Lorbert.release.xcconfig"; path = "Target Support Files/Pods-The Ballad of Lorbert/Pods-The Ballad of Lorbert.release.xcconfig"; sourceTree = "<group>"; };
+		4058BACF82EC5CBD5A5760D7 /* Pods-The Ballad of Lorbert.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-The Ballad of Lorbert.debug.xcconfig"; path = "Target Support Files/Pods-The Ballad of Lorbert/Pods-The Ballad of Lorbert.debug.xcconfig"; sourceTree = "<group>"; };
+		4287F9058D503E6E757C538A /* Pods_The_Ballad_of_Lorbert.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_The_Ballad_of_Lorbert.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		75AF8C11774DD16CD487C4AD /* Pods_The_Ballad_of_SigurdUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_The_Ballad_of_SigurdUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		85E2C374D9886F90EE979A2A /* Pods-The Ballad of SigurdUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-The Ballad of SigurdUITests.release.xcconfig"; path = "Target Support Files/Pods-The Ballad of SigurdUITests/Pods-The Ballad of SigurdUITests.release.xcconfig"; sourceTree = "<group>"; };
+		B44132A2E18036A350E9504F /* Pods-The Ballad of SigurdTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-The Ballad of SigurdTests.release.xcconfig"; path = "Target Support Files/Pods-The Ballad of SigurdTests/Pods-The Ballad of SigurdTests.release.xcconfig"; sourceTree = "<group>"; };
+		B595D71664AF4351FEAE501D /* Pods-The Ballad of SigurdUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-The Ballad of SigurdUITests.debug.xcconfig"; path = "Target Support Files/Pods-The Ballad of SigurdUITests/Pods-The Ballad of SigurdUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		CA1E76C2223C28A200EA0FAF /* EquipmentConsole.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EquipmentConsole.swift; sourceTree = "<group>"; };
 		CA1E76C4223C3BE500EA0FAF /* InventorySelector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InventorySelector.swift; sourceTree = "<group>"; };
 		CA1E76C7223C54FA00EA0FAF /* InventorySelectorTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InventorySelectorTableViewCell.swift; sourceTree = "<group>"; };
@@ -299,7 +299,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D81F2B93CBE2BC59F810B343 /* Pods_The_Ballad_of_Lorbert.framework in Frameworks */,
+				BBA4096AC1AB581FEB9A3A0B /* Pods_The_Ballad_of_Lorbert.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -307,7 +307,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				351D0F45FC6F73A7CFB41E66 /* Pods_The_Ballad_of_SigurdTests.framework in Frameworks */,
+				0CE1DA2C2CD3C14F9DD70DF8 /* Pods_The_Ballad_of_SigurdTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -315,19 +315,19 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				08B28DADED501108FCDC480C /* Pods_The_Ballad_of_SigurdUITests.framework in Frameworks */,
+				1C77D6C682921391F2A3C112 /* Pods_The_Ballad_of_SigurdUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		509F1357753A685C73EB5122 /* Frameworks */ = {
+		602C0920BD0F510D145878E8 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				7EC226EEF7B67013708C28F5 /* Pods_The_Ballad_of_Lorbert.framework */,
-				1E32897C7123C77CFBA505B2 /* Pods_The_Ballad_of_SigurdTests.framework */,
-				08588C1B2CB1DCA0D5FB3295 /* Pods_The_Ballad_of_SigurdUITests.framework */,
+				4287F9058D503E6E757C538A /* Pods_The_Ballad_of_Lorbert.framework */,
+				28020F3D7D0E42E7872602DF /* Pods_The_Ballad_of_SigurdTests.framework */,
+				75AF8C11774DD16CD487C4AD /* Pods_The_Ballad_of_SigurdUITests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -335,12 +335,12 @@
 		70A596667E77F1B82D98B252 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				077910C001F6163C14FD80C5 /* Pods-The Ballad of Lorbert.debug.xcconfig */,
-				76CF08D569B1CAD8FA971991 /* Pods-The Ballad of Lorbert.release.xcconfig */,
-				935F6FEB8C3A109C5BAE3433 /* Pods-The Ballad of SigurdTests.debug.xcconfig */,
-				0A9F9882B021021F9FE730E1 /* Pods-The Ballad of SigurdTests.release.xcconfig */,
-				7162BD8F80522DD9A0AAF80B /* Pods-The Ballad of SigurdUITests.debug.xcconfig */,
-				4339A09D88DB012410609DF8 /* Pods-The Ballad of SigurdUITests.release.xcconfig */,
+				4058BACF82EC5CBD5A5760D7 /* Pods-The Ballad of Lorbert.debug.xcconfig */,
+				3D7D5DF2930AA24DC80B2623 /* Pods-The Ballad of Lorbert.release.xcconfig */,
+				37E4ACAD5CCDD9F893DD06F7 /* Pods-The Ballad of SigurdTests.debug.xcconfig */,
+				B44132A2E18036A350E9504F /* Pods-The Ballad of SigurdTests.release.xcconfig */,
+				B595D71664AF4351FEAE501D /* Pods-The Ballad of SigurdUITests.debug.xcconfig */,
+				85E2C374D9886F90EE979A2A /* Pods-The Ballad of SigurdUITests.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -606,7 +606,7 @@
 				CAB4EB01221F693D0066EDC4 /* The Ballad of SigurdUITests */,
 				CAB4EADA221F693B0066EDC4 /* Products */,
 				70A596667E77F1B82D98B252 /* Pods */,
-				509F1357753A685C73EB5122 /* Frameworks */,
+				602C0920BD0F510D145878E8 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -693,11 +693,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CAB4EB07221F693D0066EDC4 /* Build configuration list for PBXNativeTarget "The Ballad of Lorbert" */;
 			buildPhases = (
-				305462FF14A66CF8064A0EC5 /* [CP] Check Pods Manifest.lock */,
+				F558D4352E9D8EF8469C3D44 /* [CP] Check Pods Manifest.lock */,
 				CAB4EAD5221F693B0066EDC4 /* Sources */,
 				CAB4EAD6221F693B0066EDC4 /* Frameworks */,
 				CAB4EAD7221F693B0066EDC4 /* Resources */,
-				E5A267E6B6199BC71FAC3DDD /* [CP] Embed Pods Frameworks */,
+				5853985BDC7E17B49BD9FD48 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -712,7 +712,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CAB4EB0A221F693D0066EDC4 /* Build configuration list for PBXNativeTarget "The Ballad of SigurdTests" */;
 			buildPhases = (
-				CDAAC86EC0060E2F68E02E83 /* [CP] Check Pods Manifest.lock */,
+				A0AA5D8160231BA345CB2480 /* [CP] Check Pods Manifest.lock */,
 				CAB4EAEF221F693D0066EDC4 /* Sources */,
 				CAB4EAF0221F693D0066EDC4 /* Frameworks */,
 				CAB4EAF1221F693D0066EDC4 /* Resources */,
@@ -731,7 +731,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CAB4EB0D221F693D0066EDC4 /* Build configuration list for PBXNativeTarget "The Ballad of SigurdUITests" */;
 			buildPhases = (
-				78BC19569CA4EF63E5CECBA7 /* [CP] Check Pods Manifest.lock */,
+				F46CE95FF543702A3D0EB565 /* [CP] Check Pods Manifest.lock */,
 				CAB4EAFA221F693D0066EDC4 /* Sources */,
 				CAB4EAFB221F693D0066EDC4 /* Frameworks */,
 				CAB4EAFC221F693D0066EDC4 /* Resources */,
@@ -876,51 +876,24 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		305462FF14A66CF8064A0EC5 /* [CP] Check Pods Manifest.lock */ = {
+		5853985BDC7E17B49BD9FD48 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-The Ballad of Lorbert/Pods-The Ballad of Lorbert-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
+			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-The Ballad of Lorbert-checkManifestLockResult.txt",
+				"${PODS_ROOT}/Target Support Files/Pods-The Ballad of Lorbert/Pods-The Ballad of Lorbert-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-The Ballad of Lorbert/Pods-The Ballad of Lorbert-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		78BC19569CA4EF63E5CECBA7 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-The Ballad of SigurdUITests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		CDAAC86EC0060E2F68E02E83 /* [CP] Check Pods Manifest.lock */ = {
+		A0AA5D8160231BA345CB2480 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -942,21 +915,48 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		E5A267E6B6199BC71FAC3DDD /* [CP] Embed Pods Frameworks */ = {
+		F46CE95FF543702A3D0EB565 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-The Ballad of Lorbert/Pods-The Ballad of Lorbert-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
-			name = "[CP] Embed Pods Frameworks";
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-The Ballad of Lorbert/Pods-The Ballad of Lorbert-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-The Ballad of SigurdUITests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-The Ballad of Lorbert/Pods-The Ballad of Lorbert-frameworks.sh\"\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F558D4352E9D8EF8469C3D44 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-The Ballad of Lorbert-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -1195,7 +1195,7 @@
 		};
 		CAB4EB08221F693D0066EDC4 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 077910C001F6163C14FD80C5 /* Pods-The Ballad of Lorbert.debug.xcconfig */;
+			baseConfigurationReference = 4058BACF82EC5CBD5A5760D7 /* Pods-The Ballad of Lorbert.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -1219,7 +1219,7 @@
 		};
 		CAB4EB09221F693D0066EDC4 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 76CF08D569B1CAD8FA971991 /* Pods-The Ballad of Lorbert.release.xcconfig */;
+			baseConfigurationReference = 3D7D5DF2930AA24DC80B2623 /* Pods-The Ballad of Lorbert.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -1242,7 +1242,7 @@
 		};
 		CAB4EB0B221F693D0066EDC4 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 935F6FEB8C3A109C5BAE3433 /* Pods-The Ballad of SigurdTests.debug.xcconfig */;
+			baseConfigurationReference = 37E4ACAD5CCDD9F893DD06F7 /* Pods-The Ballad of SigurdTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -1263,7 +1263,7 @@
 		};
 		CAB4EB0C221F693D0066EDC4 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0A9F9882B021021F9FE730E1 /* Pods-The Ballad of SigurdTests.release.xcconfig */;
+			baseConfigurationReference = B44132A2E18036A350E9504F /* Pods-The Ballad of SigurdTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -1284,7 +1284,7 @@
 		};
 		CAB4EB0E221F693D0066EDC4 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7162BD8F80522DD9A0AAF80B /* Pods-The Ballad of SigurdUITests.debug.xcconfig */;
+			baseConfigurationReference = B595D71664AF4351FEAE501D /* Pods-The Ballad of SigurdUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -1304,7 +1304,7 @@
 		};
 		CAB4EB0F221F693D0066EDC4 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4339A09D88DB012410609DF8 /* Pods-The Ballad of SigurdUITests.release.xcconfig */;
+			baseConfigurationReference = 85E2C374D9886F90EE979A2A /* Pods-The Ballad of SigurdUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

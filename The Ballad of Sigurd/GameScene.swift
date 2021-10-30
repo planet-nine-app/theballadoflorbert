@@ -69,7 +69,7 @@ class GameScene: SKScene {
         }
         
         user = UserModel().getUser()
-        
+        planetNineGateway = PlanetNineGateway()
         if let user = user {
             planetNineGateway.getUser(userUUID: user.userUUID, gatewayName: "The-Ballad-of-Sigurd-dev") { pnUser in
                 print(pnUser)
