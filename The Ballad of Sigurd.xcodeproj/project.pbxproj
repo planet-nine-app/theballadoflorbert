@@ -94,7 +94,6 @@
 		CA640C9922287298004905E0 /* Healing.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA640C9822287298004905E0 /* Healing.swift */; };
 		CA640C9C222872F8004905E0 /* HealingRain.sks in Resources */ = {isa = PBXBuildFile; fileRef = CA640C9A222872F8004905E0 /* HealingRain.sks */; };
 		CA640C9D222872F8004905E0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CA640C9B222872F8004905E0 /* Assets.xcassets */; };
-		CA640CA52228784D004905E0 /* cloud2.png in Resources */ = {isa = PBXBuildFile; fileRef = CA640CA42228784C004905E0 /* cloud2.png */; };
 		CA640CAB2229E601004905E0 /* TutorialScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA640CAA2229E601004905E0 /* TutorialScene.swift */; };
 		CA640CAD2229E6EE004905E0 /* TutorialControls.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA640CAC2229E6EE004905E0 /* TutorialControls.swift */; };
 		CA640CAF2229E8D3004905E0 /* AbstractControls.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA640CAE2229E8D3004905E0 /* AbstractControls.swift */; };
@@ -130,6 +129,7 @@
 		CAC2C6F1225800FE00C5A78D /* Lorbert_Large@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = CAC2C6E8225800FE00C5A78D /* Lorbert_Large@3x.png */; };
 		CAC2C6F2225800FE00C5A78D /* Artro_Small@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = CAC2C6E9225800FE00C5A78D /* Artro_Small@3x.png */; };
 		CAC2C6F4225805FB00C5A78D /* BossAttack.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAC2C6F3225805FB00C5A78D /* BossAttack.swift */; };
+		DCAD87ED273107E500D92390 /* cloud2.png in Resources */ = {isa = PBXBuildFile; fileRef = DCAD87EC273107E500D92390 /* cloud2.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -243,7 +243,6 @@
 		CA640C9822287298004905E0 /* Healing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Healing.swift; sourceTree = "<group>"; };
 		CA640C9A222872F8004905E0 /* HealingRain.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = HealingRain.sks; sourceTree = "<group>"; };
 		CA640C9B222872F8004905E0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		CA640CA42228784C004905E0 /* cloud2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = cloud2.png; path = ../../../../../Downloads/cloud2.png; sourceTree = "<group>"; };
 		CA640CAA2229E601004905E0 /* TutorialScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorialScene.swift; sourceTree = "<group>"; };
 		CA640CAC2229E6EE004905E0 /* TutorialControls.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorialControls.swift; sourceTree = "<group>"; };
 		CA640CAE2229E8D3004905E0 /* AbstractControls.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbstractControls.swift; sourceTree = "<group>"; };
@@ -292,6 +291,7 @@
 		CAC2C6E8225800FE00C5A78D /* Lorbert_Large@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Lorbert_Large@3x.png"; sourceTree = "<group>"; };
 		CAC2C6E9225800FE00C5A78D /* Artro_Small@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Artro_Small@3x.png"; sourceTree = "<group>"; };
 		CAC2C6F3225805FB00C5A78D /* BossAttack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BossAttack.swift; sourceTree = "<group>"; };
+		DCAD87EC273107E500D92390 /* cloud2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cloud2.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -555,7 +555,7 @@
 				CA640C8E22285811004905E0 /* spark.png */,
 				CA640C9422285A81004905E0 /* runeIsa.png */,
 				CA640C962228690D004905E0 /* icecube.png */,
-				CA640CA42228784C004905E0 /* cloud2.png */,
+				DCAD87EC273107E500D92390 /* cloud2.png */,
 			);
 			path = Images;
 			sourceTree = "<group>";
@@ -837,7 +837,6 @@
 				CA46E3C3225296C6002E891C /* Alien2_Weapon@3x.png in Resources */,
 				CA640C9D222872F8004905E0 /* Assets.xcassets in Resources */,
 				CAC2C6F2225800FE00C5A78D /* Artro_Small@3x.png in Resources */,
-				CA640CA52228784D004905E0 /* cloud2.png in Resources */,
 				CA1E76EE223C55CD00EA0FAF /* Nineum2_Small@3x.png in Resources */,
 				CAB4EAED221F693D0066EDC4 /* LaunchScreen.storyboard in Resources */,
 				CA640C8F22285811004905E0 /* spark.png in Resources */,
@@ -846,6 +845,7 @@
 				CA1E76F0223C55CD00EA0FAF /* Nineum3_Small@3x.png in Resources */,
 				CAC2C6DE2257D26000C5A78D /* Alien2_Fight@3x.png in Resources */,
 				CA640C6E22260378004905E0 /* grassy_lake.png in Resources */,
+				DCAD87ED273107E500D92390 /* cloud2.png in Resources */,
 				CA1E76EF223C55CD00EA0FAF /* Nineum4_Small.png in Resources */,
 				CA46E3C4225296C6002E891C /* Alien1_Rest@3x.png in Resources */,
 				CA46E3C6225296C6002E891C /* Background@3x.png in Resources */,
